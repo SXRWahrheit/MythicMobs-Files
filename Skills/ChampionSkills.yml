@@ -1,0 +1,174 @@
+BleedingChampion:
+    Cooldown: 1
+    Conditions:
+    - targetwithin{d=5}
+    - targetinlineofsight true
+    Skills:
+    - GCD{ticks=120}
+    - message{m="You begin bleeding."} @target
+    - sound{s=damage.hit} @target
+    - effect:particles{particle=dripLava;amount=5;hS=1;vS=1;speed=5} @self
+    - damage{amount=3;ia=false;pk=false;pi=false} @target ~onTimer:20
+    - damage{amount=3;ia=false;pk=false;pi=false} @target ~onTimer:20
+    - effect:particles{particle=dripLava;amount=5;hS=1;vS=1;speed=5} @self
+    - damage{amount=3;ia=false;pk=false;pi=false} @target ~onTimer:20
+    - damage{amount=3;ia=false;pk=false;pi=false} @target ~onTimer:20
+    - effect:particles{particle=dripLava;amount=5;hS=1;vS=1;speed=5} @self
+    - damage{amount=3;ia=false;pk=false;pi=false} @target ~onTimer:20
+    - damage{amount=3;ia=false;pk=false;pi=false} @target ~onTimer:20
+    - GCD{ticks=120}
+SummonSkeletonsChampion:
+    Cooldown: 60
+    Conditions:
+    - offgcd
+    Skills:
+    - message{m="<mob.name>&f<&co> Arise, my minions!"} @PlayersInRadius{r=40}
+    - delay 20
+    - summon{mob=SkeletalRogue;amount=1;noise=5} @Self
+    - delay 20
+    - summon{mob=Banshee;amount=1;noise=5} @Self
+    - delay 20
+    - summon{mob=LesserDrow;amount=1;noise=5} @Self
+    - delay 20
+    - summon{mob=SkeletalArcher;amount=1;noise=5} @Self
+    - GCD{ticks=120}
+PoisonFangChampion:
+    Cooldown: 30
+    Conditions:
+    - offgcd
+    Skills:
+    - message{m="&d<mob.name>&f<&co> Feel my poison run through your veins!"} @PlayersInRadius{r=40}
+    - delay 20
+    - potion{type=SLOW;duration=200;level=2} @Target
+    - potion{type=CONFUSION;duration=200;level=1} @Target
+    - potion{type=POISON;duration=200;level=2} @Target
+    - GCD{ticks=120}
+LifeLeechChampion:
+    Cooldown: 30
+    Conditions:
+    - offgcd
+    Skills:
+    - message{m="&d<mob.name>&f<&co> Can you feel the life leaving you?"} @PlayersInRadius{r=40}
+    - delay 20
+    - heal{amount=250} @self
+    - damage{amount=10} @Target
+    - GCD{ticks=120}
+RegenChampion:
+    Cooldown: 30
+    Conditions:
+    - offgcd
+    Skills:
+    - message{m="&d<mob.name>&f<&co> I am everlasting!"} @PlayersInRadius{r=40}
+    - delay 20
+    - potion{type=REGENERATION;duration=200;level=2} @self
+    - GCD{ticks=120}
+CripplingShotChampion:
+    Cooldown: 30
+    Conditions:
+    - offgcd
+    Skills:
+    - message={m="&d<mob.name>&f<&co> This will slow you down!"} @PlayersInRadius{r=40}
+    - delay 20
+    - arrowvolley{a=1;s=10;v=30;f=0;rd=200} @Target
+    - potion{type=SLOW;duration=200;level=2} @Target
+    - GCD{ticks=120}
+BurningShotChampion:
+    Cooldown: 30
+    Conditions:
+    - offgcd
+    Skills:
+    - message={m="&d<mob.name>&f<&co> You will be nothing but ashes!"} @PlayersInRadius{r=40}
+    - delay 20
+    - arrowvolley{a=1;s=10;v=30;f=0;rd=200} @Target
+    - ignite{ticks=100} @Target
+    - GCD{ticks=120}
+VanishChampion:
+    Cooldown: 30
+    Conditions:
+    - offgcd
+    Skills:
+    - message={m="&d<mob.name>&f disappears!"} @PlayersInRadius{r=40}
+    - delay 10
+    - potion{type=INVISIBILITY;duration=200;level=2} @Self
+    - GCD{ticks=120}
+SmashAttackChampion:
+    Cooldown: 6
+    Conditions:
+    - targetwithin{d=25}
+    - offgcd
+    Skills:
+    - message{cooldown=30;m="<mob.name>&f<&co> You can't escape me!"} @PlayersInRadius{r=40}
+    - teleport @target
+    - effect:sound{s=mob.endermen.portal;volume=1.0;pitch=0.5}
+    - delay 10
+    - damage{amount=6;ignorearmor=true} @PlayersInRadius{r=5}
+    - throw{velocity=10;velocityY=5} @PlayersInRadius{r=5}
+    - effect:explosion @Self
+    - GCD{ticks=120}
+LevitateChampion:
+    cooldown: 60
+    Conditions:
+    - targetwithin{d=50}
+    - offgcd
+    Skills:
+    - message{cooldown=30;m="<mob.name>&f<&co> Feeling a little light-footed?"} @PlayersInRadius{r=40}
+    - delay 10
+    - potion{type=LEVITATION;duration=320;level=1} @PlayersInRadius{r=40}
+    - GCD{ticks=120}
+CrippleChampion:
+    cooldown: 60
+    Conditions:
+    - targetwithin{d=50}
+    - offgcd
+    Skills:
+    - message{cooldown=30;m="<mob.name>&f<&co> Slow down!"}
+    - delay 10
+    - potion{type=SLOW;duration=320;level=1}
+    - GCD{ticks=120}
+ShadowstepChampion:
+    Cooldown: 30
+    Conditions:
+    - offgcd
+    Skills:
+    - message{m="<mob.name>&f<&co> You can't lock up the darkness!"} @PlayersInRadius{r=40}
+    - delay 10
+    - teleport{spreadh=2;spreadv=3} @target
+    - GCD{ticks=120}
+RallyChampion:
+    Cooldown: 30
+    Conditions:
+    - offgcd
+    Skills:
+    - GCD{ticks=120}
+    - message{m="<mob.name>&f<&co> Hordes of the darkness, fight for me!"} @PlayersInRadius{r=40}
+    - delay 10
+    - rally{types=Skeleton,Creeper,Zombie,SkeletalRogue,LesserDrow,SkeletalArcher,Occultist,Banshee,Phantom,Pig_Zombie,Arachnid,Lich;radius=50;ot=true} @PlayersInRadius{r=40}
+    - GCD{ticks=120}
+ExplosionChampion:
+    Cooldown: 30
+    Conditions:
+    - offgcd
+    Skills:
+    - message{m="<mob.name>&f<&co> Your heart is about to burst!"} @PlayersInRadius{r=40}
+    - delay 10
+    - explosion{yield=6;bd=true;fire=true} @Target
+    - GCD{ticks=120}
+RootChampion:
+    Cooldown: 20
+    Conditions:
+    - offgcd
+    Skills:
+    - message{m="<mob.name>&f<&co> Freeze!"} @PlayersInRadius{r=40}
+    - velocity{m=set;x=0;y=-4;z=0;repeat=120;repeatinterval=1} @PlayersInRadius{r=10}
+UmbraHorde:
+    Cooldown: 180
+    Conditions:
+    - offgcd
+    Skills:
+    - summon{type=Lich;amount=1;radius=10;itt=true} @Self
+ToxusHorde:
+    Cooldown: 180
+    Conditions:
+    - offgcd
+    Skills:
+    - summon{type=Arachnid;amount=5;radius=10;itt=true} @Self

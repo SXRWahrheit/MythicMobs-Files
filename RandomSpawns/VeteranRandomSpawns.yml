@@ -1,0 +1,33 @@
+ProsperusVeterans:
+    Type: SkeletalRogue,LesserWight,LesserShade,SkeletalArcher
+    Worlds: prosperus
+    Chance: 0.03
+    Action: REPLACE
+    Priority: 10
+    Conditions:
+    - region{r=dawnslanding} false
+    - onblock STATIONARY_WATER,WATER false
+HeavensVeterans:
+    Type: SkeletalRogue,LesserWight,LesserShade,LesserDrow,SkeletalArcher,AbsoluteExplodyBoy
+    Worlds: heavens,ultimatus
+    Chance: 0.10
+    Action: REPLACE
+    Conditions:
+    - onblock STATIONARY_WATER,WATER false
+NetherVeterans:
+    Type: SkeletalRogue,LesserWight,LesserShade,LesserDrow,SkeletalArcher,AbsoluteExplodyBoy
+    Worlds: prosperus_nether
+    Chance: 0.03
+    Action: REPLACE
+EndVeterans:
+    Type: SkeletalRogue,LesserWight,LesserShade,LesserDrow,SkeletalArcher,AbsoluteExplodyBoy
+    Worlds: prosperus_the_end
+    Chance: 0.20
+    Action: REPLACE
+AvenfeldVeterans:
+    Type: SkeletalRogue,LesserWight,LesserShade,LesserDrow,SkeletalArcher,AbsoluteExplodyBoy
+    Worlds: avenfeld
+    Chance: 0.10
+    Action: REPLACE
+    Conditions:
+    - onblock STATIONARY_WATER,WATER false

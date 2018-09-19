@@ -1,0 +1,384 @@
+#SuperChargeDeathElite:
+#    Skills:
+#    - modifytargetscore{objective=SuperSkill;action=add;value=30} @ThreatTablePlayers ~onDeath
+#    - skill{s=SuperCharging} @ThreatTablePlayers ~onDeath
+#    - skill{s=SuperReady} @ThreatTablePlayers ~onDeath
+ReTeleport:
+    Cooldown: 1
+    Conditions:
+    - inblock AIR false
+    #- inblock STATIONARY_WATER false
+    Skills:
+    - teleport{spreadh=10;spreadv=0} @target
+SummonSkeletonsElite:
+    Cooldown: 15
+    Conditions:
+    - offgcd
+    Skills:
+    - GCD{ticks=160}
+    - message{m="<mob.name><&co> Arise, my minions!"}
+    - delay 20
+    - summon{type=SkeletalRogue;amount=1;noise=5} @Self
+    - delay 20
+    - summon{type=SkeletalRogue;amount=1;noise=5} @Self
+    - delay 20
+    - summon{type=SkeletalRogue;amount=1;noise=5} @Self
+    - GCD{ticks=160}
+PoisonFangElite:
+    Cooldown: 40
+    Conditions:
+    - offgcd
+    Skills:
+    - GCD{ticks=160}
+    - message{m="&d<mob.name>&f<&co> Feel my poison run through your veins!"}
+    - delay 20
+    - potion{type=SLOW;duration=200;level=2} @Target
+    - potion{type=CONFUSION;duration=200;level=1} @Target
+    - potion{type=POISON;duration=200;level=2} @Target
+    - GCD{ticks=160}
+LifeLeechElite:
+    Cooldown: 60
+    Conditions:
+    - offgcd
+    Skills:
+    - GCD{ticks=160}
+    - message{m="&d<mob.name>&f<&co> Can you feel the life leaving you?"}
+    - delay 20
+    - heal{amount=100} @self
+    - damage{amount=10} @Target
+    - GCD{ticks=160}
+RegenElite:
+    Cooldown: 60
+    Conditions:
+    - offgcd
+    Skills:
+    - GCD{ticks=160}
+    - message{m="&d<mob.name>&f<&co> I am everlasting!"}
+    - delay 20
+    - potion{type=REGENERATION;duration=200;level=2} @self
+    - GCD{ticks=160}
+CripplingShotElite:
+    Cooldown: 20
+    Conditions:
+    - offgcd
+    Skills:
+    - GCD{ticks=160}
+    - message{m="&d<mob.name>&f<&co> This will slow you down!"}
+    - delay 20
+#    - arrowvolley{a=5;s=10;v=30;f=0;rd=200} @Target
+    - shoot {type=ARROW;velocity=30;damage=4} @Target
+    - potion{type=SLOW;duration=200;level=2} @Target
+    - GCD{ticks=160}
+BurningShotElite:
+    Cooldown: 20
+    Conditions:
+    - offgcd
+    Skills:
+    - message{m="&d<mob.name>&f<&co> You will be nothing but ashes!"}
+    - delay 20
+#    - arrowvolley{a=5;s=10;v=30;f=0;rd=200} @Target
+    - shoot {type=ARROW;velocity=30;damage=4} @Target
+    - ignite{ticks=100} @Target
+    - GCD{ticks=160}
+ExplodingArrowElite:
+    Cooldown: 20
+    Conditions:
+    - offgcd
+    - world prosperus,ultimatus
+    Skills:
+    - GCD{ticks=160}
+    - message{m="&d<mob.name>&f<&co> What's that hissing sound?"}
+    - delay 20
+#    - arrowvolley{a=5;s=10;v=30;f=0;rd=200} @Target
+    - shoot {type=ARROW;velocity=30;damage=4} @Target
+    - explosion{yield=1;bd=false} @Target
+    - GCD{ticks=160}
+ExplodingArrowEliteBD:
+    Cooldown: 20
+    Conditions:
+    - offgcd
+    - world prosperus_nether,prosperus_the_end,heavens
+    Skills:
+    - GCD{ticks=160}
+    - message{m="&d<mob.name>&f<&co> What's that hissing sound?"}
+    - delay 20
+#    - arrowvolley{a=5;s=10;v=30;f=0;rd=200} @Target
+    - shoot {type=ARROW;velocity=30;damage=4} @Target
+    - explosion{yield=1;bd=true} @Target
+    - GCD{ticks=160}
+VanishElite:
+    Cooldown: 20
+    Conditions:
+    - offgcd
+    Skills:
+    - GCD{ticks=160}
+    - message{m="&d<mob.name>&f disappears!"}
+    - delay 10
+    - potion{type=INVISIBILITY;duration=200;level=2} @self
+    - GCD{ticks=160}
+SmashAttackElite:
+    Cooldown: 8
+    Conditions:
+    - targetwithin{d=10}
+    - offgcd
+    Skills:
+    - GCD{ticks=160}
+    - message{cooldown=30;m="<mob.name>&f<&co> You can't escape me!"}
+    - teleport @target
+    - effect:sound{s=mob.endermen.portal;volume=1.0;pitch=0.5}
+    - delay 10
+    - damage{amount=5;ignorearmor=true} @PlayersInRadius{r=5}
+    - throw{velocity=10;velocityY=5} @PlayersInRadius{r=5}
+    - effect:explosion @Self
+    - GCD{ticks=160}
+LevitateElite:
+    Cooldown: 20
+    Conditions:
+    - targetwithin{d=50}
+    - offgcd
+    Skills:
+    - GCD{ticks=160}
+    - message{cooldown=30;m="<mob.name>&f<&co> Feeling a little light-footed?"}
+    - delay 10
+    - potion{type=LEVITATION;duration=160;level=1} @Target
+    - GCD{ticks=160}
+CrippleElite:
+    Cooldown: 20
+    Conditions:
+    - targetwithin{d=50}
+    - offgcd
+    Skills:
+    - GCD{ticks=160}
+    - message{cooldown=30;m="<mob.name>&f<&co> Slow down!"}
+    - delay 10
+    - potion{type=SLOW;duration=160;level=1}
+    - GCD{ticks=160}
+JumpSmashElite:
+    Cooldown: 5
+    Conditions:
+    - targetwithin{d=5}
+    - offgcd
+    Skills:
+    - GCD{ticks=100}
+    - leap{velocity=200} @target
+    - jump{velocity=1}
+    - delay 10
+    - leap{velocity=200} @target
+    - delay 20
+    - pull{velocity=-5} @PlayersInRadius{r=10}
+    - effect:explosion @self
+    - damage{amount=6} @PlayersInRadius{r=10}
+    - throw{velocity=15;velocityY=10} @PlayersInRadius{r=10}
+    - GCD{ticks=100}
+PhantomFireball:
+    Cooldown: 20
+    Conditions:
+    - offgcd
+    Skills:
+    - GCD{ticks=160}
+    - message{m="<mob.name>&f<&co> Fires consume you!"} @PlayersInRadius{r=40}
+    - shootfireball{y=4;v=24;i=true;ft=200;ps=true} @target
+    - delay 20
+    - shootfireball{y=4;v=24;i=true;ft=200;ps=true} @target
+    - delay 20
+    - shootfireball{y=4;v=24;i=true;ft=200;ps=true} @target
+    - GCD{ticks=160}
+InfernoFireball:
+    Cooldown: 20
+    Conditions:
+    - offgcd
+    Skills:
+    - GCD{ticks=160}
+    - message{m="<mob.name>&f<&co> Fires consume you!"} @PlayersInRadius{r=40}
+    - shootfireball{y=4;v=24;i=true;ft=200;ps=true} @target
+    - delay 20
+    - shootfireball{y=4;v=24;i=true;ft=200;ps=true} @target
+    - delay 20
+    - shootfireball{y=4;v=24;i=true;ft=200;ps=true} @target
+    - GCD{ticks=160}
+TerrifyElite:
+    Cooldown: 12
+    Conditions:
+    - offgcd
+    Skills:
+    - GCD{ticks=160}
+SummonBlazesElite:
+    Cooldown: 40
+    Conditions:
+    - offgcd
+    Skills:
+    - GCD{ticks=160}
+    - message{m="<mob.name>&f<&co> Hell comes for you!"} @PlayersInRadius{r=40}
+    - delay 20
+    - summon{type=Blaze;amount=1;radius=10} @Self
+    - delay 20
+    - summon{type=Blaze;amount=1;radius=10} @Self
+    - delay 20
+    - summon{type=Blaze;amount=1;radius=10} @Self
+    - GCD{ticks=160}
+SummonGhastsElite:
+    Cooldown: 40
+    Conditions:
+    - offgcd
+    Skills:
+    - GCD{ticks=160}
+    - message{m="<mob.name>&f<&co> Hell comes for you!"} @PlayersInRadius{r=40}
+    - delay 20
+    - summon{type=Ghast;amount=1;radius=10} @Self
+    - delay 20
+    - summon{type=Ghast;amount=1;radius=10} @Self
+    - delay 20
+    - summon{type=Ghast;amount=1;radius=10} @Self
+    - GCD{ticks=160}
+SummonLichMinionsElite:
+    Cooldown: 20
+    Conditions:
+    - offgcd
+    Skills:
+    - GCD{ticks=160}
+    - message{m="<mob.name>&f<&co> The dead are rising!"} @PlayersInRadius{r=40}
+    - delay 20
+    - summon{type=LichMinion;amount=1;radius=3;itt=true} @Self
+    - delay 20
+    - summon{type=LichMinion;amount=1;radius=3;itt=true} @Self
+    - delay 20
+    - summon{type=LichMinion;amount=1;radius=3;itt=true} @Self
+    - GCD{ticks=160}
+LeapElite:
+    Cooldown: 8
+    Conditions:
+    - targetinlineofsight true
+    - offgcd
+    Skills:
+    - GCD{ticks=160}
+    - message{m="<mob.name>&f<&co> Hyah!"} @PlayersInRadius{r=40}
+    - leap{velocity=200} @target
+    - damage{amount=4} @PlayersInRadius{r=5}
+    - GCD{ticks=160}
+WailElite:
+    Cooldown: 8
+    Conditions:
+    - offgcd
+    Skills:
+    - GCD{ticks=160}
+    - message{m="<mob.name>&f lets out a paralyzing wail!"} @PlayersInRadius{r=40}
+    - potion{type=SLOW;duration=80;level=10} @PlayersInRadius{r=8}
+    - throw{velocity=15;velocityY=5} @PlayersInRadius{r=8}
+    - GCD{ticks=160}
+CorruptingTouchElite:
+    Cooldown: 8
+    Conditions:
+    - offgcd
+    - targetwithin{d=5}
+    Skills:
+    - GCD{ticks=160}
+    - message{m="<mob.name>&f<&co> Corruption overcomes you!"} @PlayersInRadius{r=40}
+    - potion{type=WITHER;duration=120;level=1} @PlayersInRadius{r=8}
+    - potion{type=CONFUSION;duration=120;level=10} @PlayersInRadius{r=8}
+    - GCD{ticks=160}
+HamstringElite:
+    Cooldown: 16
+    Conditions:
+    - targetinlineofsight true
+    - targetwithin{d=5}
+    - offgcd
+    Skills:
+    - GCD{ticks=160}
+    - message{cooldown=30;m="<mob.name>&f<&co> Slash their legs!"}
+    - delay 10
+    - potion{type=SLOW;duration=120;level=1}
+    - GCD{ticks=160}
+MeteorElite:
+    Cooldown: 14
+    Conditions:
+    - offgcd
+    Skills:
+    - GCD{ticks=240}
+    - message{cooldown=30;m="<mob.name>&f<&co> I sense your meteoric fall!"}
+    - projectile{onTick=MeteorElite-Tick;onEnd=MeteorElite-Hit;v=48;g=2.0;i=1;hR=2;vR=2;HitPlayers=true;HitNonPlayers=true;mr=80;d=360;StartYOffset=+8.0}
+    - GCD{ticks=240}
+MeteorElite-Tick:
+    Skills:
+    - effect:particles{p=flame;amount=20;speed=0;hS=0.2;vS=0.2} @origin
+MeteorElite-Hit:
+    Skills:
+#    - skill{s=MeteorElite-Hit-Mobs} @EntitiesNearOrigin{r=6;ignore=players}
+    - skill{s=MeteorElite-Hit-Players} @PlayersNearOrigin{r=6}
+    - skill{s=MeteorElite-Hit-ExplosionBD}
+    - skill{s=MeteorElite-Hit-Explosion}
+MeteorElite-Hit-Mobs:
+    Skills:
+    - damage{a=20}
+    - ignite{t=200}
+MeteorElite-Hit-Players:
+    Skills:
+    - damage{a=8}
+    - ignite{t=200}
+MeteorElite-Hit-ExplosionBD:
+    Conditions:
+    - world prosperus_nether,prosperus_the_end,heavens
+    Skills:
+    - explosion{yield=4;bd=true;fire=true}
+MeteorElite-Hit-Explosion:
+    Conditions:
+    - world prosperus,ultimatus
+    Skills:
+    - explosion{yield=4;bd=false;fire=false} @TargetLocation
+BleedingElite:
+    Cooldown: 1
+    Conditions:
+    - targetwithin{d=5}
+    - targetinlineofsight true
+    Skills:
+    - GCD{ticks=160}
+    - message{m="You begin bleeding."} @target
+    - sound{s=damage.hit} @target
+    - effect:particles{particle=dripLava;amount=5;hS=1;vS=1;speed=5} @self
+    - damage{amount=2;ia=false;pk=false;pi=false} @target ~onTimer:20
+    - damage{amount=2;ia=false;pk=false;pi=false} @target ~onTimer:20
+    - effect:particles{particle=dripLava;amount=5;hS=1;vS=1;speed=5} @self
+    - damage{amount=2;ia=false;pk=false;pi=false} @target ~onTimer:20
+    - damage{amount=2;ia=false;pk=false;pi=false} @target ~onTimer:20
+    - effect:particles{particle=dripLava;amount=5;hS=1;vS=1;speed=5} @self
+    - damage{amount=2;ia=false;pk=false;pi=false} @target ~onTimer:20
+    - damage{amount=2;ia=false;pk=false;pi=false} @target ~onTimer:20
+    - GCD{ticks=160}
+ShadowstepElite:
+    Cooldown: 20
+    Conditions:
+    - offgcd
+    Skills:
+    - GCD{ticks=160}
+    - message{m="<mob.name>&f<&co> You can't lock up the darkness!"} @PlayersInRadius{r=40}
+    - delay 10
+    - teleport{spreadh=2;spreadv=3} @target
+    - GCD{ticks=160}
+PullElite:
+    Cooldown: 20
+    Conditions:
+    - offgcd
+    Skills:
+    - GCD{ticks=160}
+    - message{m="<mob.name>&f<&co> Get over here!"} @PlayersInRadius{r=40}
+    - delay 20
+    - forcepull{spread=1} @PlayersInRadius{r=40}
+    - GCD{ticks=160}
+RallyElite:
+    Cooldown: 30
+    Conditions:
+    - offgcd
+    Skills:
+    - GCD{ticks=160}
+    - message{m="<mob.name>&f<&co> Hordes of the darkness, fight for me!"} @PlayersInRadius{r=40}
+    - delay 10
+    - rally{types=Skeleton,Creeper,Zombie,SkeletalRogue,LesserDrow,SkeletalArcher,Occultist,Banshee,Phantom,Pig_Zombie,Arachnid,Lich;radius=50;ot=true} @PlayersInRadius{r=40}
+    - GCD{ticks=160}
+#ConjureSwordsElite:
+#    Cooldown: 120
+#    Conditions:
+#    - offgcd
+#    Skills:
+#    - GCD{ticks=160}
+#    - message{m="<mob.name>&f<&co> Allies, arm yourselves!"} @PlayersInRadius{r=40}
+#    - delay 10
+#    - equip{item=Diamond_Sword:0} @MobsInRadius{r=20}

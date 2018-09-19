@@ -1,0 +1,5 @@
+#SuperChargeDeathVanilla:
+#    Skills:
+#    - modifytargetscore{objective=SuperSkill;action=add;value=3} @ThreatTablePlayers ~onDeath
+#    - skill{s=SuperCharging} @ThreatTablePlayers ~onDeath
+#    - skill{s=SuperReady} @ThreatTablePlayers ~onDeath

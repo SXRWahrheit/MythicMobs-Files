@@ -1,0 +1,69 @@
+CrystallizedExperienceSliver:
+  Id: emerald
+  Data: 0
+  Amount: 1
+  Display: "&aSliver of Crystallized Experience"
+  Lore:
+  - "&6The Arch Artificer created this by crystallizing a small number of levels."
+  Enchantments:
+  - MENDING:1
+  Hide:
+  - ENCHANTS
+CrystallizedExperienceChunk:
+  Id: emerald
+  Data: 0
+  Amount: 1
+  Display: "&aChunk of Crystallized Experience"
+  Lore:
+  - "&6The Arch Artificer created this by crystallizing a fair number of levels."
+  Enchantments:
+  - MENDING:1
+  Hide:
+  - ENCHANTS
+CrystallizedExperienceBillet:
+  Id: emerald
+  Data: 0
+  Amount: 1
+  Display: "&aBillet of Crystallized Experience"
+  Lore:
+  - "&6The Arch Artificer created this by crystallizing a sizable number of levels."
+  Enchantments:
+  - MENDING:1
+  Hide:
+  - ENCHANTS
+CrystallizedExperienceBloom:
+  Id: emerald
+  Data: 0
+  Amount: 1
+  Display: "&aBloom of Crystallized Experience"
+  Lore:
+  - "&6The Arch Artificer created this by crystallizing a large number of levels."
+  Enchantments:
+  - MENDING:1
+  Hide:
+  - ENCHANTS
+CrystallizedExperienceIngot:
+  Id: emerald
+  Data: 0
+  Amount: 1
+  Display: "&aIngot of Crystallized Experience"
+  Lore:
+  - "&6The Arch Artificer created this by crystallizing a tremendous number of levels."
+  Enchantments:
+  - MENDING:1
+  Hide:
+  - ENCHANTS
+VeteranTokenPlaceholder:
+  Id: bone
+  Data: 0
+  Amount: 1
+  Display: "&9Ethereal Substance"
+  Lore:
+  - "&6This substance seems as though it is not long for the world. Right click while holding it to convert it into something tangible."
+  Enchantments:
+  - MENDING:1
+  Hide:
+  - ENCHANTS
+  Skills:
+  - dskill{s=CreateVeteranToken} @Self ~onUse
+  - ConsumeHeldItem @Self ~onUse

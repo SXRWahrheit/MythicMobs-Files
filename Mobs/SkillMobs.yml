@@ -1,0 +1,29 @@
+### Meteor Shower Block ###
+
+MeteorPointer:
+  Type: bat
+  Display: ''
+  Health: 1000
+  Damage: 0
+  DamageModifiers:
+  - ENTITY_ATTACK 0
+  - PROJECTILE 0
+  - FIRE 0
+  - FIRE_TICK 0
+  - LAVA 0
+  - FALL 0
+  - SUFFOCATION 0
+  - MAGIC 0
+  - CUSTOM 0
+  - CONTACT 0
+  - ENTITY_EXPLOSION 0
+  - BLOCK_EXPLOSION 0
+  Skills:
+  - skill{s=MeteorPointerSpawn} @Self ~onSpawn
+  - skill{s=MeteorPointerFinish} @Self ~onTimer:5 0.07
+  Options:
+    PreventOtherDrops: true
+    KnockbackResistance: 1
+    Silent: true
+    
+### End Meteor Shower Block ###

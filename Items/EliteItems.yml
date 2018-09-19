@@ -1,0 +1,275 @@
+FrostWalkers:
+    Id: iron_boots
+    Data: 0
+    Display: '&dFrost Walkers'
+    Enchantments:
+    - FROST_WALKER:1
+SkeletonKingSword:
+    Id: diamond_sword
+    Data: 0
+    Display: '&3Greatsword of the Skeleton King'
+    Lore:
+    - '&fA powerful sword used by the King of Skeletons.'
+    Enchantments:
+    - DAMAGE_ALL:5
+    - KNOCKBACK:2
+    - FIRE_ASPECT:2
+    Options:
+        Health: 10
+        MovementSpeed: 0.1
+KingsCrown:
+    Id: gold_helmet
+    Data: 0
+    Amount: 1
+    Display: '&dCrown of the King'
+    Lore:
+    - '&fA kingly crowl that grants the wearer unwavering power!'
+    Enchantments:
+    - PROTECTION_ENVIRONMENTAL:2
+    - PROTECTION_PROJECTILE:2
+    - PROTECTION_FIRE:2
+    - PROTECTION_EXPLOSIONS:2
+    Options:
+        Health: 10
+        KnockbackResistance: 10
+SkeletalDarkKnightSword:
+    Id: diamond_sword
+    Data: 0
+    Display: '&dSkeletal Dark Knight''s Blade'
+    Lore:
+    - '&d&oElite'
+    - '&fA shimmering blade used by dark knights.'
+    Enchantments:
+    - DAMAGE_ALL:7
+    - KNOCKBACK:1
+    - FIRE_ASPECT:2
+    - LOOT_BONUS_MOBS:3
+    - DURABILITY:2
+    Attributes:
+        MainHand:
+            Armor: 4
+            Damage: 13
+            AttackSpeed: -0.6
+SkeletalDarkKnightHelm:
+    Id: diamond_helmet
+    Data: 0
+    Amount: 1
+    Display: '&dSkeletal Dark Knight''s Helm'
+    Lore:
+    - '&d&oElite'
+    - '&fA corrupted helm offering protection, but at what cost?'
+    Enchantments:
+    - PROTECTION_ENVIRONMENTAL:4
+    - PROTECTION_PROJECTILE:3
+    - PROTECTION_FIRE:3
+    - PROTECTION_EXPLOSIONS:3
+    - DURABILITY:2
+    Attributes:
+        Head:
+            Health: 4
+            Armor: 4
+            ArmorToughness: 2
+SharpshooterBow:
+    Id: bow
+    Data: 0
+    Amount: 1
+    Display: '&dSharpshooter''s Bow'
+    Lore:
+    - '&d&oElite'
+    - '&fThis bow belonged to a distinguished shooter.'
+    Enchantments:
+    - ARROW_DAMAGE:7
+    - ARROW_KNOCKBACK:3
+    - LOOT_BONUS_MOBS:3
+    - DURABILITY:2
+    Attributes:
+        MainHand:
+            Armor: 6
+            MovementSpeed: 0.01
+BountifulBlade:
+    Id: gold_sword
+    Data: 0
+    Amount: 1
+    Display: '&dBountiful Blade'
+    Lore:
+    - '&d&oElite'
+    - '&fThis blade brings good fortune to its holder.'
+    Enchantments:
+    - LOOT_BONUS_MOBS:5
+    Attributes:
+        MainHand:
+            MovementSpeed: 0.05
+            AttackSpeed: -0.8
+            Damage: 4
+WitheringBlade:
+    Id: gold_sword
+    Data: 0
+    Amount: 1
+    Display: '&dWithering Blade'
+    Lore:
+    - '&d&oElite'
+    - '&fA shadowy presence emanates from this blade.'
+    Enchantments:
+    Attributes:
+        MainHand:
+            AttackSpeed: -0.9
+            Damage: 4
+    Skills:
+    - skill{s=WitheringBladeStrike} @Target ~onAttack
+BurnishedSword:
+    Id: Diamond_Sword
+    Data: 0
+    Display: '&dBurnished Diamond Sword'
+    Lore:
+    - '&d&oElite'
+    - '&fThis blade seeps magical energy.'
+    Enchantments:
+    - DAMAGE_ALL:7
+    Attributes:
+        MainHand:
+            Damage: 13.0
+            MovementSpeed: 0.1
+            AttackSpeed: -0.54
+BurnishedHelm:
+    Id: Diamond_Helmet
+    Data: 0
+    Display: '&dBurnished Diamond Helm'
+    Lore:
+    - '&d&oElite'
+    - '&fThis helm seeps magical energy.'
+    Enchantments:
+    - PROTECTION_ENVIRONMENTAL:6
+    Attributes:
+        Head:
+            Health: 5
+            Armor: 3
+            ArmorToughness: 2
+BurnishedChest:
+    Id: Diamond_Chestplate
+    Data: 0
+    Display: '&dBurnished Diamond Chestplate'
+    Lore:
+    - '&d&oElite'
+    - '&fThis chestplate seeps magical energy.'
+    Enchantments:
+    - PROTECTION_ENVIRONMENTAL:6
+    - PROTECTION_EXPLOSIONS:4
+    Attributes:
+        Chest:
+            Health: 9
+            Armor: 9
+            ArmorToughness: 2
+BurnishedLegs:
+    Id: Diamond_Leggings
+    Data: 0
+    Display: '&dBurnished Diamond Leggings'
+    Lore:
+    - '&d&oElite'
+    - '&fThese leggings seep magical energy.'
+    Enchantments:
+    - PROTECTION_ENVIRONMENTAL:6
+    Attributes:
+        Legs:
+            Health: 7
+            Armor: 7
+            ArmorToughness: 2
+BurnishedBoots:
+    Id: Diamond_Boots
+    Data: 0
+    Display: '&dBurnished Diamond Boots'
+    Lore:
+    - '&d&oElite'
+    - '&fThese boots seep magical energy.'
+    Enchantments:
+    - PROTECTION_ENVIRONMENTAL:6
+    Attributes:
+        Feet:
+            Health: 3
+            Armor: 4
+            ArmorToughness: 2
+BurnishedBow:
+    Id: Bow
+    Data: 0
+    Display: '&dBurnished Bow'
+    Lore:
+    - '&d&oElite'
+    - '&fThis bow seeps magical energy.'
+    Enchantments:
+    - ARROW_DAMAGE:7
+    - ARROW_KNOCKBACK:3
+BurnishedShield:
+    Id: Shield
+    Data: 0
+    Display: '&dBurnished Shield'
+    Lore:
+    - '&d&oElite'
+    - '&fThis shield seeps magical energy.'
+    Enchantments:
+    - DURABILITY:4
+    Attributes:
+        OffHand:
+            Health: 6
+            ArmorToughness: 3
+BurnishedAxe:
+    Id: Diamond_Axe
+    Data: 0
+    Display: '&dBurnished Axe'
+    Lore:
+    - '&d&oElite'
+    - '&fThis axe seeps magical energy.'
+    Enchantments:
+    - DAMAGE_ALL:7
+    - DIG_SPEED:7
+    Attributes:
+        MainHand:
+            Damage: 14.0
+            ArmorToughness: 3
+            AttackSpeed: -0.70
+BurnishedPickaxe:
+    Id: Diamond_Pickaxe
+    Data: 0
+    Display: '&dBurnished Pickaxe'
+    Lore:
+    - '&d&oElite'
+    - '&fThis pickaxe seeps magical energy.'
+    Enchantments:
+    - DIG_SPEED:7
+BurnishedShovel:
+    Id: Diamond_Spade
+    Data: 0
+    Display: '&dBurnished Shovel'
+    Lore:
+    - '&d&oElite'
+    - '&fThis shovel seeps magical energy.'
+    Enchantments:
+    - DIG_SPEED:7
+BurnishedHoe:
+    Id: Diamond_Hoe
+    Data: 0
+    Display: '&dBurnished Hoe'
+    Lore:
+    - '&d&oElite'
+    - '&fThis hoe seeps magical energy.'
+    Enchantments:
+    - DURABILITY:6
+BurnishedFishingRod:
+    Id: Fishing_Rod
+    Data: 0
+    Display: '&dBurnished Fishing Rod'
+    Lore:
+    - '&d&oElite'
+    - '&fThis fishing rod seeps magical energy.'
+    Enchantments:
+    - LUCK:5
+RedstoneCache:
+    Id: potion
+    Display: '&dRedstone Cache'
+    Lore:
+    - '&d&oElite'
+    - '&fThis bottle is brimming with redstone.'
+    Skills:
+    - command{c="ex inventory add d:<p@<trigger.name>.inventory> o:li@i@redstone[quantity=64]"}
+        ~onUse
+    - ConsumeHeldItem @Self ~onUse
+    Options:
+        Color: 255,0,0

@@ -1,0 +1,156 @@
+ImbuedSword:
+    Id: Diamond_Sword
+    Data: 0
+    Display: '&9Imbued Diamond Sword'
+    Lore:
+    - '&9&oVeteran'
+    - '&fThis blade has a mystic presence.'
+    Enchantments:
+    - DAMAGE_ALL:6
+    Attributes:
+        MainHand:
+            Damage: 12.5
+            MovementSpeed: 0.1
+            AttackSpeed: -0.57
+ImbuedHelm:
+    Id: Diamond_Helmet
+    Data: 0
+    Display: '&9Imbued Diamond Helm'
+    Lore:
+    - '&9&oVeteran'
+    - '&fThis helm has a mystic presence.'
+    Enchantments:
+    - PROTECTION_ENVIRONMENTAL:5
+    Attributes:
+        Head:
+            Health: 4
+            Armor: 3
+            ArmorToughness: 2
+ImbuedChest:
+    Id: Diamond_Chestplate
+    Data: 0
+    Display: '&9Imbued Diamond Chestplate'
+    Lore:
+    - '&9&oVeteran'
+    - '&fThis chestplate has a mystic presence.'
+    Enchantments:
+    - PROTECTION_ENVIRONMENTAL:5
+    - PROTECTION_EXPLOSIONS:2
+    Attributes:
+        Chest:
+            Health: 8
+            Armor: 8
+            ArmorToughness: 2
+ImbuedLegs:
+    Id: Diamond_Leggings
+    Data: 0
+    Display: '&9Imbued Diamond Leggings'
+    Lore:
+    - '&9&oVeteran'
+    - '&fThese leggings have a mystic presence.'
+    Enchantments:
+    - PROTECTION_ENVIRONMENTAL:5
+    Attributes:
+        Legs:
+            Health: 6
+            Armor: 6
+            ArmorToughness: 2
+ImbuedBoots:
+    Id: Diamond_Boots
+    Data: 0
+    Display: '&9Imbued Diamond Boots'
+    Lore:
+    - '&9&oVeteran'
+    - '&fThese boots have a mystic presence.'
+    Enchantments:
+    - PROTECTION_ENVIRONMENTAL:5
+    Attributes:
+        Feet:
+            Health: 2
+            Armor: 3
+            ArmorToughness: 2
+ImbuedBow:
+    Id: Bow
+    Data: 0
+    Display: '&9Imbued Bow'
+    Lore:
+    - '&9&oVeteran'
+    - '&fThis bow has a mystic presence.'
+    Enchantments:
+    - ARROW_DAMAGE:6
+    - ARROW_KNOCKBACK:2
+ImbuedShield:
+    Id: Shield
+    Data: 0
+    Display: '&9Imbued Shield'
+    Lore:
+    - '&9&oVeteran'
+    - '&fThis shield has a mystic presence.'
+    Enchantments:
+    - DURABILITY:3
+    Attributes:
+        OffHand:
+            Health: 4
+            ArmorToughness: 2
+ImbuedAxe:
+    Id: Diamond_Axe
+    Data: 0
+    Display: '&9Imbued Axe'
+    Lore:
+    - '&9&oVeteran'
+    - '&fThis axe has a mystic presence.'
+    Enchantments:
+    - DAMAGE_ALL:6
+    - DIG_SPEED:6
+    Attributes:
+        MainHand:
+            Damage: 13.5
+            ArmorToughness: 2
+            AttackSpeed: -0.73
+ImbuedPickaxe:
+    Id: Diamond_Pickaxe
+    Data: 0
+    Display: '&9Imbued Pickaxe'
+    Lore:
+    - '&9&oVeteran'
+    - '&fThis pickaxe has a mystic presence.'
+    Enchantments:
+    - DIG_SPEED:6
+ImbuedShovel:
+    Id: Diamond_Spade
+    Data: 0
+    Display: '&9Imbued Shovel'
+    Lore:
+    - '&9&oVeteran'
+    - '&fThis shovel has a mystic presence.'
+    Enchantments:
+    - DIG_SPEED:6
+ImbuedHoe:
+    Id: Diamond_Hoe
+    Data: 0
+    Display: '&9Imbued Hoe'
+    Lore:
+    - '&9&oVeteran'
+    - '&fThis hoe has a mystic presence.'
+    Enchantments:
+    - DURABILITY:5
+ImbuedFishingRod:
+    Id: Fishing_Rod
+    Data: 0
+    Display: '&9Imbued Fishing Rod'
+    Lore:
+    - '&9&oVeteran'
+    - '&fThis fishing rod has a mystic presence.'
+    Enchantments:
+    - LUCK:4
+SmallRedstoneCache:
+    Id: potion
+    Display: '&9Small Redstone Cache'
+    Lore:
+    - '&9&oVeteran'
+    - '&fThis bottle is partially filled with redstone.'
+    Skills:
+    - command{c="ex inventory add d:<p@<trigger.name>.inventory> o:li@i@redstone[quantity=32]"} ~onUse
+    - ConsumeHeldItem @Self ~onUse
+    Options:
+        Color: 255,0,0

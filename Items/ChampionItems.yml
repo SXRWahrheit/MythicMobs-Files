@@ -1,0 +1,261 @@
+ChampSword:
+    Id: diamond_sword
+    Data: 0
+    Enchantments:
+    - DAMAGE_ALL:1
+ChampHelm:
+    Id: diamond_helmet
+    Data:    0
+    Enchantments:
+    - PROTECTION_ENVIRONMENTAL:1
+ChampChest:
+    Id: diamond_chestplate
+    Data: 0
+    Enchantments:
+    - PROTECTION_ENVIRONMENTAL:1
+ChampLegs:
+    Id: diamond_leggings
+    Data:    0
+    Enchantments:
+    - PROTECTION_ENVIRONMENTAL:1
+ChampBoots:
+    Id: diamond_boots
+    Data: 0
+    Enchantments:
+    - PROTECTION_ENVIRONMENTAL:1
+UmbraSword:
+    Id: diamond_sword
+    Data: 0
+    Display: "&eBlade of the Consuming Shadow"
+    Lore:
+    - '&e&oChampion'
+    - '&fThe blade of Umbra, the Consuming Shadow. It is pure darkness, and gazing upon it for too long is infuriating.'
+    Enchantments:
+    - DAMAGE_ALL:10
+    - KNOCKBACK:3
+    - FIRE_ASPECT:3
+    - DURABILITY:4
+    Attributes:
+        MainHand:
+            Armor: 6
+            Damage: 18
+UmbraHelm:
+    Id: diamond_helmet
+    Data: 0
+    Amount: 1
+    Display: "&eHelm of the Consuming Shadow"
+    Lore:
+    - '&e&oChampion'
+    - '&fThe helm of Umbra, the Consuming Shadow. Putting it on sends a shock of terror through your body and soul.'
+    Enchantments:
+    - PROTECTION_ENVIRONMENTAL:3
+    - PROTECTION_PROJECTILE:4
+    - PROTECTION_FIRE:4
+    - PROTECTION_EXPLOSIONS:3
+    - DURABILITY:4
+    Attributes:
+        Head:
+            Health: 8
+            Armor: 1
+UmbraChest:
+    Id: diamond_chestplate
+    Data: 0
+    Amount: 1
+    Display: "&ePlate of the Consuming Shadow"
+    Lore:
+    - '&e&oChampion'
+    - '&fThe chestplate of Umbra, the Consuming Shadow. Your heart feels darker, somehow, when you wear it.'
+    Enchantments:
+    - PROTECTION_ENVIRONMENTAL:3
+    - PROTECTION_PROJECTILE:4
+    - PROTECTION_FIRE:4
+    - PROTECTION_EXPLOSIONS:3
+    - THORNS:2
+    - DURABILITY:4
+    Attributes:
+        Chest:
+            Health: 14
+            Armor: 2
+UmbraLegs:
+    Id: diamond_leggings
+    Data: 0
+    Amount: 1
+    Display: "&eLeggings of the Consuming Shadow"
+    Lore:
+    - '&e&oChampion'
+    - '&fThe leggings of Umbra, the Consuming Shadow. They are surprisingly lightweight.'
+    Enchantments:
+    - PROTECTION_ENVIRONMENTAL:3
+    - PROTECTION_PROJECTILE:4
+    - PROTECTION_FIRE:4
+    - PROTECTION_EXPLOSIONS:3
+    - THORNS:2
+    - DURABILITY:4
+    Attributes:
+        Legs:
+            Health: 10
+            Armor: 2
+UmbraBoots:
+    Id: diamond_boots
+    Data: 0
+    Amount: 1
+    Display: "&eBoots of the Consuming Shadow"
+    Lore:
+    - '&e&oChampion'
+    - '&fThe boots of Umbra, the Consuming Shadow. Darkness lends your feet renewed vigor as you nimbly step through the shadow realm.'
+    Enchantments:
+    - PROTECTION_ENVIRONMENTAL:3
+    - PROTECTION_PROJECTILE:4
+    - PROTECTION_FIRE:4
+    - PROTECTION_EXPLOSIONS:3
+    - DURABILITY:4
+    Attributes:
+        Feet:
+            Health: 8
+            Armor: 1
+            MovementSpeed: 0.2
+EmblazonedSword:
+    Id: Diamond_Sword
+    Data: 0
+    Display: '&eEmblazoned Diamond Sword'
+    Lore:
+    - '&e&oChampion'
+    - '&fThis blade emanates a radiant power.'
+    Enchantments:
+    - DAMAGE_ALL:8
+    Attributes:
+        MainHand:
+            Damage: 13.5
+            MovementSpeed: 0.1
+            AttackSpeed: -0.51
+EmblazonedHelm:
+    Id: Diamond_Helmet
+    Data: 0
+    Display: '&eEmblazoned Diamond Helm'
+    Lore:
+    - '&e&oChampion'
+    - '&fThis helm emanates a radiant power.'
+    Enchantments:
+    - PROTECTION_ENVIRONMENTAL:7
+    Attributes:
+        Head:
+            Health: 6
+            Armor: 4
+            ArmorToughness: 3
+EmblazonedChest:
+    Id: Diamond_Chestplate
+    Data: 0
+    Display: '&eEmblazoned Diamond Chestplate'
+    Lore:
+    - '&e&oChampion'
+    - '&fThis chestplate emanates a radiant power.'
+    Enchantments:
+    - PROTECTION_ENVIRONMENTAL:7
+    - PROTECTION_EXPLOSIONS:5
+    Attributes:
+        Chest:
+            Health: 10
+            Armor: 10
+            ArmorToughness: 3
+EmblazonedLegs:
+    Id: Diamond_Leggings
+    Data: 0
+    Display: '&eEmblazoned Diamond Leggings'
+    Lore:
+    - '&e&oChampion'
+    - '&fThese leggings seep magical energy.'
+    Enchantments:
+    - PROTECTION_ENVIRONMENTAL:7
+    Attributes:
+        Legs:
+            Health: 8
+            Armor: 8
+            ArmorToughness: 3
+EmblazonedBoots:
+    Id: Diamond_Boots
+    Data: 0
+    Display: '&eEmblazoned Diamond Boots'
+    Lore:
+    - '&e&oChampion'
+    - '&fThese boots seep magical energy.'
+    Enchantments:
+    - PROTECTION_ENVIRONMENTAL:7
+    Attributes:
+        Feet:
+            Health: 4
+            Armor: 5
+            ArmorToughness: 3
+EmblazonedBow:
+    Id: Bow
+    Data: 0
+    Display: '&eEmblazoned Bow'
+    Lore:
+    - '&e&oChampion'
+    - '&fThis bow emanates a radiant power.'
+    Enchantments:
+    - ARROW_DAMAGE:8
+    - ARROW_KNOCKBACK:3
+EmblazonedShield:
+    Id: Shield
+    Data: 0
+    Display: '&eEmblazoned Shield'
+    Lore:
+    - '&e&oChampion'
+    - '&fThis shield emanates a radiant power.'
+    Enchantments:
+    - DURABILITY:4
+    Attributes:
+        OffHand:
+            Health: 8
+            ArmorToughness: 4
+EmblazonedAxe:
+    Id: Diamond_Axe
+    Data: 0
+    Display: '&eEmblazoned Axe'
+    Lore:
+    - '&e&oChampion'
+    - '&fThis axe emanates a radiant power.'
+    Enchantments:
+    - DAMAGE_ALL:8
+    - DIG_SPEED:8
+    Attributes:
+        MainHand:
+            Damage: 14.5
+            ArmorToughness: 4
+            AttackSpeed: -0.67
+EmblazonedPickaxe:
+    Id: Diamond_Pickaxe
+    Data: 0
+    Display: '&eEmblazoned Pickaxe'
+    Lore:
+    - '&e&oChampion'
+    - '&fThis pickaxe emanates a radiant power.'
+    Enchantments:
+    - DIG_SPEED:8
+EmblazonedShovel:
+    Id: Diamond_Spade
+    Data: 0
+    Display: '&eEmblazoned Shovel'
+    Lore:
+    - '&e&oChampion'
+    - '&fThis shovel emanates a radiant power.'
+    Enchantments:
+    - DIG_SPEED:8
+EmblazonedHoe:
+    Id: Diamond_Hoe
+    Data: 0
+    Display: '&eEmblazoned Hoe'
+    Lore:
+    - '&e&oChampion'
+    - '&fThis hoe emanates a radiant power.'
+    Enchantments:
+    - DURABILITY:7
+EmblazonedFishingRod:
+    Id: Fishing_Rod
+    Data: 0
+    Display: '&eEmblazoned Fishing Rod'
+    Lore:
+    - '&e&oChampion'
+    - '&fThis fishing rod emanates a radiant power.'
+    Enchantments:
+    - LUCK:6

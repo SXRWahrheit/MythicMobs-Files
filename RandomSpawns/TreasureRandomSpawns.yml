@@ -1,0 +1,34 @@
+ProsperusTreasure:
+  Type: GoblinRedstone,GoblinMoney,GoblinLapis,GoblinExp,GoblinSand,GoblinPrismarine
+  Worlds: prosperus
+  Chance: 0.001
+  Action: REPLACE
+  Conditions:
+  - outside true
+  - region{r=dawnslanding} false
+#  - lightlevelbelow 10
+HeavensTreasure:
+  Type: GoblinRedstone,GoblinMoney,GoblinLapis,GoblinExp,GoblinSand,GoblinPrismarine
+  Worlds: heavens,ultimatus
+  Chance: 0.005
+  Action: REPLACE
+  Conditions:
+  - outside true
+#  - lightlevelbelow 10  
+AvenfeldTreasure:
+  Type: GoblinRedstone,GoblinMoney,GoblinLapis,GoblinExp,GoblinSand,GoblinPrismarine
+  Worlds: avenfeld
+  Chance: 0.005
+  Action: REPLACE
+  Conditions:
+  - outside true
+NetherTreasure:
+  Type: GoblinRedstone,GoblinMoney,GoblinLapis,GoblinExp,GoblinSand,GoblinPrismarine
+  Worlds: prosperus_nether
+  Chance: 0.005
+  Action: REPLACE
+EndTreasure:
+  Type: GoblinRedstone,GoblinMoney,GoblinLapis,GoblinExp,GoblinSand,GoblinPrismarine
+  Worlds: prosperus_the_end
+  Chance: 0.005
+  Action: REPLACE

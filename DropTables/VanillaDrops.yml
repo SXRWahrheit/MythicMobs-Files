@@ -1,0 +1,77 @@
+BlazeDrops:
+  Drops:
+  - exp 30 1
+  - money 2 1
+  - blaze_rod 0-3 1
+  - glowstone_dust 0-6 1
+CaveSpiderDrops:
+  Drops:
+  - exp 15 1
+  - money 1 1
+  - string 0-6 1
+  - spider_eye 0-3 1
+CreeperDrops:
+  Drops:
+  - exp 15 1
+  - money 1 1
+  - sulphur 0-6 1
+EndermanDrops:
+  Drops:
+  - exp 15 1
+  - money 1 1
+  - ender_pearl 0-3 1
+GuardianDrops:
+  Drops:
+  - exp 30 1
+  - money 2 1
+  - prismarine_shard 0-6 1
+  - raw_fish 0-3 0.4
+  - prismarine_crystals 0-3 0.4
+HuskDrops:
+  Drops:
+  - exp 15 1
+  - money 1 1
+  - rotten_flesh 0-6 1
+MagmaCubeDrops:
+  Drops:
+  - exp 12 1
+  - magma_cream 0-3 1
+PigZombieDrops:
+  Drops:
+  - exp 15 1
+  - money 1 1
+  - rotten_flesh 0-3 1
+  - gold_nugget 0-3 1
+SkeletonDrops:
+  Drops:
+  - exp 15 1
+  - money 1 1
+  - arrow 0-6 1
+  - bone 0-6 1
+SlimeDrops:
+  Drops:
+  - exp 12 1
+  - money 1 1
+  - slime_ball 0-4 1
+SpiderDrops:
+  Drops:
+  - exp 15 1
+  - money 1 1
+  - string 0-6 1
+  - spider_eye 0-3 1
+WitchDrops:
+  Drops:
+  - exp 15 1
+  - money 1 1
+  - glass_bottle 0-6 0.125
+  - glowstone_dust 0-6 0.125
+  - sulphur 0-6 0.125
+  - redstone 0-6 0.125
+  - spider_eye 0-6 0.125
+  - sugar 0-6 0.125
+  - stick 0-6 0.25
+ZombieDrops:
+  Drops:
+  - exp 15 1
+  - money 1 1
+  - rotten_flesh 0-6 1

@@ -1,0 +1,182 @@
+SkeletalRogue:
+    Mobtype: SKELETON
+    Display: '&9Skeletal Rogue'
+    Health: 75
+    Damage: 2
+    Equipment:
+    - leather_helmet:4
+    - leather_chestplate:3
+    - leather_leggings:2
+    - leather_boots:1
+    - iron_sword:0
+    Drops:
+    - SkeletalRogueDrops 1 1
+    - VeteranDrops 1 1
+    - VeteranMeleeDrops 1 0.01
+    Options:
+        FollowRange: 50
+        AlwaysShowName: true
+        MovementSpeed: 0.31
+        PreventOtherDrops: false
+        PreventItemPickup: true
+    Skills:
+    - skill{s=BleedingVeteran} ~onAttack 0.1
+    - skill{s=ShadowstepVeteran} >0 0.2
+#    - skill{s=SuperChargeDeathVeteran} @ThreatTablePlayers ~onDeath
+    Modules:
+        ThreatTable: true
+LesserWight:
+    Type: ZOMBIE
+    Display: '&9Lesser Wight'
+    Health: 75
+    Damage: 3
+    Equipment:
+    - iron_sword:0
+    Drops:
+    - LesserWightDrops 1 1
+    - VeteranDrops 1 1
+    - VeteranMeleeDrops 1 0.01
+    Options:
+        AlwaysShowName: true
+        FollowRange: 50
+        MovementSpeed: 0.31
+        PreventOtherDrops: false
+        PreventItemPickup: true
+    Skills:
+    - skill{s=BleedingVeteran} ~onAttack 0.1
+#    - skill{s=SuperChargeDeathVeteran} @ThreatTablePlayers ~onDeath
+    Modules:
+        ThreatTable: true
+LesserShade:
+    Type: ENDERMAN
+    Display: '&9Lesser Shade'
+    Health: 75
+    Damage: 3
+    Drops:
+    - LesserShadeDrops 1 1
+    - VeteranDrops 1 1
+    - VeteranMeleeDrops 1 0.01
+    Options:
+        AlwaysShowName: true
+        FollowRange: 100
+        MovementSpeed: 0.3
+        PreventOtherDrops: false
+        PreventItemPickup: true
+    Skills:
+    - skill{s=SummonDarkSpriteVeteran} @PIR{r=40} >0 0.2
+    - skill{s=BleedingVeteran} ~onAttack 0.1
+    - skill{s=BlindVeteran} @PIR{r=40} >0 0.2
+    - skill{s=PullVeteran} @PIR{r=40} >0 0.2
+#    - skill{s=SuperChargeDeathVeteran} @ThreatTablePlayers ~onDeath
+    Modules:
+        ThreatTable: true
+LesserDarkSprite:
+    Type: ENDERMITE
+    Display: 'Lesser Dark Sprite'
+    Health: 40
+    Damage: 2
+    Drops:
+    - VeteranMinionDrops 1 1
+    Options:
+        FollowRange: 100
+        MovementSpeed: 0.3
+        PreventOtherDrops: false
+        PreventItemPickup: true
+        AlwaysShowName: true
+    Modules:
+        ThreatTable: true
+LesserDrow:
+    Type: WITHER_SKELETON
+    Display: '&9Lesser Drow'
+    Health: 75
+    Damage: 3
+    Drops:
+    - VeteranDrops 1 1
+    - VeteranMeleeDrops 1 0.01
+    Options:
+        AlwaysShowName: true
+        FollowRange: 100
+        MovementSpeed: 0.31
+        PreventOtherDrops: false
+        PreventItemPickup: true
+    Skills:
+    - skill{s=SummonDarkSpriteVeteran} @PIR{r=40} >0 0.2
+    - skill{s=LeapVeteran} @PIR{r=40} >0 0.2
+    - skill{s=WitheringGraspVeteran} ~onAttack 0.1
+    - skill{s=ShadowstepVeteran} >0 0.2
+#    - skill{s=SuperChargeDeathVeteran} @ThreatTablePlayers ~onDeath
+    Equipment:
+    - iron_helmet:4
+    - iron_chestplate:3
+    - iron_leggings:2
+    - iron_boots:1
+    - iron_sword:0
+    Modules:
+        ThreatTable: true
+SkeletalArcher:
+    Type: SKELETON
+    Display: '&9Skeletal Archer'
+    Health: 75
+    Damage: 6
+    Drops:
+    - VeteranDrops 1 1
+    - VeteranRangedDrops 1 0.01
+    - lingering_potion 1 0.1
+    - iron_ingot 1-3 1
+    - bone 1-32 1
+    - arrow 32-64 1
+    - arrow 32-64 1
+    Options:
+        AlwaysShowName: true
+        FollowRange: 100
+        MovementSpeed: 0.3
+        PreventOtherDrops: false
+        PreventItemPickup: true
+    Skills:
+    - skill{s=CripplingShotVeteran} @PIR{r=40} >0 0.2
+    - skill{s=BurningShotVeteran} @PIR{r=40} >0 0.2
+    - shoot{type=ARROW;velocity=10;damage=6} @Target ~onTimer:60
+#    - skill{s=SuperChargeDeathVeteran} @ThreatTablePlayers ~onDeath
+    Equipment:
+    - iron_helmet:4
+    - iron_chestplate:3
+    - iron_leggings:2
+    - iron_boots:1
+    - ImbuedBow:0
+    Modules:
+        ThreatTable: true
+AbsoluteExplodyBoy:
+    Type: CREEPER
+    Display: '&9Absolute Explody Boy'
+    Health: 150
+    Damage: 10
+    Drops:
+    - VeteranDrops
+    - VeteranMeleeDrops 1 0.01
+    Options:
+        AlwaysShowName: true
+        FollowRange: 100
+        MovementSpeed: 0.35
+        PreventOtherDrops: false
+        PreventItemPickup: true
+        ExplosionRadius: 8
+        FuseTicks: 40
+        SuperCharged: true
+        PreventSuicide: false
+    Modules:
+        ThreatTable: true
+VeteranTableTester:
+    Type: ZOMBIE
+    Display: '&9Veteran Table Tester'
+    Health: 8
+    Damage: 1
+    Drops:
+    - VeteranTableTest 100 0.1
+    Options:
+        AlwaysShowName: true
+        PreventOtherDrops: true
+        PreventItemPickup: true
+    Modules:
+        ThreatTable: true
+#Drider
+#LesserGhoul

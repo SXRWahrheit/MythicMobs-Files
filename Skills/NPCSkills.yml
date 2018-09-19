@@ -1,0 +1,6 @@
+GiveCrystallizedExperienceSliver:
+    Skills:
+    - dropmythicitem{i=CrystallizedExperienceSliver;give=true;mark=true}
+GiveCrystallizedExperienceChunk:
+    Skills:
+    - dropmythicitem{i=CrystallizedExperienceChunk;give=true;mark=true}

@@ -1,0 +1,21 @@
+SlimeSummon7:
+    Skills:
+    - summon{type=BouncySlime7;amount=2;radius=5}
+SlimeSummon6:
+    Skills:
+    - summon{type=BouncySlime6;amount=2;radius=5}
+SlimeSummon5:
+    Skills:
+    - summon{type=BouncySlime5;amount=2;radius=5}
+SlimeSummon4:
+    Skills:
+    - summon{type=BouncySlime4;amount=2;radius=5}
+SlimeSummon3:
+    Skills:
+    - summon{type=BouncySlime3;amount=2;radius=5}
+SlimeSummon2:
+    Skills:
+    - summon{type=BouncySlime2;amount=2;radius=5}
+SlimeSummon1:
+    Skills:
+    - summon{type=BouncySlime1;amount=2;radius=5}

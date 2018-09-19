@@ -1,0 +1,178 @@
+# 
+# This example file shows you how to change default values for 
+# vanilla mobs. Most MythicMobs options will work here, including
+# skills and effects! **Despawn: FALSE does not work, though.**
+#CAVE_SPIDER:
+#    Health: 30
+#    Damage: 7
+#WITHER_SKELETON:
+#    Health: 50
+#    Damage: 10
+#GIANT:
+#    Health: 1000
+#    Damage: 20
+#    Skills:
+#    - potion{type=POISON;duration=100;lvl=1} @target ~onAttack
+BLAZE:
+    Drops:
+    - exp 30 1
+    - money 2 1
+    - blaze_rod 0-3 1
+    - glowstone_dust 0-6 1
+    Skills:
+#    - skill{s=SuperChargeDeathVanilla} @ThreatTablePlayers ~onDeath
+    Modules:
+        ThreatTable: true
+    Options:
+        FixDisplay: true
+CAVE_SPIDER:
+    Drops:
+    - exp 15 1
+    - money 1 1
+    - string 0-6 1
+    - spider_eye 0-3 1
+    Skills:
+#    - skill{s=SuperChargeDeathVanilla} @ThreatTablePlayers ~onDeath
+    Modules:
+        ThreatTable: true
+    Options:
+        FixDisplay: true
+CREEPER:
+    Drops:
+    - exp 15 1
+    - money 1 1
+    - sulphur 0-6 1
+    Skills:
+#    - skill{s=SuperChargeDeathVanilla} @ThreatTablePlayers ~onDeath
+    Modules:
+        ThreatTable: true
+    Options:
+        FixDisplay: true
+ENDERMAN:
+    Drops:
+    - exp 15 1
+    - money 1 1
+    - ender_pearl 0-3 1
+    Skills:
+#    - skill{s=SuperChargeDeathVanilla} @ThreatTablePlayers ~onDeath
+    Modules:
+        ThreatTable: true
+    Options:
+        FixDisplay: true
+HUSK:
+    Drops:
+    - exp 15 1
+    - money 1 1
+    - rotten_flesh 0-6 1
+    Modules:
+        ThreatTable: true
+    Options:
+        FixDisplay: true
+MAGMA_CUBE:
+    Drops:
+    - exp 12 1
+    - magma_cream 0-3 1
+    Skills:
+#    - skill{s=SuperChargeDeathVanilla} @ThreatTablePlayers ~onDeath
+    Modules:
+        ThreatTable: true
+    Options:
+        FixDisplay: true
+PIG_ZOMBIE:
+    Drops:
+    - exp 15 1
+    - money 1 1
+    - rotten_flesh 0-3 1
+    - gold_nugget 0-3 1
+    Skills:
+#    - skill{s=SuperChargeDeathVanilla} @ThreatTablePlayers ~onDeath
+    Modules:
+        ThreatTable: true
+    Options:
+        FixDisplay: true
+SKELETON:
+    Drops:
+    - exp 15 1
+    - money 1 1
+    - arrow 0-6 1
+    - bone 0-6 1
+    Skills:
+#    - skill{s=SuperChargeDeathVanilla} @ThreatTablePlayers ~onDeath
+    Modules:
+        ThreatTable: true
+    Options:
+        FixDisplay: true
+SLIME:
+    Drops:
+    - exp 12 1
+    - money 1 1
+    - slime_ball 0-4 1
+    Skills:
+#    - skill{s=SuperChargeDeathVanilla} @ThreatTablePlayers ~onDeath
+    Modules:
+        ThreatTable: true
+    Options:
+        FixDisplay: true
+SPIDER:
+    Drops:
+    - exp 15 1
+    - money 1 1
+    - string 0-6 1
+    - spider_eye 0-3 1
+    Skills:
+#    - skill{s=SuperChargeDeathVanilla} @ThreatTablePlayers ~onDeath
+    Modules:
+        ThreatTable: true
+    Options:
+        FixDisplay: true
+WITCH:
+    Drops:
+    - exp 15 1
+    - money 1 1
+    - glass_bottle 0-6 0.125
+    - glowstone_dust 0-6 0.125
+    - sulphur 0-6 0.125
+    - redstone 0-6 0.125
+    - spider_eye 0-6 0.125
+    - sugar 0-6 0.125
+    - stick 0-6 0.25
+ZOMBIE:
+    Drops:
+    - exp 15 1
+    - money 1 1
+    - rotten_flesh 0-6 1
+    Skills:
+#    - skill{s=SuperChargeDeathVanilla} @ThreatTablePlayers ~onDeath
+    Modules:
+        ThreatTable: true
+    Options:
+        FixDisplay: true
+ZOMBIE_VILLAGER:
+    Drops:
+    - exp 15 1
+    - money 1 1
+    - rotten_flesh 0-6 1
+    Skills:
+#    - skill{s=SuperChargeDeathVanilla} @ThreatTablePlayers ~onDeath
+    Modules:
+        ThreatTable: true
+    Options:
+        FixDisplay: true
+ENDER_DRAGON:
+    Health: 1000
+    Damage: 18
+    Skills:
+#    - skill{s=SuperChargeDeathVanilla} @ThreatTablePlayers ~onDeath
+    Modules:
+        ThreatTable: true
+    Options:
+        FixDisplay: true
+WITHER:
+    Health: 1000
+    Damage: 18
+    Skills:
+#    - skill{s=SuperChargeDeathVanilla} @ThreatTablePlayers ~onDeath
+    Modules:
+        ThreatTable: true
+    Options:
+        FixDisplay: true

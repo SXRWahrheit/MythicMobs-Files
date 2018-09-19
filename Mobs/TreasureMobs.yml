@@ -1,0 +1,180 @@
+GoblinRedstone:
+  Type: BABY_ZOMBIE_VILLAGER
+  Display: '&6Redstone Goblin'
+  Health: 250
+  Damage: 4
+  Skills:
+  Drops:
+  - redstone 64 1
+  - redstone 1-64 0.5
+  - redstone 1-64 0.5
+  - redstone 1-64 0.25
+  - redstone 1-64 0.25
+  - redstone 1-64 0.125
+  - redstone 1-64 0.125
+  - redstone 1-64 0.06125
+  - redstone 1-64 0.06125
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.45
+    PreventOtherDrops: true
+    AgeLock: true
+    Age: -1
+    FollowRange: 15
+  Skills:
+  - runaigoalselector{goal=fleeplayers} ~onDamaged 1
+  - GoblinRadius ~onTimer:20 @Self
+  AIGoalSelectors:
+  - 0 clear
+  - 1 fleeplayers
+  - 2 randomstroll
+GoblinLapis:
+  Type: BABY_ZOMBIE_VILLAGER
+  Display: '&6Lapis Lazuli Goblin'
+  Health: 250
+  Damage: 4
+  Skills:
+  Drops:
+  - LapisLazuli 64 1
+  - LapisLazuli 1-64 0.5
+  - LapisLazuli 1-64 0.5
+  - LapisLazuli 1-64 0.25
+  - LapisLazuli 1-64 0.25
+  - LapisLazuli 1-64 0.125
+  - LapisLazuli 1-64 0.125
+  - LapisLazuli 1-64 0.06125
+  - LapisLazuli 1-64 0.06125
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.45
+    PreventOtherDrops: true
+    AgeLock: true
+    Age: -1
+    FollowRange: 15
+  Skills:
+  - runaigoalselector{goal=fleeplayers} ~onDamaged 1
+  - GoblinRadius ~onTimer:20 @Self
+  AIGoalSelectors:
+  - 0 clear
+  - 1 fleeplayers
+  - 2 randomstroll
+GoblinMoney:
+  Type: BABY_ZOMBIE_VILLAGER
+  Display: '&6Greedy Goblin'
+  Health: 250
+  Damage: 4
+  Skills:
+  Drops:
+  - money 50 1
+  - money 1-50 0.5
+  - money 1-50 0.5
+  - money 1-50 0.25
+  - money 1-50 0.25
+  - money 1-50 0.125
+  - money 1-50 0.125
+  - money 1-50 0.06125
+  - money 1-50 0.06125
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.45
+    PreventOtherDrops: true
+    AgeLock: true
+    Age: -1
+    FollowRange: 15
+  Skills:
+  - runaigoalselector{goal=fleeplayers} ~onDamaged 1
+  - GoblinRadius ~onTimer:20 @Self
+  AIGoalSelectors:
+  - 0 clear
+  - 1 fleeplayers
+  - 2 randomstroll
+GoblinExp:
+  Type: BABY_ZOMBIE_VILLAGER
+  Display: "&6Goblin o' Enchanting"
+  Health: 250
+  Damage: 4
+  Skills:
+  Drops:
+  - exp 50 1
+  - exp 1-100 0.5
+  - exp 1-100 0.5
+  - exp 1-100 0.25
+  - exp 1-100 0.25
+  - exp 1-100 0.125
+  - exp 1-100 0.125
+  - exp 1-100 0.06125
+  - exp 1-100 0.06125
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.45
+    PreventOtherDrops: true
+    AgeLock: true
+    Age: -1
+    FollowRange: 15
+  Skills:
+  - runaigoalselector{goal=fleeplayers} ~onDamaged 1
+  - GoblinRadius ~onTimer:20 @Self
+  AIGoalSelectors:
+  - 0 clear
+  - 1 fleeplayers
+  - 2 randomstroll
+GoblinSand:
+  Type: BABY_ZOMBIE_VILLAGER
+  Display: "&6Sandy Goblin"
+  Health: 250
+  Damage: 4
+  Skills:
+  Drops:
+  - sand 64 1
+  - sand 1-64 0.5
+  - sand 1-64 0.5
+  - sand 1-64 0.25
+  - sand 1-64 0.25
+  - sand 1-64 0.125
+  - sand 1-64 0.125
+  - sand 1-64 0.06125
+  - sand 1-64 0.06125
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.45
+    PreventOtherDrops: true
+    AgeLock: true
+    Age: -1
+    FollowRange: 15
+  Skills:
+  - runaigoalselector{goal=fleeplayers} ~onDamaged 1
+  - GoblinRadius ~onTimer:20 @Self
+  AIGoalSelectors:
+  - 0 clear
+  - 1 fleeplayers
+  - 2 randomstroll
+GoblinPrismarine:
+  Type: BABY_ZOMBIE_VILLAGER
+  Display: "&6Prismarine Goblin"
+  Health: 250
+  Damage: 4
+  Skills:
+  Drops:
+  - prismarine_shard 64 1
+  - prismarine_shard 1-64 0.5
+  - prismarine_shard 1-64 0.5
+  - prismarine_shard 1-64 0.25
+  - prismarine_shard 1-64 0.25
+  - prismarine_shard 1-64 0.125
+  - prismarine_shard 1-64 0.125
+  - prismarine_shard 1-64 0.06125
+  - prismarine_shard 1-64 0.06125
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.45
+    PreventOtherDrops: true
+    AgeLock: true
+    Age: -1
+    FollowRange: 15
+  Skills:
+  - runaigoalselector{goal=fleeplayers} ~onDamaged 1
+  - GoblinRadius ~onTimer:20 @Self
+  AIGoalSelectors:
+  - 0 clear
+  - 1 fleeplayers
+  - 2 randomstroll

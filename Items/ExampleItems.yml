@@ -1,0 +1,11 @@
+# 
+# This example file shows you how to set up special items
+# for your mobs to equip or drop.
+BanditTunic:
+  Id: 299
+  Display: '&aBandit Tunic'
+  Lore:
+  - '&6A leather tunic taken from'
+  - '&6the corpse of a bandit.'
+  Options:
+    Color: 255,40,40

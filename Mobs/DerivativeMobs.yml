@@ -1,0 +1,132 @@
+BouncySlime7:
+    Type: SLIME
+    Display: '&Particularly Bouncy Slime'
+    Health: 65
+    Damage: 7
+    Options:
+        AlwaysShowName: true
+        FollowRange: 50
+        MovementSpeed: 0.3
+        PreventOtherDrops: false
+        PreventItemPickup: true
+        Size: 7
+        PreventSlimeSplit: true
+    Skills:
+    - skill{s=JumpSmashElite} @PIR{r=40} ~onAttack 0.5
+    - skill{s=JumpSmashElite} @PIR{r=40} >0 0.5
+    - skill{s=SlimeSummon6} ~onDeath 1
+    DamageModifiers:
+    - FALL 0
+BouncySlime6:
+    Type: SLIME
+    Display: '&dParticularly Bouncy Slime'
+    Health: 60
+    Damage: 6
+    Options:
+        AlwaysShowName: true
+        FollowRange: 50
+        MovementSpeed: 0.3
+        PreventOtherDrops: false
+        PreventItemPickup: true
+        Size: 6
+        PreventSlimeSplit: true
+    Skills:
+    - skill{s=JumpSmashElite} @PIR{r=40} ~onAttack 0.5
+    - skill{s=JumpSmashElite} @PIR{r=40} >0 0.5
+    - skill{s=SlimeSummon5} ~onDeath 1
+    DamageModifiers:
+    - FALL 0
+BouncySlime5:
+    Type: SLIME
+    Display: '&dParticularly Bouncy Slime'
+    Health: 55
+    Damage: 5
+    Options:
+        AlwaysShowName: true
+        FollowRange: 50
+        MovementSpeed: 0.3
+        PreventOtherDrops: false
+        PreventItemPickup: true
+        Size: 5
+        PreventSlimeSplit: true
+    Skills:
+    - skill{s=JumpSmashElite} @PIR{r=40} ~onAttack 0.5
+    - skill{s=JumpSmashElite} @PIR{r=40} >0 0.5
+    - skill{s=SlimeSummon4} ~onDeath 1
+    DamageModifiers:
+    - FALL 0
+BouncySlime4:
+    Type: SLIME
+    Display: '&dParticularly Bouncy Slime'
+    Health: 50
+    Damage: 4
+    Options:
+        AlwaysShowName: true
+        FollowRange: 50
+        MovementSpeed: 0.3
+        PreventOtherDrops: false
+        PreventItemPickup: true
+        Size: 4
+        PreventSlimeSplit: true
+    Skills:
+    - skill{s=JumpSmashElite} @PIR{r=40} ~onAttack 0.5
+    - skill{s=JumpSmashElite} @PIR{r=40} >0 0.5
+    - skill{s=SlimeSummon3} ~onDeath 1
+    DamageModifiers:
+    - FALL 0
+BouncySlime3:
+    Type: SLIME
+    Display: '&dParticularly Bouncy Slime'
+    Health: 45
+    Damage: 3
+    Options:
+        AlwaysShowName: true
+        FollowRange: 50
+        MovementSpeed: 0.3
+        PreventOtherDrops: false
+        PreventItemPickup: true
+        Size: 3
+        PreventSlimeSplit: true
+    Skills:
+    - skill{s=JumpSmashElite} @PIR{r=40} ~onAttack 0.5
+    - skill{s=JumpSmashElite} @PIR{r=40} >0 0.5
+    - skill{s=SlimeSummon2} ~onDeath 1
+    DamageModifiers:
+    - FALL 0
+BouncySlime2:
+    Type: SLIME
+    Display: '&dParticularly Bouncy Slime'
+    Health: 40
+    Damage: 2
+    Options:
+        AlwaysShowName: true
+        FollowRange: 50
+        MovementSpeed: 0.3
+        PreventOtherDrops: false
+        PreventItemPickup: true
+        Size: 2
+        PreventSlimeSplit: true
+    Skills:
+    - skill{s=JumpSmashElite} @PIR{r=40} ~onAttack 0.5
+    - skill{s=JumpSmashElite} @PIR{r=40} >0 0.5
+    - skill{s=SlimeSummon1} ~onDeath 1
+    DamageModifiers:
+    - FALL 0
+BouncySlime1:
+    Type: SLIME
+    Display: '&dParticularly Bouncy Slime'
+    Health: 35
+    Damage: 1
+    Options:
+        AlwaysShowName: true
+        FollowRange: 50
+        MovementSpeed: 0.3
+        PreventOtherDrops: false
+        PreventItemPickup: true
+        Size: 1
+        PreventSlimeSplit: true
+    Skills:
+    - skill{s=JumpSmashElite} @PIR{r=40} ~onAttack 0.5
+    - skill{s=JumpSmashElite} @PIR{r=40} >0 0.5
+    DamageModifiers:
+    - FALL 0

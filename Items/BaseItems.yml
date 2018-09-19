@@ -1,0 +1,7 @@
+RegenerationArrow:
+  Id: tipped_arrow
+  PotionEffects:
+  - HEAL 60 1
+LapisLazuli:
+  Id: ink_sack
+  Data: 4

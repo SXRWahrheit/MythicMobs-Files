@@ -1,0 +1,93 @@
+EliteDrops:
+    Drops:
+    - diamond 1-2 1
+    - exp 500-1500 1
+    - money 50 1
+    - ender_portal_frame 1 0.02
+    - VeteranTokenPlaceholder 6 1
+    - VeteranTokenPlaceholder 0-6 0.25
+    - RedstoneCache 1 0.05
+    DropsPerLevel:
+    - exp 50 1
+EliteMeleeDrops:
+    TotalItems: 1
+    Drops:
+    - BurnishedSword 1 0.002
+    - BurnishedHelm 1 0.002
+    - BurnishedChest 1 0.002
+    - BurnishedLegs 1 0.002
+    - BurnishedBoots 1 0.002
+    - BurnishedShield 1 0.002
+    - BurnishedAxe 1 0.002
+    - BurnishedPickaxe 1 0.002
+    - BurnishedShovel 1 0.002
+    - BurnishedHoe 1 0.002
+    - BurnishedFishingRod 1 0.002
+    - BountifulBlade 1 0.002
+    - WitheringBlade 1 0.002
+EliteRangedDrops:
+    TotalItems: 1
+    Drops:
+    - BurnishedHelm 1 0.002
+    - BurnishedChest 1 0.002
+    - BurnishedLegs 1 0.002
+    - BurnishedBoots 1 0.002
+    - BurnishedBow 1 0.002
+    - BurnishedShield 1 0.002
+    - BurnishedAxe 1 0.002
+    - BurnishedPickaxe 1 0.002
+    - BurnishedShovel 1 0.002
+    - BurnishedHoe 1 0.002
+    - BurnishedFishingRod 1 0.002
+EliteMinionDrops:
+    Drops:
+    - exp 150
+    - money 15
+BloodWitchDrops:
+    MaxItems: 3
+    Drops:
+    - gold_ingot 8-16 1
+    - redstone 32-64 1
+    - redstone 32-64 1
+    - redstone 32-64 1
+    - redstone 32-64 1
+    - glass_bottle 1-4 0.5
+QuestEliteDrops:
+    Drops:
+    - diamond 1-2 1
+    - exp 500-1500 1
+    - money 50 1
+    - ender_portal_frame 1 0.02
+    - VeteranTokenPlaceholder 6 1
+    - VeteranTokenPlaceholder 0-6 0.25
+    - RedstoneCache 1 0.05
+QuestEliteMeleeDrops:
+    MaxItems: 1
+    Drops:
+    - BurnishedSword 1 0.002
+    - BurnishedHelm 1 0.002
+    - BurnishedChest 1 0.002
+    - BurnishedLegs 1 0.002
+    - BurnishedBoots 1 0.002
+    - BurnishedShield 1 0.002
+    - BurnishedAxe 1 0.002
+    - BurnishedPickaxe 1 0.002
+    - BurnishedShovel 1 0.002
+    - BurnishedHoe 1 0.002
+    - BurnishedFishingRod 1 0.002
+    - BountifulBlade 1 0.002
+    - WitheringBlade 1 0.002
+QuestEliteRangedDrops:
+    MaxItems: 1
+    Drops:
+    - BurnishedHelm 1 0.002
+    - BurnishedChest 1 0.002
+    - BurnishedLegs 1 0.002
+    - BurnishedBoots 1 0.002
+    - BurnishedBow 1 0.002
+    - BurnishedShield 1 0.002
+    - BurnishedAxe 1 0.002
+    - BurnishedPickaxe 1 0.002
+    - BurnishedShovel 1 0.002
+    - BurnishedHoe 1 0.002
+    - BurnishedFishingRod 1 0.002

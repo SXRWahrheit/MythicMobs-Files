@@ -1,0 +1,119 @@
+SolChest:
+    Id: diamond_chestplate
+    Data: 0
+    Amount: 1
+    Display: "&5Chest of Sol"
+    Lore:
+    - "&5&oLegendary"
+    - "&fThis chestplate, forged with the fires of a supernova, bestows a great solar energy upon the wearer."
+    Enchantments:
+    - PROTECTION_ENVIRONMENTAL:6
+    - PROTECTION_PROJECTILE:4
+    - PROTECTION_FIRE:4
+    - PROTECTION_EXPLOSIONS:3
+    - THORNS:2
+    - DURABILITY:4
+    Attributes:
+        Chest:
+            Health: 14
+            Armor: 2
+#    Skills:
+#    - skill{s=HammerOfSol} @TargetLocation ~onSwing
+#    - skill{s=HammerOfSol-Activate} @Trigger ~onUse
+SolSword:
+    Id: diamond_sword
+    Data: 0
+    Amount: 1
+    Display: "&5Sword of Sol"
+    Lore:
+    - "&5&oLegendary"
+    - "&fBehold the hammer! Right click with full Super Energy to activate Hammer of Sol, and swing to throw hammers!"
+    Enchantments:
+    - DAMAGE_ALL:10
+    - KNOCKBACK:3
+    - FIRE_ASPECT:3
+    - DURABILITY:4
+    Attributes:
+        MainHand:
+            Armor: 6
+            Damage: 18
+    Skills:
+    - skill{s=HammerOfSol} @TargetLocation ~onSwing
+    - skill{s=HammerOfSol-Activate} @Trigger ~onUse
+SolSwordTest:
+    Id: diamond_sword
+    Data: 0
+    Amount: 1
+    Display: "&5Test Sword of Sol"
+    Lore:
+    - "&5&oLegendary"
+    - "&fBehold the hammer! Right click with full Super Energy to activate Hammer of Sol, and swing to throw hammers!"
+    Enchantments:
+    - DAMAGE_ALL:10
+    - KNOCKBACK:3
+    - FIRE_ASPECT:3
+    - DURABILITY:4
+    Attributes:
+        MainHand:
+            Armor: 6
+            Damage: 18
+    Skills:
+    - skill{s=HammerOfSol-Test} @TargetLocation ~onSwing
+ReinvigorateChest:
+    Id: diamond_chestplate
+    Data: 0
+    Amount: 1
+    Display: "&5Invigorating Chestplate"
+    Lore:
+    - "&5&oLegendary"
+    - "&fAn overwhelming force of life-giving energy is emanating from this chestplate. Right-click to activate Reinvigorate, and left-click players to channel powerful healing magic into them."
+    Enchantments:
+    - PROTECTION_ENVIRONMENTAL:6
+    - PROTECTION_PROJECTILE:4
+    - PROTECTION_FIRE:4
+    - PROTECTION_EXPLOSIONS:3
+    - DURABILITY:4
+    Attributes:
+        Chest:
+            Health: 14
+            Armor: 4
+#    Skills:
+#    - skill{s=Reinvigorate-Activate} @Trigger ~onUse
+#    - skill{s=Reinvigorate-Cast} @Target ~onSwing
+
+ReinvigorateSword:
+    Id: diamond_sword
+    Data: 0
+    Amount: 1
+    Display: "&5Invigorating Blade"
+    Lore:
+    - "&5&oLegendary"
+    - "&fAn overwhelming force of life-giving energy is emanating from this blade. Right-click to activate Reinvigorate, and left-click players to channel powerful healing magic into them."
+    Enchantments:
+    - DAMAGE_ALL:10
+    - KNOCKBACK:3
+    - DURABILITY:4
+    Attributes:
+        MainHand:
+            Damage: 18
+    Skills:
+    - skill{s=Super-Activate} @Trigger ~onUse
+    - skill{s=Reinvigorate-Cast} @Target ~onSwing
+
+ReinvigorateSwordTest:
+    Id: diamond_sword
+    Data: 0
+    Amount: 1
+    Display: "&5Invigorating Blade of Testing"
+    Lore:
+    - "&5&oLegendary"
+    - "&fAn overwhelming force of life-giving energy is emanating from this blade. Right-click to activate Reinvigorate, and left-click players to channel powerful healing magic into them."
+    Enchantments:
+    - DAMAGE_ALL:10
+    - KNOCKBACK:3
+    - DURABILITY:4
+    Attributes:
+        MainHand:
+            Damage: 18
+    Skills:
+    - skill{s=Reinvigorate-Test} @Target ~onSwing

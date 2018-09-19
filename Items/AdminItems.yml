@@ -1,0 +1,56 @@
+AdminHelm:
+    Id: Diamond_Helmet
+    Data: 0
+    Display: '&dAdmin Diamond Helm'
+    Lore:
+    - '&6This helm seeps magical energy.'
+    Enchantments:
+    - PROTECTION_ENVIRONMENTAL:6
+    - OXYGEN:3
+    - WATER_WORKER:1
+    Attributes:
+        Head:
+            Health: 5
+            Armor: 3
+            ArmorToughness: 2
+AdminChest:
+    Id: Diamond_Chestplate
+    Data: 0
+    Display: '&dAdmin Diamond Chestplate'
+    Lore:
+    - '&6This chestplate seeps magical energy.'
+    Enchantments:
+    - PROTECTION_ENVIRONMENTAL:6
+    - PROTECTION_EXPLOSIONS:4
+    Attributes:
+        Chest:
+            Health: 9
+            Armor: 9
+            ArmorToughness: 2
+AdminLegs:
+    Id: Diamond_Leggings
+    Data: 0
+    Display: '&dAdmin Diamond Leggings'
+    Lore:
+    - '&6These leggings seep magical energy.'
+    Enchantments:
+    - PROTECTION_ENVIRONMENTAL:6
+    Attributes:
+        Legs:
+            Health: 7
+            Armor: 7
+            ArmorToughness: 2
+AdminBoots:
+    Id: Diamond_Boots
+    Data: 0
+    Display: '&dAdmin Diamond Boots'
+    Lore:
+    - '&6These boots seep magical energy.'
+    Enchantments:
+    - PROTECTION_ENVIRONMENTAL:6
+    - DEPTH_STRIDER:10
+    Attributes:
+        Feet:
+            Health: 3
+            Armor: 4
+            ArmorToughness: 2

@@ -1,0 +1,116 @@
+COS_RedHead:
+  Id: 298
+  Data: 0
+  Options:
+    Color: 255,0,0
+COS_RedChest:
+  Id: 299
+  Data: 0
+  Options:
+    Color: 255,0,0
+COS_RedLegs:
+  Id: 300
+  Data: 0
+  Options:
+    Color: 255,0,0
+COS_RedFeet:
+  Id: 301
+  Data: 0
+  Options:
+    Color: 255,0,0
+COS_BlueHead:
+  Id: 298
+  Data: 0
+  Options:
+    Color: 0,0,255
+COS_BlueChest:
+  Id: 299
+  Data: 0
+  Options:
+    Color: 0,0,255
+COS_BlueLegs:
+  Id: 300
+  Data: 0
+  Options:
+    Color: 0,0,255
+COS_BlueFeet:
+  Id: 301
+  Data: 0
+  Options:
+    Color: 0,0,255
+COS_YellowHead:
+  Id: 298
+  Data: 0
+  Options:
+    Color: 255,255,0
+COS_YellowChest:
+  Id: 299
+  Data: 0
+  Options:
+    Color: 255,255,0
+COS_YellowLegs:
+  Id: 300
+  Data: 0
+  Options:
+    Color: 255,255,0
+COS_YellowFeet:
+  Id: 301
+  Data: 0
+  Options:
+    Color: 255,255,0
+COS_BlackHead:
+  Id: 298
+  Data: 0
+  Options:
+    Color: 10,10,10
+COS_BlackChest:
+  Id: 299
+  Data: 0
+  Options:
+    Color: 10,10,10
+COS_BlackLegs:
+  Id: 300
+  Data: 0
+  Options:
+    Color: 10,10,10
+COS_BlackFeet:
+  Id: 301
+  Data: 0
+  Options:
+    Color: 10,10,10
+COS_LeatherHead:
+  Id: 298
+  Data: 0
+COS_LeatherChest:
+  Id: 299
+  Data: 0
+COS_LeatherLegs:
+  Id: 300
+  Data: 0
+COS_LeatherFeet:
+  Id: 301
+  Data: 0    
+COS_ChainHead:
+  Id: 302
+  Data: 0
+COS_ChainChest:
+  Id: 303
+  Data: 0
+COS_ChainLegs:
+  Id: 304
+  Data: 0
+COS_ChainFeet:
+  Id: 305
+  Data: 0  
+COS_IronSword:
+  Id: 267
+  Data: 0
+COS_StoneSword:
+  Id: 272
+  Data: 0
+COS_Wand:
+  Id: 280
+  Data: 0
+COS_Staff:
+  Id: 292
+  Data: 0  

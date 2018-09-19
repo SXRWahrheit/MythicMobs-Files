@@ -1,0 +1,59 @@
+BleedingWaterTemple-Miniboss:
+    Cooldown: 1
+    Skills:
+    - GCD 8
+    - message{m="You begin bleeding."} @target
+    - sound{s=damage.hit} @target
+    - effect:particles{particle=dripLava;amount=5;hS=1;vS=1;speed=5} @self
+    - damage{amount=3;ia=false;pk=false;pi=false} @target ~onTimer:20
+    - damage{amount=3;ia=false;pk=false;pi=false} @target ~onTimer:20
+    - effect:particles{particle=dripLava;amount=5;hS=1;vS=1;speed=5} @self
+    - damage{amount=3;ia=false;pk=false;pi=false} @target ~onTimer:20
+    - damage{amount=3;ia=false;pk=false;pi=false} @target ~onTimer:20
+    - effect:particles{particle=dripLava;amount=5;hS=1;vS=1;speed=5} @self
+    - damage{amount=3;ia=false;pk=false;pi=false} @target ~onTimer:20
+    - damage{amount=3;ia=false;pk=false;pi=false} @target ~onTimer:20
+SummonGuardiansWaterTemple-Miniboss:
+    Cooldown: 30
+    Skills:
+    - GCD 8
+    - message{m="&d<mob.name>&f<&co> Darkness manifests - minions, come forth!"} @PlayersInRadius{r=40}
+    - summon{type=WaterTemple-MinibossGuardian;amount=1;radius=5;noise=5;ctt=true;itt=true} @Target
+    - delay 20
+    - summon{type=WaterTemple-MinibossGuardian;amount=1;radius=5;noise=5;ctt=true;itt=true} @Target
+SmashAttackWaterTemple-Miniboss:
+    Cooldown: 12
+    Conditions:
+    - targetwithin{d=25}
+    Skills:
+    - message{m="<mob.name>&f<&co> You can't escape me!"} @PlayersInRadius{r=40}
+    - teleport @target
+    - effect:sound{s=mob.endermen.portal;volume=1.0;pitch=0.5}
+    - delay 10
+    - damage{amount=10;ignorearmor=false} @PlayersInRadius{r=5}
+    - throw{velocity=10;velocityY=5} @PlayersInRadius{r=5}
+    - effect:explosion @Self
+    - GCD 8
+SacrificeCheckWaterTemple-Miniboss:
+    Cooldown: 60
+    Skills:
+    - signal{s=MINIONCHECK} @LEIR{r=40}
+    - message{m="&d<mob.name>&f<&co> Skill run: SacrificeCheckWaterTemple-Miniboss"} @PlayersInRadius{r=40}
+SacrificeConfirmWaterTemple-Miniboss:
+    Skills:
+    - signal{s=RUNSACRIFICE} @LEIR{r=40}
+    - message{m="&d<mob.name>&f<&co> Skill run: SacrificeConfirmWaterTemple-Miniboss"} @PlayersInRadius{r=40}
+SacrificeSignalWaterTemple-Miniboss:
+    Cooldown: 60
+    Conditions:
+    Skills:
+    - message{m="&d<mob.name>&f<&co> My time is not yet over - minions, give me life!"} @PlayersInRadius{r=40}
+    - signal{s=SACRIFICE} @LEIR{r=40}
+SacrificeTargetWaterTemple-Miniboss:
+    Skills:
+    - signal{s=SACRIFICEHEAL} @LEIR{r=40}
+    - remove @self
+SacrificeHealWaterTemple-Miniboss:
+    Skills:
+    - message{cooldown=40;m="&d<mob.name>&f<&co> Yes... my power returns!"} @PlayersInRadius{r=40}
+    - heal{amount=20} @self

@@ -1,0 +1,68 @@
+WaterTemple-Miniboss:
+    Type: GUARDIAN
+    Display: '&eLieutenant Iqueo'
+    Health: 150
+    Damage: 0
+    Skills:
+    - message{cooldown=20;m="<mob.name>&f<&co> Can you feel the corruption creeping in?"} @PlayersInRadius{r=40} ~onCombat >0 0.2
+    - message{m="<mob.name>&f<&co> The waters of life are corrupted forever more, <trigger.name>!"} @PlayersInRadius{r=40} ~onKillPlayer >0 1
+#    - skill{s=SmashAttackWaterTemple-Miniboss} @PIR{r=40} >0 0.2
+    - skill{s=SummonGuardiansWaterTemple-Miniboss} @PIR{r=40} >0 0.2
+    - skill{s=BleedingWaterTemple-Miniboss} @PIR{r=40} ~onAttack 0.25
+    - skill{s=SacrificeCheckWaterTemple-Miniboss} @LEIR{r=40} <50% 0.2
+    - skill{s=SacrificeSignalWaterTemple-Miniboss} @LEIR{r=40} ~onSignal:RUNSACRIFICE
+    - skill{s=SacrificeHealWaterTemple-Miniboss} @self ~onSignal:SACRIFICEHEAL
+    Equipment:
+    - ChampHelm:4
+    - ChampChest:3
+    - ChampLegs:2
+    - ChampBoots:1
+    - ChampSword:0
+    Drops:
+    Options:
+        AlwaysShowName: true
+        MovementSpeed: 0.35
+        MaxCombatDistance: 25
+        FollowRange: 50
+        PreventOtherDrops: false
+    BossBar:
+        Enabled: true
+        Title: '&eLieutenant Iqueo'
+        Range: 50
+        Color: YELLOW
+        Style: SEGMENTED_20
+        CreateFog: true
+        DarkenSky: true
+        PlayMusic: true
+    Modules:
+        ThreatTable: true
+    DamageModifiers:
+    - DROWNING 0
+    - SUFFOCATION 0
+    Disguise:
+      Type: SKELETON
+    AIGoalSelectors:
+    - 0 clear
+    - 1 movetowardstarget
+    - 2 meleeattack
+    - 3 leapattarget
+    AITargetSelectors:
+#    - 0 clear
+#    - 1 attacker
+#    - 2 players
+    - 0 attacker
+    - 1 players
+WaterTemple-MinibossGuardian:
+    Type: GUARDIAN
+    Display: '&eCorrupted Guardian'
+    Health: 50
+    Damage: 4
+    Skills:
+    - skill{s=SacrificeTargetWaterTemple-Miniboss} @self ~onSignal:MINIONCHECK
+    - skill{s=SacrificeTargetWaterTemple-Miniboss} @self ~onSignal:SACRIFICE
+    Drops:
+    Options:
+        AlwaysShowName: false
+        PreventOtherDrops: false
+    Modules:
+        ThreatTable: true

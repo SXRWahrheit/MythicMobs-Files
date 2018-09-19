@@ -1,0 +1,48 @@
+ChampionDrops:
+    Drops:
+    - gold_ingot 32-64 1
+    - gold_ingot 32-64 0.75
+    - gold_ingot 32-64 0.5
+    - gold_ingot 32-64 0.25
+    - gold_ingot 32-64 0.125
+    - diamond 5-10 1
+    - diamond 5-10 0.75
+    - diamond 5-10 0.5
+    - diamond 5-10 0.25
+    - diamond 5-10 0.125
+    - exp 2500-7500 1
+    - exp 2500-7500 0.75
+    - exp 2500-7500 0.5
+    - exp 2500-7500 0.25
+    - exp 2500-7500 0.125
+    - money 250-2500 1
+    DropsPerLevel:
+    - exp 100 1
+ChampionMeleeDrops:
+    TotalItems: 1
+    Drops:
+    - EmblazonedSword 1 0.002
+    - EmblazonedHelm 1 0.002
+    - EmblazonedChest 1 0.002
+    - EmblazonedLegs 1 0.002
+    - EmblazonedBoots 1 0.002
+    - EmblazonedShield 1 0.002
+    - EmblazonedAxe 1 0.002
+    - EmblazonedPickaxe 1 0.002
+    - EmblazonedShovel 1 0.002
+    - EmblazonedHoe 1 0.002
+    - EmblazonedFishingRod 1 0.002
+ChampionRangedDrops:
+    TotalItems: 1
+    Drops:
+    - EmblazonedHelm 1 0.002
+    - EmblazonedChest 1 0.002
+    - EmblazonedLegs 1 0.002
+    - EmblazonedBoots 1 0.002
+    - EmblazonedBow 1 0.002
+    - EmblazonedShield 1 0.002
+    - EmblazonedAxe 1 0.002
+    - EmblazonedPickaxe 1 0.002
+    - EmblazonedShovel 1 0.002
+    - EmblazonedHoe 1 0.002
+    - EmblazonedFishingRod 1 0.002

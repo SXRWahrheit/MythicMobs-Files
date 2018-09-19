@@ -1,0 +1,89 @@
+Umbra:
+    Type: WITHER_SKELETON
+    Display: '&eUmbra, the Consuming Shadow'
+    Health: 3000
+    Damage: 10
+    Skills:
+    - message{cooldown=20;m="<mob.name>&f<&co> Your light is fading!"} @PlayersInRadius{r=40} ~onCombat >0 0.2
+    - message{m="<mob.name>&f<&co> Welcome to the end, <trigger.name>!"} @PlayersInRadius{r=40} ~onKillPlayer >0 1
+    - skill{s=SmashAttackChampion} @PIR{r=40} >0 0.2
+    - skill{s=SummonSkeletonsChampion} @PIR{r=40} >0 0.2
+    - skill{s=BleedingChampion} @PIR{r=40} ~onAttack 0.25
+    - skill{s=LifeLeechChampion} @PIR{r=40} >0 0.2
+    - skill{s=CrippleChampion} @PIR{r=40} >0 0.2
+    - skill{s=ShadowstepChampion} @PIR{r=40} ~onDamaged 0.2
+    - skill{s=RallyChampion} @PIR{r=40} >0 0.2
+    - skill{s=LevitateChampion} @PIR{r=40} >0 0.2
+    - skill{s=RootChampion} >0 0.2
+    - skill{s=UmbraHorde} >0 0.2
+    - remove{delay=36000} @self ~onSpawn
+    Equipment:
+    - UmbraHelm:4
+    - UmbraChest:3
+    - UmbraLegs:2
+    - UmbraBoots:1
+    - UmbraSword:0
+    Drops:
+    - ChampionDrops 1 1
+    - ChampionMeleeDrops 1 0.05
+    - EliteMeleeDrops 1 0.5
+    - VeteranMeleeDrops 1 1
+    Options:
+        AlwaysShowName: true
+        MovementSpeed: 0.35
+        MaxCombatDistance: 25
+        FollowRange: 50
+        PreventOtherDrops: false
+        Despawn: false
+    BossBar:
+        Enabled: true
+        Title: '&eUmbra, the Consuming Shadow'
+        Range: 50
+        Color: YELLOW
+        Style: SEGMENTED_10
+        CreateFog: true
+        DarkenSky: true
+        PlayMusic: true
+    Modules:
+        ThreatTable: true
+Toxus:
+    Type: SPIDER
+    Display: '&eToxus, the Creeping Venom'
+    Health: 3000
+    Damage: 8
+    Skills:
+    - message{cooldown=20;m="<mob.name>&f<co> Can you feel my corruption?"} @PlayersInRadius}{r=40} ~onCombat >0 0.2
+    - message{m="<mob.name>&f<&co> Give in to the poison..."} @PlayersInRadius{r=40} ~onKillPlayer >0 1
+    - skill{s=PoisonFangChampion} @PIR{r=40} >0 0.2
+    - skill{s=SmashAttackChampion} @PIR{r=40} >0 0.2
+    - skill{s=LevitateChampion} @PIR{r=40} >0 0.2
+    - skill{s=CrippleChampion} @PIR{r=40} >0 0.2
+    - skill{s=VanishChampion} >0 0.2
+    - skill{s=RegenChampion} >0 0.2
+    - skill{s=RootChampion} >0 0.2
+    - skill{s=ToxusHorde} >0 0.2
+    - remove{delay=36000} @self ~onSpawn
+    Drops:
+    - ChampionDrops
+    - ChampionMeleeDrops 1 0.05
+    - EliteMeleeDrops 1 0.5
+    - VeteranMeleeDrops 1 1
+    Options:
+        AlwaysShowName: true
+        MovementSpeed: 0.35
+        MaxCombatDistance: 25
+        FollowRange: 50
+        PreventOtherDrops: false
+    BossBar:
+        Enabled: true
+        Title: '&eToxus, the Creeping Venom'
+        Range: 50
+        Color: YELLOW
+        Style: SEGMENTED_10
+        CreateFog: true
+        DarkenSky: true
+        PlayMusic: true
+        Despawn: false
+    Modules:
+        ThreatTable: true
+#ShadowDragon

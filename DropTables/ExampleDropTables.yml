@@ -1,0 +1,14 @@
+# 
+# This example file shows you how to set up a basic drop table.
+# Drop tables can be used in both a mob's equipment and drops
+# to have multiple items tied to a single table.
+SkeletonKingDrops:
+  Conditions:
+  - playerwithin 40
+  Drops:
+  - KingsCrown 1 0.01
+  - 371:0 32-64 1
+  - exp 100
+  - heroesexp 200
+  DropsPerLevel:
+  - exp 10

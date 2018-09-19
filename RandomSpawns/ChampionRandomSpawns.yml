@@ -1,0 +1,7 @@
+ChampionHeavens:
+  Type: Umbra,Toxus
+  Worlds: heavens,prosperus_the_end,avenfeld
+  Chance: 0.0000000001
+  Action: REPLACE
+  Conditions:
+  - outside true
