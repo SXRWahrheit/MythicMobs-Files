@@ -1,4 +1,4 @@
-MythicMobs-Mobs
+MythicMobs-Files
 ===============
 
 A collection of config files I use with the MythicMobs plugin on my server. These files are provided as-is, with no warranty whatsoever. I frequently use the latest bleeding-edge builds of MythicMobs, and if you intend to use any of these files, I encourage you to do the same. [You can get premium access here after signing up for the MythicMobs forums.](https://www.mythicmobs.net/index.php?account/upgrades)
