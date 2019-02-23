@@ -1,0 +1,157 @@
+ImbuedSword_sealed_potential:
+    Id: Diamond_Sword
+    Data: 0
+    Display: '&9Imbued Diamond Sword'
+    Lore:
+    - '&9&oVeteran'
+    - '&fThis blade has a mystic presence.'
+    - "&6Sealed Potential"
+    Enchantments:
+    - DAMAGE_ALL:6
+    Attributes:
+        MainHand:
+            Damage: 12.5
+            MovementSpeed: 0.1
+            AttackSpeed: -0.57
+    NBT:
+        'Denizen NBT':
+            'equipment_type': weapon
+            'item_tier': veteran
+            'sealed_potential': true
+ImbuedHelm_sealed_potential:
+    Id: Diamond_Helmet
+    Data: 0
+    Display: '&9Imbued Diamond Helm'
+    Lore:
+    - '&9&oVeteran'
+    - '&fThis helm has a mystic presence.'
+    - "&6Sealed Potential"
+    Enchantments:
+    - PROTECTION_ENVIRONMENTAL:5
+    Attributes:
+        Head:
+            Health: 4
+            Armor: 3
+            ArmorToughness: 2
+    NBT:
+        'Denizen NBT':
+            'equipment_type': armor
+            'item_tier': veteran
+            'sealed_potential': true
+ImbuedChest_sealed_potential:
+    Id: Diamond_Chestplate
+    Data: 0
+    Display: '&9Imbued Diamond Chestplate'
+    Lore:
+    - '&9&oVeteran'
+    - '&fThis chestplate has a mystic presence.'
+    - "&6Sealed Potential"
+    Enchantments:
+    - PROTECTION_ENVIRONMENTAL:5
+    - PROTECTION_EXPLOSIONS:2
+    Attributes:
+        Chest:
+            Health: 8
+            Armor: 8
+            ArmorToughness: 2
+    NBT:
+        'Denizen NBT':
+            'equipment_type': armor
+            'item_tier': veteran
+            'sealed_potential': true
+ImbuedLegs_sealed_potential:
+    Id: Diamond_Leggings
+    Data: 0
+    Display: '&9Imbued Diamond Leggings'
+    Lore:
+    - '&9&oVeteran'
+    - '&fThese leggings have a mystic presence.'
+    - "&6Sealed Potential"
+    Enchantments:
+    - PROTECTION_ENVIRONMENTAL:5
+    Attributes:
+        Legs:
+            Health: 6
+            Armor: 6
+            ArmorToughness: 2
+    NBT:
+        'Denizen NBT':
+            'equipment_type': armor
+            'item_tier': veteran
+            'sealed_potential': true
+ImbuedBoots_sealed_potential:
+    Id: Diamond_Boots
+    Data: 0
+    Display: '&9Imbued Diamond Boots'
+    Lore:
+    - '&9&oVeteran'
+    - '&fThese boots have a mystic presence.'
+    - "&6Sealed Potential"
+    Enchantments:
+    - PROTECTION_ENVIRONMENTAL:5
+    Attributes:
+        Feet:
+            Health: 2
+            Armor: 3
+            ArmorToughness: 2
+    NBT:
+        'Denizen NBT':
+            'equipment_type': armor
+            'item_tier': veteran
+            'sealed_potential': true
+ImbuedBow_sealed_potential:
+    Id: Bow
+    Data: 0
+    Display: '&9Imbued Bow'
+    Lore:
+    - '&9&oVeteran'
+    - '&fThis bow has a mystic presence.'
+    - "&6Sealed Potential"
+    Enchantments:
+    - ARROW_DAMAGE:6
+    - ARROW_KNOCKBACK:2
+    NBT:
+        'Denizen NBT':
+            'equipment_type': weapon
+            'item_tier': veteran
+            'sealed_potential': true
+ImbuedShield_sealed_potential:
+    Id: Shield
+    Data: 0
+    Display: '&9Imbued Shield'
+    Lore:
+    - '&9&oVeteran'
+    - '&fThis shield has a mystic presence.'
+    - "&6Sealed Potential"
+    Enchantments:
+    - DURABILITY:3
+    Attributes:
+        OffHand:
+            Health: 4
+            ArmorToughness: 2
+    NBT:
+        'Denizen NBT':
+            'equipment_type': armor
+            'item_tier': veteran
+            'sealed_potential': true
+ImbuedAxe_sealed_potential:
+    Id: Diamond_Axe
+    Data: 0
+    Display: '&9Imbued Axe'
+    Lore:
+    - '&9&oVeteran'
+    - '&fThis axe has a mystic presence.'
+    - '&6Sealed Potential'
+    Enchantments:
+    - DAMAGE_ALL:6
+    - DIG_SPEED:6
+    Attributes:
+        MainHand:
+            Damage: 13.5
+            ArmorToughness: 2
+            AttackSpeed: -0.73
+    NBT:
+        'Denizen NBT':
+            'equipment_type': weapon
+            'item_tier': veteran
+            'sealed_potential': true

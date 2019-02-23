@@ -1,0 +1,149 @@
+BurnishedSword_sealed_potential:
+    Id: Diamond_Sword
+    Data: 0
+    Display: '&dBurnished Diamond Sword'
+    Lore:
+    - '&d&oElite'
+    - '&fThis blade seeps magical energy.'
+    Enchantments:
+    - DAMAGE_ALL:7
+    Attributes:
+        MainHand:
+            Damage: 13.0
+            MovementSpeed: 0.1
+            AttackSpeed: -0.54
+    NBT:
+        'Denizen NBT':
+            'equipment_type': weapon
+            'item_tier': elite
+            'sealed_potential': true
+BurnishedHelm_sealed_potential:
+    Id: Diamond_Helmet
+    Data: 0
+    Display: '&dBurnished Diamond Helm'
+    Lore:
+    - '&d&oElite'
+    - '&fThis helm seeps magical energy.'
+    Enchantments:
+    - PROTECTION_ENVIRONMENTAL:6
+    Attributes:
+        Head:
+            Health: 5
+            Armor: 3
+            ArmorToughness: 2
+    NBT:
+        'Denizen NBT':
+            'equipment_type': armor
+            'item_tier': elite
+            'sealed_potential': true
+BurnishedChest_sealed_potential:
+    Id: Diamond_Chestplate
+    Data: 0
+    Display: '&dBurnished Diamond Chestplate'
+    Lore:
+    - '&d&oElite'
+    - '&fThis chestplate seeps magical energy.'
+    Enchantments:
+    - PROTECTION_ENVIRONMENTAL:6
+    - PROTECTION_EXPLOSIONS:4
+    Attributes:
+        Chest:
+            Health: 9
+            Armor: 9
+            ArmorToughness: 2
+    NBT:
+        'Denizen NBT':
+            'equipment_type': armor
+            'item_tier': elite
+            'sealed_potential': true
+BurnishedLegs_sealed_potential:
+    Id: Diamond_Leggings
+    Data: 0
+    Display: '&dBurnished Diamond Leggings'
+    Lore:
+    - '&d&oElite'
+    - '&fThese leggings seep magical energy.'
+    Enchantments:
+    - PROTECTION_ENVIRONMENTAL:6
+    Attributes:
+        Legs:
+            Health: 7
+            Armor: 7
+            ArmorToughness: 2
+    NBT:
+        'Denizen NBT':
+            'equipment_type': armor
+            'item_tier': elite
+            'sealed_potential': true
+BurnishedBoots_sealed_potential:
+    Id: Diamond_Boots
+    Data: 0
+    Display: '&dBurnished Diamond Boots'
+    Lore:
+    - '&d&oElite'
+    - '&fThese boots seep magical energy.'
+    Enchantments:
+    - PROTECTION_ENVIRONMENTAL:6
+    Attributes:
+        Feet:
+            Health: 3
+            Armor: 4
+            ArmorToughness: 2
+    NBT:
+        'Denizen NBT':
+            'equipment_type': armor
+            'item_tier': elite
+            'sealed_potential': true
+BurnishedBow_sealed_potential:
+    Id: Bow
+    Data: 0
+    Display: '&dBurnished Bow'
+    Lore:
+    - '&d&oElite'
+    - '&fThis bow seeps magical energy.'
+    Enchantments:
+    - ARROW_DAMAGE:7
+    - ARROW_KNOCKBACK:3
+    NBT:
+        'Denizen NBT':
+            'equipment_type': weapon
+            'item_tier': elite
+            'sealed_potential': true
+BurnishedShield_sealed_potential:
+    Id: Shield
+    Data: 0
+    Display: '&dBurnished Shield'
+    Lore:
+    - '&d&oElite'
+    - '&fThis shield seeps magical energy.'
+    Enchantments:
+    - DURABILITY:4
+    Attributes:
+        OffHand:
+            Health: 6
+            ArmorToughness: 3
+    NBT:
+        'Denizen NBT':
+            'equipment_type': armor
+            'item_tier': elite
+            'sealed_potential': true
+BurnishedAxe_sealed_potential:
+    Id: Diamond_Axe
+    Data: 0
+    Display: '&dBurnished Axe'
+    Lore:
+    - '&d&oElite'
+    - '&fThis axe seeps magical energy.'
+    Enchantments:
+    - DAMAGE_ALL:7
+    - DIG_SPEED:7
+    Attributes:
+        MainHand:
+            Damage: 14.0
+            ArmorToughness: 3
+            AttackSpeed: -0.70
+    NBT:
+        'Denizen NBT':
+            'equipment_type': weapon
+            'item_tier': elite
+            'sealed_potential': true

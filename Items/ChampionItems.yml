@@ -140,7 +140,7 @@ EmblazonedHelm:
     Attributes:
         Head:
             Health: 6
-            Armor: 4
+            Armor: 3
             ArmorToughness: 3
 EmblazonedChest:
     Id: Diamond_Chestplate
@@ -163,7 +163,7 @@ EmblazonedLegs:
     Display: '&eEmblazoned Diamond Leggings'
     Lore:
     - '&e&oChampion'
-    - '&fThese leggings seep magical energy.'
+    - '&fThese leggings emanate a radiant power.'
     Enchantments:
     - PROTECTION_ENVIRONMENTAL:7
     Attributes:
@@ -177,7 +177,7 @@ EmblazonedBoots:
     Display: '&eEmblazoned Diamond Boots'
     Lore:
     - '&e&oChampion'
-    - '&fThese boots seep magical energy.'
+    - '&fThese boots emanate a radiant power.'
     Enchantments:
     - PROTECTION_ENVIRONMENTAL:7
     Attributes:
