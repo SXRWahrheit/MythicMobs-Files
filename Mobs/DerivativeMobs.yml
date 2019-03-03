@@ -1,6 +1,6 @@
 BouncySlime7:
     Type: SLIME
-    Display: '&Particularly Bouncy Slime'
+    Display: 'Particularly Bouncy Slime'
     Health: 65
     Damage: 7
     Options:
@@ -19,7 +19,7 @@ BouncySlime7:
     - FALL 0
 BouncySlime6:
     Type: SLIME
-    Display: '&dParticularly Bouncy Slime'
+    Display: 'Particularly Bouncy Slime'
     Health: 60
     Damage: 6
     Options:
@@ -38,7 +38,7 @@ BouncySlime6:
     - FALL 0
 BouncySlime5:
     Type: SLIME
-    Display: '&dParticularly Bouncy Slime'
+    Display: 'Particularly Bouncy Slime'
     Health: 55
     Damage: 5
     Options:
@@ -57,7 +57,7 @@ BouncySlime5:
     - FALL 0
 BouncySlime4:
     Type: SLIME
-    Display: '&dParticularly Bouncy Slime'
+    Display: 'Particularly Bouncy Slime'
     Health: 50
     Damage: 4
     Options:
@@ -76,7 +76,7 @@ BouncySlime4:
     - FALL 0
 BouncySlime3:
     Type: SLIME
-    Display: '&dParticularly Bouncy Slime'
+    Display: 'Particularly Bouncy Slime'
     Health: 45
     Damage: 3
     Options:
@@ -95,7 +95,7 @@ BouncySlime3:
     - FALL 0
 BouncySlime2:
     Type: SLIME
-    Display: '&dParticularly Bouncy Slime'
+    Display: 'Particularly Bouncy Slime'
     Health: 40
     Damage: 2
     Options:
@@ -114,7 +114,7 @@ BouncySlime2:
     - FALL 0
 BouncySlime1:
     Type: SLIME
-    Display: '&dParticularly Bouncy Slime'
+    Display: 'Particularly Bouncy Slime'
     Health: 35
     Damage: 1
     Options:

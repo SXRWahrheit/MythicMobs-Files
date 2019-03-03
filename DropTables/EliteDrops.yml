@@ -6,7 +6,8 @@ EliteDrops:
     - ender_portal_frame 1 0.02
     - VeteranTokenPlaceholder 6 1
     - VeteranTokenPlaceholder 0-6 0.25
-    - RedstoneCache 1 0.05
+    - SmallRedstoneCache 1 0.20
+    - RedstoneCache 1 0.10
     DropsPerLevel:
     - exp 50 1
 EliteMeleeDrops:

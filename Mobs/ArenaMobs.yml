@@ -1,0 +1,670 @@
+SkeletalRogueArena:
+    Mobtype: SKELETON
+    Display: '&9Skeletal Rogue'
+    Health: 75
+    Damage: 2
+    Equipment:
+    - leather_helmet:4
+    - leather_chestplate:3
+    - leather_leggings:2
+    - leather_boots:1
+    - iron_sword:0
+    Drops:
+    - ArenaVeteranDrops 1 1
+    Options:
+        FollowRange: 50
+        AlwaysShowName: true
+        MovementSpeed: 0.31
+        PreventOtherDrops: false
+        PreventItemPickup: true
+    Skills:
+    - skill{s=BleedingVeteran} ~onAttack 0.1
+    - skill{s=ShadowstepVeteran} >0 0.2
+#    - skill{s=SuperChargeDeathVeteran} @ThreatTablePlayers ~onDeath
+    Modules:
+        ThreatTable: true
+LesserWightArena:
+    Type: ZOMBIE
+    Display: '&9Lesser Wight'
+    Health: 75
+    Damage: 3
+    Equipment:
+    - iron_sword:0
+    Drops:
+    - ArenaVeteranDrops 1 1
+    Options:
+        AlwaysShowName: true
+        FollowRange: 50
+        MovementSpeed: 0.31
+        PreventOtherDrops: false
+        PreventItemPickup: true
+    Skills:
+    - skill{s=BleedingVeteran} ~onAttack 0.1
+#    - skill{s=SuperChargeDeathVeteran} @ThreatTablePlayers ~onDeath
+    Modules:
+        ThreatTable: true
+LesserShadeArena:
+    Type: ENDERMAN
+    Display: '&9Lesser Shade'
+    Health: 75
+    Damage: 3
+    Drops:
+    - ArenaVeteranDrops 1 1
+    Options:
+        AlwaysShowName: true
+        FollowRange: 100
+        MovementSpeed: 0.3
+        PreventOtherDrops: false
+        PreventItemPickup: true
+    Skills:
+    - skill{s=SummonDarkSpriteVeteran} @PIR{r=40} >0 0.2
+    - skill{s=BleedingVeteran} ~onAttack 0.1
+    - skill{s=BlindVeteran} @PIR{r=40} >0 0.2
+    - skill{s=PullVeteran} @PIR{r=40} >0 0.2
+#    - skill{s=SuperChargeDeathVeteran} @ThreatTablePlayers ~onDeath
+    Modules:
+        ThreatTable: true
+LesserDarkSpriteArena:
+    Type: ENDERMITE
+    Display: 'Lesser Dark Sprite'
+    Health: 40
+    Damage: 2
+    Options:
+        FollowRange: 100
+        MovementSpeed: 0.3
+        PreventOtherDrops: false
+        PreventItemPickup: true
+        AlwaysShowName: true
+    Modules:
+        ThreatTable: true
+LesserDrowArena:
+    Type: WITHER_SKELETON
+    Display: '&9Lesser Drow'
+    Health: 75
+    Damage: 3
+    Drops:
+    - ArenaVeteranDrops 1 1
+    Options:
+        AlwaysShowName: true
+        FollowRange: 100
+        MovementSpeed: 0.31
+        PreventOtherDrops: false
+        PreventItemPickup: true
+    Skills:
+    - skill{s=SummonDarkSpriteVeteran} @PIR{r=40} >0 0.2
+    - skill{s=LeapVeteran} @PIR{r=40} >0 0.2
+    - skill{s=WitheringGraspVeteran} ~onAttack 0.1
+    - skill{s=ShadowstepVeteran} >0 0.2
+#    - skill{s=SuperChargeDeathVeteran} @ThreatTablePlayers ~onDeath
+    Equipment:
+    - iron_helmet:4
+    - iron_chestplate:3
+    - iron_leggings:2
+    - iron_boots:1
+    - iron_sword:0
+    Modules:
+        ThreatTable: true
+SkeletalArcherArena:
+    Type: SKELETON
+    Display: '&9Skeletal Archer'
+    Health: 75
+    Damage: 6
+    Drops:
+    - ArenaVeteranDrops 1 1
+    - lingering_potion 1 0.1
+    - arrow 32-64 1
+    - arrow 32-64 1
+    Options:
+        AlwaysShowName: true
+        FollowRange: 100
+        MovementSpeed: 0.3
+        PreventOtherDrops: false
+        PreventItemPickup: true
+    Skills:
+    - skill{s=CripplingShotVeteran} @PIR{r=40} >0 0.2
+    - skill{s=BurningShotVeteran} @PIR{r=40} >0 0.2
+    - shoot{type=ARROW;velocity=10;damage=6} @Target ~onTimer:60
+#    - skill{s=SuperChargeDeathVeteran} @ThreatTablePlayers ~onDeath
+    Equipment:
+    - iron_helmet:4
+    - iron_chestplate:3
+    - iron_leggings:2
+    - iron_boots:1
+    - ImbuedBow:0
+    Modules:
+        ThreatTable: true
+AbsoluteExplodyBoyArena:
+    Type: CREEPER
+    Display: '&9Absolute Explody Boy'
+    Health: 150
+    Damage: 10
+    Drops:
+    - ArenaVeteranDrops 1 1
+    Options:
+        AlwaysShowName: true
+        FollowRange: 100
+        MovementSpeed: 0.35
+        PreventOtherDrops: false
+        PreventItemPickup: true
+        ExplosionRadius: 8
+        FuseTicks: 40
+        SuperCharged: true
+        PreventSuicide: false
+    Modules:
+        ThreatTable: true
+SkeletalDarkKnightArena:
+    Type: WITHER_SKELETON
+    Display: '&dSkeletal Dark Knight'
+    Health: 150
+    Damage: 10
+    Skills:
+    - message{cooldown=20;m="<mob.name>&f<&co> My blade will reap your soul!"} @PlayersInRadius{r=40} ~onCombat >0 0.2
+    - message{m="<mob.name>&f<&co> You're no match for me, <trigger.name>!"} @PlayersInRadius{r=40} ~onKillPlayer >0 1
+    - skill{s=SmashAttackElite} @Target >0 0.2
+    - skill{s=PullElite} @PIR{r=40} >0 0.2
+#    - skill{s=SuperChargeDeathElite} @ThreatTablePlayers ~onDeath
+    Equipment:
+    - SkeletalDarkKnightHelm:4
+    - iron_chestplate:3
+    - iron_leggings:2
+    - FrostWalkers:1
+    - SkeletalDarkKnightSword:0
+    Drops:
+    - ArenaEliteDrops 1 1
+    Options:
+        AlwaysShowName: true
+        MovementSpeed: 0.25
+        MaxCombatDistance: 50
+        FollowRange: 50
+        PreventOtherDrops: false
+    Modules:
+        ThreatTable: true
+LichArena:
+    Type: ZOMBIE
+    Display: '&dLich'
+    Health: 300
+    Damage: 10
+    Skills:
+    - message{cooldown=20;m="<mob.name>&f<&co> Death comes for you!"} @PlayersInRadius{r=40} ~onCombat >0 0.2
+    - message{m="<mob.name>&f<&co> Welcome to damnation, <trigger.name>!"} @PlayersInRadius{r=40} ~onKillPlayer >0 1
+    - skill{s=PoisonFangElite} @PIR{r=40} >0 0.2
+    - skill{s=SummonLichMinionsElite} @PIR{r=40} >0 0.2
+    - skill{s=CrippleElite} @PIR{r=40} >0 0.2
+    - skill{s=PullElite} @PIR{r=40} >0 0.2
+#    - skill{s=SuperChargeDeathElite} @ThreatTablePlayers ~onDeath
+    Equipment:
+    - diamond_sword:0
+    - iron_chestplate:3
+    - iron_leggings:2
+    - FrostWalkers:1
+    Drops:
+    - ArenaEliteDrops 1 1
+    Options:
+        AlwaysShowName: true
+        MaxCombatDistance: 50
+        FollowRange: 50
+        MovementSpeed: 0.25
+        PreventOtherDrops: false
+    Modules:
+        ThreatTable: true
+LichMinionArena:
+    Type: ZOMBIE
+    Display: 'Undead Footsoldier'
+    Health: 50
+    Damage: 10
+    Skills:
+    - skill{s=LeapElite} @PIR{r=40} >0 0.2
+    - skill{s=HamstringElite} @PIR{r=40} >0 0.2
+    Equipment:
+    - diamond_sword:0
+    - iron_chestplate:3
+    - iron_leggings:2
+    - FrostWalkers:1
+    Options:
+        AlwaysShowName: true
+        MaxCombatDistance: 50
+        FollowRange: 50
+        MovementSpeed: 0.28
+        PreventOtherDrops: false
+    Modules:
+        ThreatTable: true
+BloodWitchArena:
+    Type: WITCH
+    Display: '&dBlood Witch'
+    Health: 300
+    Damage: 10
+    Skills:
+    - message{cooldown=20;m="<mob.name>&f<&co> I will rip the life from your corpse!"} @PlayersInRadius{r=40} ~onCombat >0 0.2
+    - message{m="<mob.name>&f<&co> My life is everlong; yours is gone."} @PlayersInRadius{r=40} ~onKillPlayer >0 1
+    - skill{s=LifeLeechElite} @PIR{r=40} >0 0.2
+    - skill{s=CrippleElite} @PIR{r=40} >0 0.2
+    - skill{s=PullElite} @PIR{r=40} >0 0.2
+    - skill{s=RallyElite} @PIR{r=40} >0 0.2
+    - skill{s=WailElite} @PIR{r=40} >0 0.2
+#    - skill{s=ConjureSwordsElite} @PIR{r=40} >0 0.2
+    - teleport{spreadh=15;spreadv=5} @target ~onDamaged <50% 0.6
+#    - skill{s=SuperChargeDeathElite} @ThreatTablePlayers ~onDeath
+    Drops:
+    - ArenaEliteDrops 1 1
+    Options:
+        AlwaysShowName: true
+        MaxCombatDistance: 50
+        FollowRange: 50
+        MovementSpeed: 0.2
+        PreventOtherDrops: false
+    Modules:
+        ThreatTable: true
+SharpshooterArena:
+    Type: SKELETON
+    Display: '&dSharpshooter'
+    Health: 200
+    Damage: 10
+    MovementSpeed: 0.3
+    Skills:
+    - message{cooldown=20;m="<mob.name>&f<&co> Your corpse will be littered with arrows!"} @PlayersInRadius{r=40} ~onCombat >0 0.2
+    - message{m="<mob.name>&f<&co> You threw away your shot."} @PlayersInRadius{r=40} ~onKillPlayer >0 1    
+    - skill{s=CripplingShotElite} @PIR{r=40} >0 0.2
+    - skill{s=BurningShotElite} @PIR{r=40} >0 0.2
+    - skill{s=ExplodingArrowElite} @PIR{r=40} >0 0.2
+    - skill{s=ExplodingArrowEliteBD} @PIR{r=40} >0 0.2
+    - shoot{type=ARROW;velocity=10;damage=10} @Target ~onTimer:60
+#    - skill{s=SuperChargeDeathElite} @ThreatTablePlayers ~onDeath
+    Equipment:
+    - iron_chestplate:3
+    - iron_leggings:2
+    - iron_boots:1
+    - SharpshooterBow:0
+    Drops:
+    - ArenaEliteDrops 1 1
+    Options:
+        AlwaysShowName: true
+        MaxCombatDistance: 50
+        FollowRange: 50
+        MovementSpeed: 0.3
+        PreventOtherDrops: false
+    Modules:
+        ThreatTable: true
+OccultistArena:
+    Type: EVOKER
+    Display: '&dOccultist'
+    Health: 300
+    Damage: 10
+    MovementSpeed: 0.3
+    Skills:
+    - message{cooldown=20;m="<mob.name>&f<&co> You will feel pain like you have never known!"} @PlayersInRadius{r=40} ~onCombat >0 0.2
+    - message{m="<mob.name>&f<&co> You never stood a chance."} @PlayersInRadius{r=40} ~onKillPlayer >0 1    
+    - skill{s=LevitateElite} @PIR{r=40} >0 0.2
+    - skill{s=CrippleElite} @PIR{r=40} >0 0.2
+    - skill{s=PullElite} @PIR{r=40} >0 0.2
+    - skill{s=VanishElite} >0 0.2
+#    - skill{s=SuperChargeDeathElite} @ThreatTablePlayers ~onDeath
+#    Equipment:
+#    - iron_chestplate:3
+#    - iron_leggings:2
+#    - iron_boots:1
+    Drops:
+    - ArenaEliteDrops 1 1
+    Options:
+        AlwaysShowName: true
+        MaxCombatDistance: 50
+        FollowRange: 50
+        MovementSpeed: 0.3
+        PreventOtherDrops: false
+    Modules:
+        ThreatTable: true
+#Dretch
+DretchArena:
+    Type: PIGZOMBIE
+    Display: '&dDretch'
+    Health: 150
+    Damage: 10
+    Equipment:
+    - iron_sword:0
+    Drops:
+    - ArenaEliteDrops 1 1
+    Options:
+        AlwaysShowName: true
+        FollowRange: 50
+        MovementSpeed: 0.35
+        PreventOtherDrops: false
+        PreventItemPickup: true
+        Angry: true
+    Skills:
+    - skill{s=BleedingVeteran} ~onAttack 0.2
+    - skill{s=CrippleElite} @PIR{r=40} >0 0.2
+    - skill{s=PullElite} @PIR{r=40} >0 0.2
+#    - skill{s=SuperChargeDeathElite} @ThreatTablePlayers ~onDeath
+    Modules:
+        ThreatTable: true
+BansheeArena:
+    Type: VEX
+    Display: '&dBanshee'
+    Health: 50
+    Damage: 10
+    Equipment:
+    - iron_sword:0
+    Drops:
+    - ArenaEliteDrops 1 1
+    Options:
+        AlwaysShowName: true
+        FollowRange: 50
+        MovementSpeed: 0.35
+        PreventOtherDrops: false
+    Skills:
+    - skill{s=BleedingElite} ~onAttack 0.1
+    - skill{s=WailElite} @Target >0 0.1
+    - skill{s=CorruptingTouchElite} @PIR{r=40} >0 0.2
+#    - skill{s=SuperChargeDeathElite} @ThreatTablePlayers ~onDeath
+    Modules:
+        ThreatTable: true
+BouncySlime8Arena:
+    Type: SLIME
+    Display: '&dParticularly Bouncy Slime'
+    Health: 75
+    Damage: 10
+    Drops:
+    - ArenaEliteDrops 1 1
+    Options:
+        AlwaysShowName: true
+        FollowRange: 50
+        MovementSpeed: 0.3
+        PreventOtherDrops: false
+        PreventItemPickup: true
+        Size: 8
+        PreventSlimeSplit: true
+    Skills:
+    - skill{s=JumpSmashElite} @PIR{r=40} ~onAttack 0.5
+    - skill{s=JumpSmashElite} @PIR{r=40} >0 0.5
+    - skill{s=SlimeSummon7} ~onDeath 1
+    DamageModifiers:
+    - FALL 0
+PhantomArena:
+    Type: GHAST
+    Display: '&dPhantom'
+    Health: 150
+    Damage: 12
+    Drops:
+    - ArenaEliteDrops 1 1
+    Options:
+        AlwaysShowName: true
+        PreventOtherDrops: false
+        PreventItemPickup: true
+    Skills:
+    - skill{s=PhantomFireball} @Target >0 0.2
+    - skill{s=MeteorElite} @Target >0 0.2
+    - skill{s=TerrifyElite} @PIR{r=50} >0 0.2
+    - skill{s=SummonGhastsElite} >0 0.2
+    - skill{s=ReTeleport} @self ~onTimer:10
+    - shootfireball{y=4;v=10;i=true;ft=200;small=false;playsound=true} @Target ~onTimer:120
+#    - skill{s=SuperChargeDeathElite} @ThreatTablePlayers ~onDeath
+    Modules:
+        ThreatTable: true
+    DamageModifiers:
+    - BLOCK_EXPLOSION 0
+    - ENTITY_EXPLOSION 0
+    - FIRE_TICK 0
+    - SUFFOCATION 0
+    - LAVA 0
+    - FIRE 0
+InfernoArena:
+    Type: BLAZE
+    Display: '&dInferno'
+    Health: 150
+    Damage: 10
+    Drops:
+    - ArenaEliteDrops 1 1
+    Options:
+        AlwaysShowName: true
+        PreventOtherDrops: false
+        PreventItemPickup: true
+    Skills:
+    - skill{s=InfernoFireball} @Target >0 0.2
+    - skill{s=MeteorElite} @Target >0 0.2
+    - skill{s=TerrifyElite} @PIR{r=50} >0 0.2
+    - skill{s=SummonBlazesElite} >0 0.2
+    - skill{s=ReTeleport} @self ~onTimer:10
+    - shootfireball{y=4;v=10;i=true;ft=200;small=true;playsound=true} @Target ~onTimer:120
+#    - skill{s=SuperChargeDeathElite} @ThreatTablePlayers ~onDeath
+    Modules:
+        ThreatTable: true
+    DamageModifiers:
+    - BLOCK_EXPLOSION 0
+    - ENTITY_EXPLOSION 0
+    - FIRE_TICK 0
+    - SUFFOCATION 0
+    - LAVA 0
+    - FIRE 0
+ArachnidArena:
+    Type: CAVE_SPIDER
+    Display: '&dArachnid'
+    Health: 200
+    Damage: 10
+    Drops:
+    - ArenaEliteDrops 1 1
+    Options:
+        AlwaysShowName: true
+        PreventOtherDrops: false
+        PreventItemPickup: true
+    Skills:
+    - skill{s=ShadowstepElite} @Target >0 0.2
+    - skill{s=CrippleElite} @PIR{r=40} >0 0.2
+    - skill{s=PullElite} @PIR{r=40} >0 0.2
+    - skill{s=VanishElite} >0 0.2
+#    - skill{s=SuperChargeDeathElite} @ThreatTablePlayers ~onDeath
+    Modules:
+        ThreatTable: true
+UmbraArena:
+    Type: WITHER_SKELETON
+    Display: '&eUmbra, the Consuming Shadow'
+    Health: 2000
+    Damage: 10
+    Skills:
+    - message{cooldown=20;m="<mob.name>&f<&co> Your light is fading!"} @PlayersInRadius{r=40} ~onCombat >0 0.2
+    - message{m="<mob.name>&f<&co> Welcome to the end, <trigger.name>!"} @PlayersInRadius{r=40} ~onKillPlayer >0 1
+    - skill{s=SmashAttackChampion} @PIR{r=40} ~onTimer:20 >0 0.2
+    - skill{s=SummonSkeletonsChampion} @PIR{r=40} ~onTimer:20 >0 0.2
+    - skill{s=BleedingChampion} @PIR{r=40} ~onAttack 0.25
+    - skill{s=LifeLeechChampion} @PIR{r=40} ~onTimer:20 >0 0.2
+    - skill{s=CrippleChampion} @PIR{r=40} ~onTimer:20 >0 0.2
+    - skill{s=ShadowstepChampion} @PIR{r=40} ~onDamaged 0.2
+    - skill{s=RallyChampion} @PIR{r=40} ~onTimer:20 >0 0.2
+    - skill{s=LevitateChampion} @PIR{r=40} ~onTimer:20 >0 0.2
+    - skill{s=RootChampion} ~onTimer:20 >0 0.2
+    - skill{s=UmbraHorde} ~onTimer:20 >0 0.2
+    - remove{delay=36000} @self ~onSpawn
+    Equipment:
+    - UmbraHelm:4
+    - UmbraChest:3
+    - UmbraLegs:2
+    - UmbraBoots:1
+    - UmbraSword:0
+    Drops:
+    - ArenaChampionDrops 1 1
+    Options:
+        AlwaysShowName: true
+        MovementSpeed: 0.35
+        MaxCombatDistance: 25
+        FollowRange: 50
+        PreventOtherDrops: false
+        Despawn: false
+    BossBar:
+        Enabled: true
+        Title: '&eUmbra, the Consuming Shadow'
+        Range: 50
+        Color: YELLOW
+        Style: SEGMENTED_10
+        CreateFog: true
+        DarkenSky: true
+        PlayMusic: true
+    Modules:
+        ThreatTable: true
+ToxusArena:
+    Type: SPIDER
+    Display: '&eToxus, the Creeping Venom'
+    Health: 2000
+    Damage: 8
+    Skills:
+    - message{cooldown=20;m="<mob.name>&f<co> Can you feel my corruption?"} @PlayersInRadius}{r=40} ~onCombat >0 0.2
+    - message{m="<mob.name>&f<&co> Give in to the poison..."} @PlayersInRadius{r=40} ~onKillPlayer >0 1
+    - skill{s=PoisonFangChampion} @PIR{r=40} ~onTimer:20 >0 0.2
+    - skill{s=SmashAttackChampion} @PIR{r=40} ~onTimer:20 >0 0.2
+    - skill{s=LevitateChampion} @PIR{r=40} ~onTimer:20 >0 0.2
+    - skill{s=CrippleChampion} @PIR{r=40} ~onTimer:20 >0 0.2
+    - skill{s=VanishChampion} ~onTimer:20 >0 0.2
+    - skill{s=RegenChampion} ~onTimer:20 >0 0.2
+    - skill{s=RootChampion} ~onTimer:20 >0 0.2
+    - skill{s=ToxusHorde} ~onTimer:20 >0 0.2
+    - remove{delay=36000} @self ~onSpawn
+    Drops:
+    - ArenaChampionDrops 1 1
+    Options:
+        AlwaysShowName: true
+        MovementSpeed: 0.35
+        MaxCombatDistance: 25
+        FollowRange: 50
+        PreventOtherDrops: false
+        Despawn: false
+    BossBar:
+        Enabled: true
+        Title: '&eToxus, the Creeping Venom'
+        Range: 50
+        Color: YELLOW
+        Style: SEGMENTED_10
+        CreateFog: true
+        DarkenSky: true
+        PlayMusic: true
+    Modules:
+        ThreatTable: true
+#ShadowDragon
+BouncySlime7Arena:
+    Type: SLIME
+    Display: 'Particularly Bouncy Slime'
+    Health: 65
+    Damage: 7
+    Options:
+        AlwaysShowName: true
+        FollowRange: 50
+        MovementSpeed: 0.3
+        PreventOtherDrops: false
+        PreventItemPickup: true
+        Size: 7
+        PreventSlimeSplit: true
+    Skills:
+    - skill{s=JumpSmashElite} @PIR{r=40} ~onAttack 0.5
+    - skill{s=JumpSmashElite} @PIR{r=40} >0 0.5
+    - skill{s=SlimeSummon6} ~onDeath 1
+    DamageModifiers:
+    - FALL 0
+BouncySlime6Arena:
+    Type: SLIME
+    Display: 'Particularly Bouncy Slime'
+    Health: 60
+    Damage: 6
+    Options:
+        AlwaysShowName: true
+        FollowRange: 50
+        MovementSpeed: 0.3
+        PreventOtherDrops: false
+        PreventItemPickup: true
+        Size: 6
+        PreventSlimeSplit: true
+    Skills:
+    - skill{s=JumpSmashElite} @PIR{r=40} ~onAttack 0.5
+    - skill{s=JumpSmashElite} @PIR{r=40} >0 0.5
+    - skill{s=SlimeSummon5} ~onDeath 1
+    DamageModifiers:
+    - FALL 0
+BouncySlime5Arena:
+    Type: SLIME
+    Display: 'Particularly Bouncy Slime'
+    Health: 55
+    Damage: 5
+    Options:
+        AlwaysShowName: true
+        FollowRange: 50
+        MovementSpeed: 0.3
+        PreventOtherDrops: false
+        PreventItemPickup: true
+        Size: 5
+        PreventSlimeSplit: true
+    Skills:
+    - skill{s=JumpSmashElite} @PIR{r=40} ~onAttack 0.5
+    - skill{s=JumpSmashElite} @PIR{r=40} >0 0.5
+    - skill{s=SlimeSummon4} ~onDeath 1
+    DamageModifiers:
+    - FALL 0
+BouncySlime4Arena:
+    Type: SLIME
+    Display: 'Particularly Bouncy Slime'
+    Health: 50
+    Damage: 4
+    Options:
+        AlwaysShowName: true
+        FollowRange: 50
+        MovementSpeed: 0.3
+        PreventOtherDrops: false
+        PreventItemPickup: true
+        Size: 4
+        PreventSlimeSplit: true
+    Skills:
+    - skill{s=JumpSmashElite} @PIR{r=40} ~onAttack 0.5
+    - skill{s=JumpSmashElite} @PIR{r=40} >0 0.5
+    - skill{s=SlimeSummon3} ~onDeath 1
+    DamageModifiers:
+    - FALL 0
+BouncySlime3Arena:
+    Type: SLIME
+    Display: 'Particularly Bouncy Slime'
+    Health: 45
+    Damage: 3
+    Options:
+        AlwaysShowName: true
+        FollowRange: 50
+        MovementSpeed: 0.3
+        PreventOtherDrops: false
+        PreventItemPickup: true
+        Size: 3
+        PreventSlimeSplit: true
+    Skills:
+    - skill{s=JumpSmashElite} @PIR{r=40} ~onAttack 0.5
+    - skill{s=JumpSmashElite} @PIR{r=40} >0 0.5
+    - skill{s=SlimeSummon2} ~onDeath 1
+    DamageModifiers:
+    - FALL 0
+BouncySlime2Arena:
+    Type: SLIME
+    Display: 'Particularly Bouncy Slime'
+    Health: 40
+    Damage: 2
+    Options:
+        AlwaysShowName: true
+        FollowRange: 50
+        MovementSpeed: 0.3
+        PreventOtherDrops: false
+        PreventItemPickup: true
+        Size: 2
+        PreventSlimeSplit: true
+    Skills:
+    - skill{s=JumpSmashElite} @PIR{r=40} ~onAttack 0.5
+    - skill{s=JumpSmashElite} @PIR{r=40} >0 0.5
+    - skill{s=SlimeSummon1} ~onDeath 1
+    DamageModifiers:
+    - FALL 0
+BouncySlime1Arena:
+    Type: SLIME
+    Display: 'Particularly Bouncy Slime'
+    Health: 35
+    Damage: 1
+    Options:
+        AlwaysShowName: true
+        FollowRange: 50
+        MovementSpeed: 0.3
+        PreventOtherDrops: false
+        PreventItemPickup: true
+        Size: 1
+        PreventSlimeSplit: true
+    Skills:
+    - skill{s=JumpSmashElite} @PIR{r=40} ~onAttack 0.5
+    - skill{s=JumpSmashElite} @PIR{r=40} >0 0.5
+    DamageModifiers:
+    - FALL 0

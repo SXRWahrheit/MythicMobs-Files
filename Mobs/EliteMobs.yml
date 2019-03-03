@@ -3,7 +3,7 @@ SkeletalDarkKnight:
     Type: WITHER_SKELETON
     Display: '&dSkeletal Dark Knight'
     Health: 150
-    Damage: 10
+    Damage: 8
     Skills:
     - message{cooldown=20;m="<mob.name>&f<&co> My blade will reap your soul!"} @PlayersInRadius{r=40} ~onCombat >0 0.2
     - message{m="<mob.name>&f<&co> You're no match for me, <trigger.name>!"} @PlayersInRadius{r=40} ~onKillPlayer >0 1

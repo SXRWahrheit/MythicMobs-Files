@@ -1,0 +1,26 @@
+ArenaVeteranDrops:
+    Drops:
+    - exp 50 1
+    - SmallRedstoneCache 1 0.10
+    DropsPerLevel:
+    - exp 10 1
+ArenaEliteDrops:
+    Drops:
+    - exp 100-300 1
+    - SmallRedstoneCache 1 0.20
+    - RedstoneCache 1 0.10
+    DropsPerLevel:
+    - exp 50 1
+ArenaChampionDrops:
+    Drops:
+    - exp 500-2500 1
+    - exp 500-2500 0.75
+    - exp 500-2500 0.5
+    - exp 500-2500 0.25
+    - exp 500-2500 0.125
+    - RedstoneCache 16 1
+    - RedstoneCache 16 0.5
+    - RedstoneCache 16 0.25
+    - RedstoneCache 16 0.125
+    DropsPerLevel:
+    - exp 100 1

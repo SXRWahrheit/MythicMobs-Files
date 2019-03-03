@@ -10,6 +10,22 @@ ChampionDrops:
     - diamond 5-10 0.5
     - diamond 5-10 0.25
     - diamond 5-10 0.125
+    - redstone 32-64 1
+    - redstone 32-64 1
+    - redstone 32-64 1
+    - redstone 32-64 1
+    - redstone 32-64 .5
+    - redstone 32-64 .5
+    - redstone 32-64 .5
+    - redstone 32-64 .5
+    - redstone 32-64 .25
+    - redstone 32-64 .25
+    - redstone 32-64 .25
+    - redstone 32-64 .25
+    - redstone 32-64 .125
+    - redstone 32-64 .125
+    - redstone 32-64 .125
+    - redstone 32-64 .125
     - exp 2500-7500 1
     - exp 2500-7500 0.75
     - exp 2500-7500 0.5

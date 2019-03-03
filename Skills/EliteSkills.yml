@@ -127,7 +127,7 @@ SmashAttackElite:
     - teleport @target
     - effect:sound{s=mob.endermen.portal;volume=1.0;pitch=0.5}
     - delay 10
-    - damage{amount=5;ignorearmor=true} @PlayersInRadius{r=5}
+    - damage{amount=6;ignorearmor=false} @PlayersInRadius{r=5}
     - throw{velocity=10;velocityY=5} @PlayersInRadius{r=5}
     - effect:explosion @Self
     - GCD{ticks=160}
@@ -371,7 +371,7 @@ RallyElite:
     - GCD{ticks=160}
     - message{m="<mob.name>&f<&co> Hordes of the darkness, fight for me!"} @PlayersInRadius{r=40}
     - delay 10
-    - rally{types=Skeleton,Creeper,Zombie,SkeletalRogue,LesserDrow,SkeletalArcher,Occultist,Banshee,Phantom,Pig_Zombie,Arachnid,Lich;radius=50;ot=true} @PlayersInRadius{r=40}
+    - rally{types=Skeleton,Creeper,Zombie,SkeletalRogue,LesserDrow,SkeletalArcher,Occultist,Banshee,Phantom,Pig_Zombie,Arachnid,Lich,Enderman,LesserShade;radius=50;ot=true} @PlayersInRadius{r=40}
     - GCD{ticks=160}
 #ConjureSwordsElite:
 #    Cooldown: 120
