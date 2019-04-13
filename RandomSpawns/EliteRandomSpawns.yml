@@ -5,7 +5,8 @@ ProsperusElites:
     Action: REPLACE
     Conditions:
     - outside true
-    - region{r=dawnslanding} false
+    - distancefromspawn{distance=>1000} true
+#    - region{r=dawnslanding} false
 #    - lightlevelbelow 10
     - onblock STATIONARY_WATER,WATER false
 SlimeSpawner:

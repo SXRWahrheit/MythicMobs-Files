@@ -1,0 +1,7 @@
+WindMage:
+  Type: Zombie
+  Display: "&dCultist Wind Mage"
+  Health: 200
+  Disguise:
+    Type: windmage
+    ModifyBoundingBox: true
