@@ -9,6 +9,12 @@ VeteranToken:
     - MENDING:1
     Hide:
     - ENCHANTS
+    
+MountStick:
+    Id: bone
+    Display: "Mount Stick"
+    Skills:
+    - mounttarget @target ~onSwing
 
 
 ArcSword:
@@ -69,4 +75,18 @@ TestChest:
         All:
             Health: 9
             Armor: 9
+            ArmorToughness: 2
+
+WindMageElytra:
+    Id: elytra
+    Data: 0
+    Display: "&dCultist Wind Mage's Elytra"
+    Lore:
+    - '&d&oElite'
+    - '&fA cultist wind mage once owned this'
+    - '&felytra.'
+    Attributes:
+        Chest:
+            Health: 4
+            Armor: 4
             ArmorToughness: 2

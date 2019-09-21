@@ -2,9 +2,9 @@ CrystallizedExperienceSliver:
   Id: emerald
   Data: 0
   Amount: 1
-  Display: "&aSliver of Crystallized Experience"
+  Display: '&aSliver of Crystallized Experience'
   Lore:
-  - "&6The Arch Artificer created this by crystallizing a small number of levels."
+  - '&6The Arch Artificer created this by crystallizing a small number of levels.'
   Enchantments:
   - MENDING:1
   Hide:
@@ -13,9 +13,9 @@ CrystallizedExperienceChunk:
   Id: emerald
   Data: 0
   Amount: 1
-  Display: "&aChunk of Crystallized Experience"
+  Display: '&aChunk of Crystallized Experience'
   Lore:
-  - "&6The Arch Artificer created this by crystallizing a fair number of levels."
+  - '&6The Arch Artificer created this by crystallizing a fair number of levels.'
   Enchantments:
   - MENDING:1
   Hide:
@@ -24,9 +24,9 @@ CrystallizedExperienceBillet:
   Id: emerald
   Data: 0
   Amount: 1
-  Display: "&aBillet of Crystallized Experience"
+  Display: '&aBillet of Crystallized Experience'
   Lore:
-  - "&6The Arch Artificer created this by crystallizing a sizable number of levels."
+  - '&6The Arch Artificer created this by crystallizing a sizable number of levels.'
   Enchantments:
   - MENDING:1
   Hide:
@@ -35,9 +35,9 @@ CrystallizedExperienceBloom:
   Id: emerald
   Data: 0
   Amount: 1
-  Display: "&aBloom of Crystallized Experience"
+  Display: '&aBloom of Crystallized Experience'
   Lore:
-  - "&6The Arch Artificer created this by crystallizing a large number of levels."
+  - '&6The Arch Artificer created this by crystallizing a large number of levels.'
   Enchantments:
   - MENDING:1
   Hide:
@@ -46,9 +46,9 @@ CrystallizedExperienceIngot:
   Id: emerald
   Data: 0
   Amount: 1
-  Display: "&aIngot of Crystallized Experience"
+  Display: '&aIngot of Crystallized Experience'
   Lore:
-  - "&6The Arch Artificer created this by crystallizing a tremendous number of levels."
+  - '&6The Arch Artificer created this by crystallizing a tremendous number of levels.'
   Enchantments:
   - MENDING:1
   Hide:
@@ -57,9 +57,10 @@ VeteranTokenPlaceholder:
   Id: bone
   Data: 0
   Amount: 1
-  Display: "&9Ethereal Substance"
+  Display: '&9Ethereal Substance'
   Lore:
-  - "&6This substance seems as though it is not long for the world. Right click while holding it to convert it into something tangible."
+  - '&6This substance seems as though it is not long for the world. Right click while
+    holding it to convert it into something tangible.'
   Enchantments:
   - MENDING:1
   Hide:
@@ -67,3 +68,20 @@ VeteranTokenPlaceholder:
   Skills:
   - dskill{s=CreateVeteranToken} @Self ~onUse
   - ConsumeHeldItem @Self ~onUse
+VeteranTokenNBT:
+  ItemStack:
+    ==: org.bukkit.inventory.ItemStack
+    type: BONE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9Phantasmal Bones
+      lore:
+      - §f§6The bones of a powerful monster,
+      - §6slain by a hero. When held, you can
+      - §6still feel energy pouring out of them.
+      enchants:
+        MENDING: 1
+      ItemFlags:
+      - HIDE_ENCHANTS
+      internal: H4sIAAAAAAAAAONiYOBgEHZJzcusSs1T8CxJzVUITi7KLChhsDy0PPnQciBpcGi5MZhhBGabgRGQaw5GpoeWp4BVJoHZQIYBFwM3zEA/pxAOBp6kxJSc0uTskvzs1DwG9rDUktSixDwGBgCfVTEwfAAAAA==

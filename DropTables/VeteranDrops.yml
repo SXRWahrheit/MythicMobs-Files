@@ -2,8 +2,8 @@ VeteranDrops:
     Drops:
     - exp 150 1
     - money 25 1
-    - VeteranTokenPlaceholder 1 1
-    - VeteranTokenPlaceholder 1-2 0.25
+    - cmd{cmd="ex drop VeteranToken <e@<caster.uuid>.location> quantity:6"} 1 1
+    - cmd{cmd="ex drop VeteranToken <e@<caster.uuid>.location> quantity:<util.random.int[1].to[2]>"} 1 0.25
     - SmallRedstoneCache 1 0.10
     DropsPerLevel:
     - exp 10 1

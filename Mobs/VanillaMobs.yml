@@ -159,18 +159,19 @@ ZOMBIE_VILLAGER:
     Options:
         FixDisplay: true
 ENDER_DRAGON:
-    Health: 1000
+    Health: 5000
     Damage: 18
     Skills:
-#    - skill{s=SuperChargeDeathVanilla} @ThreatTablePlayers ~onDeath
+    - skill{s=DragonSummon} @PIR{r=40} >0 0.2
     Modules:
         ThreatTable: true
     Options:
         FixDisplay: true
 WITHER:
-    Health: 1000
+    Health: 5000
     Damage: 18
     Skills:
+    - skill{s=DragonSummon} @PIR{r=40} ~onTimer:20 >0 0.2
 #    - skill{s=SuperChargeDeathVanilla} @ThreatTablePlayers ~onDeath
     Modules:
         ThreatTable: true

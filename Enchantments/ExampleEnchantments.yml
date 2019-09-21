@@ -1,0 +1,25 @@
+
+VENOMOUS:
+  Display: 'Venomous'
+  MinLevel: 1
+  MaxLevel: 3
+  ItemType: WEAPON
+  Options:
+    Cursed: FALSE
+    Treasure: FALSE
+    ShowInLore: FALSE
+    LevelAsPower: FALSE
+  EnchantableItems:
+  - DIAMOND_SWORD
+  - IRON_SWORD
+  - GOLDEN_SWORD
+  - STONE_SWORD
+  - WOODEN_SWORD
+  ConflictingEnchants:
+  - FIRE_ASPECT 
+  Skills:
+  - effect:particles{p=happyVillager;amount=5;speed=0.1;yOffset=1;hS=0.5;vS=0.1} @target ~onAttack
+  - potion{type=SLOW;d=100;level=1} @trigger ~onAttack
+  - potion{type=WITHER;d=100;level=1} ?enchantlevel{level=1} @trigger ~onAttack
+  - potion{type=WITHER;d=100;level=2} ?enchantlevel{level=2} @trigger ~onAttack
+  - potion{type=WITHER;d=100;level=3} ?enchantlevel{level=3} @trigger ~onAttack

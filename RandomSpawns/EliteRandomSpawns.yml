@@ -19,7 +19,7 @@ SlimeSpawner:
     - region{r=dawnslanding} false
     - biome{b=SWAMP} true
 HeavensElites:
-    Type: SkeletalDarkKnight,Lich,BloodWitch,Sharpshooter,Occultist,Banshee,BouncySlime8,Inferno,Arachnid
+    Type: SkeletalDarkKnight,Lich,BloodWitch,Sharpshooter,Occultist,Banshee,BouncySlime8,Inferno,Arachnid,WindMageElite,FireMageElite
     Worlds: heavens
     Chance: 0.05
     Action: REPLACE
@@ -34,14 +34,14 @@ HeavensElites:
 #    - blocktype{t=air} true
 #    - lightlevelbelow 10
 UltimatusElites:
-    Type: SkeletalDarkKnight,Lich,BloodWitch,Sharpshooter,Occultist,Banshee,BouncySlime8
+    Type: SkeletalDarkKnight,Lich,BloodWitch,Sharpshooter,Occultist,Banshee,BouncySlime8,WindMageElite,FireMageElite
     Worlds: ultimatus
     Chance: 0.05
     Action: REPLACE
     Conditions:
     - outside true
 NetherElites:
-    Type: SkeletalDarkKnight,Lich,BloodWitch,Sharpshooter,Occultist,Dretch,Banshee,BouncySlime8,Inferno,Arachnid
+    Type: SkeletalDarkKnight,Lich,BloodWitch,Sharpshooter,Occultist,Dretch,Banshee,BouncySlime8,Inferno,Arachnid,WindMageElite,FireMageElite
     Worlds: prosperus_nether
     Chance: 0.01
     Action: REPLACE
@@ -53,12 +53,12 @@ NetherElites:
 #    Conditions:
 #    - blocktype{t=air} true
 EndElites:
-    Type: SkeletalDarkKnight,Lich,BloodWitch,Sharpshooter,Occultist,Dretch,Banshee,BouncySlime8,Inferno,Arachnid
+    Type: SkeletalDarkKnight,Lich,BloodWitch,Sharpshooter,Occultist,Dretch,Banshee,BouncySlime8,Inferno,Arachnid,WindMageElite,FireMageElite
     Worlds: prosperus_the_end
     Chance: 0.075
     Action: REPLACE
 AvenfeldElites:
-    Type: SkeletalDarkKnight,Lich,BloodWitch,Sharpshooter,Occultist,Banshee,Arachnid
+    Type: SkeletalDarkKnight,Lich,BloodWitch,Sharpshooter,Occultist,Banshee,Arachnid,WindMageElite,FireMageElite
     Worlds: avenfeld
     Chance: 0.05
     Action: REPLACE

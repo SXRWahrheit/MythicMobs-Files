@@ -1,5 +1,31 @@
-#SuperChargeDeathVanilla:
-#    Skills:
-#    - modifytargetscore{objective=SuperSkill;action=add;value=3} @ThreatTablePlayers ~onDeath
-#    - skill{s=SuperCharging} @ThreatTablePlayers ~onDeath
-#    - skill{s=SuperReady} @ThreatTablePlayers ~onDeath
+DragonSummon:
+    Cooldown: 60
+    Skills:
+    - randomskill{skills=DragonSummonLich,DragonSummonWindMageElite,DragonSummonFireMageElite,DragonSummonSkeletalDarkKnight,DragonSummonSharpshooter,DragonSummonOccultist,DragonSummonBanshee,DragonSummonInferno,DragonSummonArachnid}
+DragonSummonLich:
+    Skills:
+    - summon{type=Lich;amount=1;radius=12;itt=true} @target
+DragonSummonWindMageElite:
+    Skills:
+    - summon{type=WindMageElite;amount=3;radius=12;itt=true} @target
+DragonSummonFireMageElite:
+    Skills:
+    - summon{type=FireMageElite;amount=3;radius=12;itt=true} @target
+DragonSummonSkeletalDarkKnight:
+    Skills:
+    - summon{type=SkeletalDarkKnight;amount=2;radius=12;itt=true} @target
+DragonSummonSharpshooter:
+    Skills:
+    - summon{type=Sharpshooter;amount=4;radius=12;itt=true} @target
+DragonSummonOccultist:
+    Skills:
+    - summon{type=Occultist;amount=3;radius=12;itt=true} @target
+DragonSummonBanshee:
+    Skills:
+    - summon{type=Banshee;amount=10;radius=12;itt=true} @target
+DragonSummonInferno:
+    Skills:
+    - summon{type=Inferno;amount=5;radius=12;itt=true} @target
+DragonSummonArachnid:
+    Skills:
+    - summon{type=Arachnid;amount=3;radius=12;itt=true} @target

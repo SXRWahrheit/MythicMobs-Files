@@ -9,7 +9,134 @@ Arcblade:
 Arcblade-Test:
     Skills:
     - dskill{s=arcblade-task-runner}
-    
+
+#############################################################
+#   Elemental skills
+#############################################################
+
+######################
+#   Wind
+######################
+
+GustlaunchTargetElite:
+    Cooldown: 45
+    Conditions:
+    - targetwithin{d=100}
+    - offgcd
+    Skills:
+    - GCD{ticks=160}
+    - message{m="&cThe Cultist Wind Mage focuses on you, and you hear a rush of wind approaching..."} @target
+    - delay 60
+    - throw{velocity=0.5;velocityY=20} @target
+    - GCD{ticks=160}
+GustlaunchRadiusElite:
+    Cooldown: 15
+    Conditions:
+    - offgcd
+    Skills:
+    - GCD{ticks=160}
+    - message{m="&cThe Cultist Wind Mage concentrates, and you feel winds rushing towards you from all sides..."} @PIR{r=20}
+    - delay 60
+    - throw{velocity=0.5;velocityY=20} @PIR{r=20}
+    - GCD{ticks=160}
+GustleapElite:
+    Cooldown: 10
+    Skills:
+    - message{m="&cThe Cultist Wind Mage whips up the wind around them to leap forward!"}
+    - jump{velocity=20} @self
+    - leap{velocity=100} @target
+ShockwaveElite:
+    Cooldown: 30
+    Conditions:
+    - offgcd
+    Skills:
+    - GCD{ticks=160}
+    - message{m="&cThe Cultist Wind Mage begins to channel winds, forcing them down from the sky!"}
+    - delay 60
+    - throw{velocity=40;velocityY=6} @PIR{r=20}
+    - GCD{ticks=160}
+WindboltElite:
+    Cooldown: 2
+    Skills:
+    - projectile{onTick=WindboltElite-Tick;onHit=WindboltElite-Hit;v=30;i=1;hR=1.5;vR=1.5;syo=+8;sfo=-.5;mr=100;d=800} @target
+WindboltElite-Tick:
+    Skills:
+    - effect:particles{p=cloud;amount=4;speed=0;hS=0.1;vS=0.1} @origin
+WindboltElite-Hit:
+    Skills:
+    - damage{a=12}
+    - throw{velocity=10;velocityY=10}
+    - effect:particles{p=cloud;amount=20;speed=0;hS=1.0;vS=1.0} @origin
+
+######################
+#   Fire
+######################
 
 
 
+FireboltElite:
+    Cooldown: 2
+    Skills:
+    - projectile{onTick=FireboltElite-Tick;onHit=FireboltElite-Hit;v=30;i=1;hR=1.5;vR=1.5;syo=+8;sfo=-.5;mr=100;d=800} @target
+FireboltElite-Tick:
+    Skills:
+    - effect:particles{p=flame;amount=4;speed=0;hS=0.1;vS=0.1} @origin
+    - effect:particles{p=lava;amount=4;speed=0;hS=0.1;vS=0.1} @origin
+FireboltElite-Hit:
+    Skills:
+    - damage{a=14}
+    - ignite{ticks=100}
+    - effect:particles{p=flame;amount=10;speed=0;hs=2.0;vs=2.0} @origin
+    - effect:particles{p=lava;amount=10;speed=0;hs=2.0;vs=2.0} @origin
+
+HeatwaveElite:
+    Cooldown: 30
+    Conditions:
+    - offgcd
+    Skills:
+    - GCD{ticks=160}
+    - message{m="&cThe Cultist Fire Mage is concentrating fire magic..."}
+    - delay 60
+    - ignite{ticks=200} @PIR{r=20}
+    - GCD{ticks=160}
+
+SearingFlamesElite:
+    Cooldown: 45
+    Conditions:
+    - offgcd
+    Skills:
+    - GCD{ticks=160}
+    - message{m="&cThe Cultist Fire Mage is channeling searing flames!"}
+    - delay 60
+    - skill{s=SearingFlames-ExtraDamage} @PIR{r=20}
+    - ignite{ticks=100} @PIR{r=20}
+    - GCD{ticks=160}
+SearingFlames-ExtraDamage:
+    TargetConditions:
+    - isburning{action=true}
+    Skills:
+    - damage{a=20}
+
+MeteorShowerElite:
+    Cooldown: 45
+    Conditions:
+    - offgcd
+    Skills:
+    - GCD{ticks=160}
+    - message{m="&cThe Cultist Fire Mage calls down a fiery wrath from above!"}
+    - delay 60
+    - skill{s=MeteorShowerElite-Meteor;repeat=12;repeatinterval=40}
+MeteorShowerElite-Meteor:
+    Skills:
+    - projectile{onTick=MeteorShowerElite-Meteor-Tick;onHit=MeteorShowerElite-Meteor-Hit;v=30;i=1;hR=2.0;vR=2.0;syo=+30;sfo=%denizen_<util.random.int[-10].to[10]>%;sso=%denizen_<util.random.int[-10].to[10]>%;mr=100;d=800} @PIR{r=20;limit=1;sort=random}
+MeteorShowerElite-Meteor-Tick:
+    Skills:
+    - effect:particles{p=flame;amount=8;speed=0;hS=0.5;vS=0.5} @origin
+    - effect:particles{p=flame;amount=4;speed=0;hS=0.1;vS=0.1} @origin
+    - effect:particles{p=lava;amount=8;speed=0;hS=0.5;vS=0.5} @origin
+    - effect:particles{p=lava;amount=4;speed=0;hS=0.1;vS=0.1} @origin
+MeteorShowerElite-Meteor-Hit:
+    Skills:
+    - damage{a=18} @PIR{r=3}
+    - effect:particles{p=flame;amount=20;speed=0;hs=2.0;vs=2.0} @origin
+    - effect:particles{p=lava;amount=20;speed=0;hs=2.0;vs=2.0} @origin

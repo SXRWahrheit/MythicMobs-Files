@@ -1,21 +1,4 @@
-#SuperChargeDeathVeteran:
-#    Skills:
-#    - modifytargetscore{objective=SuperSkill;action=add;value=20} @ThreatTablePlayers ~onDeath
-#    - skill{s=SuperCharging} @ThreatTablePlayers ~onDeath
-#    - skill{s=SuperReady} @ThreatTablePlayers ~onDeath
-SummonSkeletonsVeteran:
-    Cooldown: 15
-    Conditions:
-    - offgcd
-    Skills:
-    - GCD{ticks=200}
-    - message{m="<mob.name><&co> Arise, my minions!"} @PlayersInRadius{r=40}
-    - delay 20
-    - summon{mob=SkeletalMinion;amount=2;noise=5} @Self
-    - delay 20
-    - summon{mob=SkeletalMinion;amount=2;noise=5} @Self
-    - delay 20
-    - summon{mob=SkeletalMinion;amount=2;noise=5} @Self
+
 PoisonFangVeteran:
     Cooldown: 60
     Conditions:

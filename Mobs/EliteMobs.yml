@@ -26,7 +26,6 @@ SkeletalDarkKnight:
     Options:
         AlwaysShowName: true
         MovementSpeed: 0.25
-        MaxCombatDistance: 50
         FollowRange: 50
         PreventOtherDrops: false
     Modules:
@@ -56,7 +55,6 @@ Lich:
     - VeteranMeleeDrops 1 0.02
     Options:
         AlwaysShowName: true
-        MaxCombatDistance: 50
         FollowRange: 50
         MovementSpeed: 0.25
         PreventOtherDrops: false
@@ -79,7 +77,6 @@ LichMinion:
     - EliteMinionDrops 1 1
     Options:
         AlwaysShowName: true
-        MaxCombatDistance: 50
         FollowRange: 50
         MovementSpeed: 0.28
         PreventOtherDrops: false
@@ -108,7 +105,6 @@ BloodWitch:
     - VeteranMeleeDrops 1 0.02
     Options:
         AlwaysShowName: true
-        MaxCombatDistance: 50
         FollowRange: 50
         MovementSpeed: 0.2
         PreventOtherDrops: false
@@ -143,7 +139,6 @@ Sharpshooter:
     - lingering_potion 1 1
     Options:
         AlwaysShowName: true
-        MaxCombatDistance: 50
         FollowRange: 50
         MovementSpeed: 0.3
         PreventOtherDrops: false
@@ -175,7 +170,6 @@ Occultist:
     - diamond 0-2 1
     Options:
         AlwaysShowName: true
-        MaxCombatDistance: 50
         FollowRange: 50
         MovementSpeed: 0.3
         PreventOtherDrops: false
@@ -210,7 +204,7 @@ Dretch:
 Banshee:
     Type: VEX
     Display: '&dBanshee'
-    Health: 50
+    Health: 150
     Damage: 10
     Equipment:
     - iron_sword:0

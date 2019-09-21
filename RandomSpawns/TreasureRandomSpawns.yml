@@ -32,3 +32,12 @@ EndTreasure:
   Worlds: prosperus_the_end
   Chance: 0.005
   Action: REPLACE
+
+CowSpawns:
+  Type: Cow
+  Worlds: prosperus
+  Chance: 1
+  Action: ADD
+  conditions:
+  - outside true
+  - region{r=dawnslanding} true
