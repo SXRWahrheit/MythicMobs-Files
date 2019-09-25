@@ -1,65 +1,21 @@
-WindMageElite:
-    Type: vindicator
-    Display: "&dCultist Wind Mage"
-    Health: 600
-    Damage: 6
-    Disguise:
-        Type: windmage
-        ModifyBoundingBox: true
+Ogre:
+    Type: VINDICATOR
+    Display: '&9Ogre'
+    Health: 100
+    Damage: 10
+    Drops:
+    - VeteranDrops 1 1
+    - VeteranMeleeDrops 1 0.01
     Options:
         AlwaysShowName: true
-        MovementSpeed: 0.25
         FollowRange: 50
-        PreventOtherDrops: true
+        MovementSpeed: 0.29
+        PreventOtherDrops: false
         PreventItemPickup: true
-        PreventRandomEquipment: true
-        Silent: true
-        PreventSunburn: true
-    DamageModifiers:
-    - FALL 0
+        PreventRandomItems: true
+    Skills:
+    - skill{s=CrushingBlowVeteran} @target ~onAttack 0.5
+    - skill{s=BoulderTossVeteran} @target ~onTimer:20
+    - skill{s=StompVeteran} @PIR{r=4} ~onTimer:240
     Modules:
         ThreatTable: true
-    Skills:
-    - skill{s=GustlaunchTargetElite} @PIR{r=100} ~onTimer:20 >0 0.5
-    - skill{s=GustlaunchRadiusElite} @PIR{r=20} ~onTimer:20 >0 0.5
-    - skill{s=GustleapElite} @target ~onTimer:200 >0 0.5
-    - skill{s=ShockwaveElite} @PIR{r=20} ~onTimer:20 >0 0.5
-    - skill{s=WindboltElite} @target ~onTimer:20 >0 0.8
-    Drops:
-    - EliteDrops 1 1
-    - EliteMeleeDrops 1 0.01
-    - VeteranMeleeDrops 1 0.02
-    - WindMageElytra 1 0.005
-FireMageElite:
-    Type: vindicator
-    Display: "&dCultist Fire Mage"
-    Health: 600
-    Damage: 6
-    Disguise:
-        Type: firemage
-        ModifyBoundingBox: true
-    Options:
-        AlwaysShowName: true
-        MovementSpeed: 0.25
-        FollowRange: 50
-        PreventOtherDrops: true
-        PreventItemPickup: true
-        PreventRandomEquipment: true
-        Silent: true
-        PreventSunburn: true
-    DamageModifiers:
-    - LAVA 0
-    - FIRE 0
-    - FIRE_TICK 0
-    - HOT_FLOOR 0
-    Modules:
-        ThreatTable: true
-    Skills:
-    - skill{s=FireboltElite} @target ~onTimer:20 >0 0.8
-    - skill{s=HeatwaveElite} @PIR{r=20} ~onTimer:20 >0 0.5
-    - skill{s=SearingFlamesElite} @PIR{r=20} ~onTimer:20 >0 0.5
-    - skill{s=MeteorShowerElite} @PIR{r=20} ~onTimer:20 >0 0.5
-    Drops:
-    - EliteDrops 1 1
-    - EliteMeleeDrops 1 0.01
-    - VeteranMeleeDrops 1 0.02

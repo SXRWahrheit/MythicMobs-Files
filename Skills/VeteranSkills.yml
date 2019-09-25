@@ -181,3 +181,44 @@ ShadowstepVeteran:
     - delay 10
     - teleport{spreadh=2;spreadv=3} @target
     - GCD{ticks=200}
+
+CrushingBlowVeteran:
+    Cooldown: 20
+    Conditions:
+    - offgcd
+    - targetwithin{d=2}
+    Skills:
+    - gcd{ticks=160}
+    - damage{amount=10} @target
+    - throw{velocity=20;velocityY=4} @target
+    - gcd{ticks=160}
+
+BoulderTossVeteran:
+    Cooldown: 8
+    Conditions:
+    - offgcd
+    - targetwithin{d=6} cancel
+    Skills:
+    - gcd{ticks=160}
+    - projectile{bulletType=BLOCK;material=STONE;onHit=BoulderTossVeteran-Hit;onTick=BoulderTossVeteran-Tick;i=4;hR=1.5;vR=1.5;d=800;mr=100;v=2;syo=+1.5;sfo=+1;hp=true;hnp=true;g=1} @target
+BoulderTossVeteran-Hit:
+    Skills:
+    - damage{amount=18} @PIR{r=2}
+    - message{m="<mob.name>&f<&co> I'll crush you!"} @PIR{r=40}
+    - effect:particles{p=blockcrack_1;a=200;hSpread=3.0;vSpread=3.0} @origin
+    - effect:particles{p=blockcrack_1;a=100;hSpread=1.0;vSpread=1.0} @origin
+    - effect:particles{p=cloud;a=40;hSpread=1.0;vSpread=1.0} @origin
+BoulderTossVeteran-Tick:
+    Skills:
+    - effect:particles{p=blockcrack_1;a=10;hSpread=0.5;vSpread=0.5} @origin
+
+StompVeteran:
+    Cooldown: 8
+    Conditions:
+    - offgcd
+    - targetwithin{d=4}
+    Skills:
+    - gcd{ticks=160}
+    - damage{amount=10} @PIR{r=4}
+    - throw{velocity=20;velocityY=4} @PIR{r=4}
+    - effect:particles{p=cloud;a=200;hSpread=4.0;vSpread=1.0} @self

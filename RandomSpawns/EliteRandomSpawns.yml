@@ -25,8 +25,8 @@ HeavensElites:
     Action: REPLACE
     Conditions:
     - outside true
-#HeavensPhantom:
-#    Type: Phantom
+#HeavensGhastPhantom:
+#    Type: GhastPhantom
 #    Worlds: heavens
 #    Chance: 0.0005
 #    Action: ADD
@@ -45,8 +45,8 @@ NetherElites:
     Worlds: prosperus_nether
     Chance: 0.01
     Action: REPLACE
-#NetherPhantom:
-#    Type: Phantom
+#NetherGhastGhastPhantom:
+#    Type: GhastPhantom
 #    Worlds: prosperus_nether
 #    Chance: 0.0005
 #    Action: ADD
