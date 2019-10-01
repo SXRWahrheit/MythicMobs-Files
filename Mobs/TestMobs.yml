@@ -2,10 +2,13 @@ Ogre:
     Type: VINDICATOR
     Display: '&9Ogre'
     Health: 100
-    Damage: 10
+    Damage: 8
     Drops:
     - VeteranDrops 1 1
     - VeteranMeleeDrops 1 0.01
+    Equipment:
+    - STONE:HAND
+    - AIR:OFFHAND
     Options:
         AlwaysShowName: true
         FollowRange: 50
@@ -17,5 +20,108 @@ Ogre:
     - skill{s=CrushingBlowVeteran} @target ~onAttack 0.5
     - skill{s=BoulderTossVeteran} @target ~onTimer:20
     - skill{s=StompVeteran} @PIR{r=4} ~onTimer:240
+    Modules:
+        ThreatTable: true
+
+
+
+GoblinRusher:
+    Type: BABY_ZOMBIE
+    Display: '&9Goblin Rusher'
+    Health: 50
+    Damage: 6
+    Drops:
+    - VeteranDrops 1 1
+    - VeteranMeleeDrops 1 0.01
+    Equipment:
+    - AIR:HAND
+    - AIR:OFFHAND
+    Options:
+        AlwaysShowName: true
+        FollowRange: 50
+        MovementSpeed: 0.3
+        PreventOtherDrops: true
+        PreventItemPickup: true
+        PreventRandomItems: true
+    Skills:
+    - skill{s=RushVeteran} @target ~onTimer:20
+    Modules:
+        ThreatTable: true
+
+GoblinTosser:
+    Type: BABY_ZOMBIE
+    Display: '&9Goblin Tosser'
+    Health: 50
+    Damage: 6
+    Drops:
+    - VeteranDrops 1 1
+    - VeteranRangedDrops 1 0.01
+    Equipment:
+    - STONE:HAND
+    - AIR:OFFHAND
+    AIGoalSelectors:
+    - 0 clear
+    - 1 fleeplayers
+    - 2 float
+    - 3 movetowardstarget
+    - 4 lookatplayers
+    - 5 randomstroll
+    Options:
+        AlwaysShowName: true
+        FollowRange: 15
+        MovementSpeed: 0.3
+        PreventOtherDrops: true
+        PreventItemPickup: true
+        PreventRandomItems: true
+    Skills:
+    - skill{s=RockTossVeteran} @target ~onTimer:20
+    Modules:
+        ThreatTable: true
+
+GoblinCaretaker:
+    Type: BABY_ZOMBIE
+    Display: '&9Goblin Caretaker'
+    Health: 60
+    Damage: 6
+    Drops:
+    - VeteranDrops 1 1
+    - VeteranRangedDrops 1 0.01
+    Equipment:
+    - AIR:HAND
+    - AIR:OFFHAND
+    AIGoalSelectors:
+    - 0 clear
+    - 1 fleeplayers
+    - 2 float
+    - 3 movetowardstarget
+    - 4 lookatplayers
+    - 5 randomstroll
+    Options:
+        AlwaysShowName: true
+        FollowRange: 15
+        MovementSpeed: 0.3
+        PreventOtherDrops: true
+        PreventItemPickup: true
+        PreventRandomItems: true
+    Skills:
+    - skill{s=TossBabyGoblinVeteran} @targetlocation ~onTimer:20
+    Modules:
+        ThreatTable: true
+
+BabyGoblin:
+    Type: BABY_ZOMBIE
+    Display: '&fBaby Goblin'
+    Health: 20
+    Damage: 6
+    Equipment:
+    - AIR:HAND
+    - AIR:OFFHAND
+    Options:
+        AlwaysShowName: true
+        FollowRange: 50
+        MovementSpeed: 0.27
+        PreventOtherDrops: true
+        PreventItemPickup: true
+        PreventRandomItems: true
     Modules:
         ThreatTable: true

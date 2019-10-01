@@ -66,7 +66,7 @@ CripplingShotElite:
     - message{m="&d<mob.name>&f<&co> This will slow you down!"}
     - delay 20
 #    - arrowvolley{a=5;s=10;v=30;f=0;rd=200} @Target
-    - shoot {type=ARROW;velocity=30;damage=4} @Target
+    - shoot{type=ARROW;velocity=30;damage=4} @Target
     - potion{type=SLOW;duration=200;level=2} @Target
     - GCD{ticks=160}
 BurningShotElite:
@@ -77,7 +77,7 @@ BurningShotElite:
     - message{m="&d<mob.name>&f<&co> You will be nothing but ashes!"}
     - delay 20
 #    - arrowvolley{a=5;s=10;v=30;f=0;rd=200} @Target
-    - shoot {type=ARROW;velocity=30;damage=4} @Target
+    - shoot{type=ARROW;velocity=30;damage=4} @Target
     - ignite{ticks=100} @Target
     - GCD{ticks=160}
 ExplodingArrowElite:
@@ -90,7 +90,7 @@ ExplodingArrowElite:
     - message{m="&d<mob.name>&f<&co> What's that hissing sound?"}
     - delay 20
 #    - arrowvolley{a=5;s=10;v=30;f=0;rd=200} @Target
-    - shoot {type=ARROW;velocity=30;damage=4} @Target
+    - shoot{type=ARROW;velocity=30;damage=4} @Target
     - explosion{yield=1;bd=false} @Target
     - GCD{ticks=160}
 ExplodingArrowEliteBD:
@@ -103,7 +103,7 @@ ExplodingArrowEliteBD:
     - message{m="&d<mob.name>&f<&co> What's that hissing sound?"}
     - delay 20
 #    - arrowvolley{a=5;s=10;v=30;f=0;rd=200} @Target
-    - shoot {type=ARROW;velocity=30;damage=4} @Target
+    - shoot{type=ARROW;velocity=30;damage=4} @Target
     - explosion{yield=1;bd=true} @Target
     - GCD{ticks=160}
 VanishElite:
@@ -382,3 +382,20 @@ RallyElite:
 #    - message{m="<mob.name>&f<&co> Allies, arm yourselves!"} @PlayersInRadius{r=40}
 #    - delay 10
 #    - equip{item=Diamond_Sword:0} @MobsInRadius{r=20}
+
+GoblinSummonElite:
+    Cooldown: 20
+    Conditions:
+    - offgcd
+    Skills:
+    - gcd{ticks=100}
+    - randomskill{skills=GoblinSummonCaretaker,GoblinSummonTosser,GoblinSummonRusher;repeat=3;repeatinterval=10} @self
+GoblinSummonTosser:
+    Skills:
+    - summon{type=GoblinTosser;amount=1;radius=8;ctt=true;itt=true} @self
+GoblinSummonCaretaker:
+    Skills:
+    - summon{type=GoblinCaretaker;amount=1;radius=8;ctt=true;itt=true} @self
+GoblinSummonRusher:
+    Skills:
+    - summon{type=GoblinRusher;amount=1;radius=8;ctt=true;itt=true} @self

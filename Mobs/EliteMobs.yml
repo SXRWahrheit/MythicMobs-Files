@@ -393,3 +393,35 @@ FireMageElite:
     - EliteDrops 1 1
     - EliteMeleeDrops 1 0.01
     - VeteranMeleeDrops 1 0.02
+
+GoblinLeader:
+    Type: BABY_ZOMBIE
+    Display: '&dGoblin Leader'
+    Health: 120
+    Damage: 8
+    Drops:
+    - EliteDrops 1 1
+    - EliteMeleeDrops 1 0.01
+    - VeteranMeleeDrops 1 0.02
+    Equipment:
+    - AIR:HAND
+    - AIR:OFFHAND
+    Options:
+        AlwaysShowName: true
+        FollowRange: 20
+        MovementSpeed: 0.27
+        PreventOtherDrops: true
+        PreventItemPickup: true
+        PreventRandomItems: true
+    AIGoalSelectors:
+    - 0 clear
+    - 1 fleeplayers
+    - 2 float
+    - 3 movetowardstarget
+    - 4 lookatplayers
+    - 5 randomstroll
+    Skills:
+    - skill{s=GoblinSummonElite} @self ~onTimer:100
+    - skill{s=RockTossVeteran} @target ~onTimer:20
+    Modules:
+        ThreatTable: true

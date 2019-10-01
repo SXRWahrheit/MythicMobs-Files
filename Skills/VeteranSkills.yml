@@ -38,7 +38,7 @@ CripplingShotVeteran:
     - message{m="&d<mob.name>&f<&co> This will slow you down!"} @PlayersInRadius{r=40}
     - delay 20
 #    - arrowvolley{a=1;s=10;v=30;f=0;rd=200} @Target
-    - shoot {type=ARROW;velocity=30;damage=4} @Target
+    - shoot{type=ARROW;velocity=30;damage=4} @Target
     - potion{type=SLOW;duration=200;level=2}
 BurningShotVeteran:
     Cooldown: 60
@@ -49,7 +49,7 @@ BurningShotVeteran:
     - message{m="&d<mob.name>&f<&co> You will be nothing but ashes!"} @PlayersInRadius{r=40}
     - delay 20
 #    - arrowvolley{a=1;s=10;v=30;f=0;rd=200} @Target
-    - shoot {type=ARROW;velocity=30;damage=4} @Target
+    - shoot{type=ARROW;velocity=30;damage=4} @Target
     - ignite{ticks=100} @Target
 VanishVeteran:
     Cooldown: 60
@@ -189,7 +189,7 @@ CrushingBlowVeteran:
     - targetwithin{d=2}
     Skills:
     - gcd{ticks=160}
-    - damage{amount=10} @target
+    - damage{amount=8} @target
     - throw{velocity=20;velocityY=4} @target
     - gcd{ticks=160}
 
@@ -197,14 +197,16 @@ BoulderTossVeteran:
     Cooldown: 8
     Conditions:
     - offgcd
-    - targetwithin{d=6} cancel
+    - targetwithin{d=4} cancel
     Skills:
     - gcd{ticks=160}
-    - projectile{bulletType=BLOCK;material=STONE;onHit=BoulderTossVeteran-Hit;onTick=BoulderTossVeteran-Tick;i=4;hR=1.5;vR=1.5;d=800;mr=100;v=2;syo=+1.5;sfo=+1;hp=true;hnp=true;g=1} @target
+    - message{m="<mob.name>&f<&co> I'll crush you!"} @PIR{r=40}
+    - projectile{bulletType=BLOCK;material=STONE;onHit=BoulderTossVeteran-Hit;onTick=BoulderTossVeteran-Tick;onEnd=BoulderTossVeteran-End;i=1;hR=2.0;vR=2.0;d=800;mr=100;v=28;syo=+1.5;sfo=+1;hp=true;hnp=true;g=1;vo=0.4} @targetlocation
 BoulderTossVeteran-Hit:
     Skills:
-    - damage{amount=18} @PIR{r=2}
-    - message{m="<mob.name>&f<&co> I'll crush you!"} @PIR{r=40}
+    - damage{amount=14} @PlayersNearOrigin{r=3}
+BoulderTossVeteran-End:
+    Skills:
     - effect:particles{p=blockcrack_1;a=200;hSpread=3.0;vSpread=3.0} @origin
     - effect:particles{p=blockcrack_1;a=100;hSpread=1.0;vSpread=1.0} @origin
     - effect:particles{p=cloud;a=40;hSpread=1.0;vSpread=1.0} @origin
@@ -219,6 +221,49 @@ StompVeteran:
     - targetwithin{d=4}
     Skills:
     - gcd{ticks=160}
-    - damage{amount=10} @PIR{r=4}
+    - damage{amount=8} @PIR{r=4}
     - throw{velocity=20;velocityY=4} @PIR{r=4}
     - effect:particles{p=cloud;a=200;hSpread=4.0;vSpread=1.0} @self
+
+RockTossVeteran:
+    Cooldown: 3
+    Conditions:
+    - offgcd
+    Skills:
+    - gcd{ticks=160}
+#    - message{m="<mob.name>&f<&co> Sticks and stones will break your bones!"} @PIR{r=40}
+    - projectile{bulletType=ITEM;material=STONE;onHit=RockTossVeteran-Hit;onTick=RockTossVeteran-Tick;i=1;hR=2.0;vR=2.0;d=800;mr=100;v=28;syo=+1.5;sfo=+1;hp=true;hnp=true;g=1;vo=0.4} @targetlocation
+RockTossVeteran-Hit:
+    Skills:
+    - damage{amount=6} @PlayersNearOrigin{r=3}
+RockTossVeteran-End:
+    Skills:
+    - effect:particles{p=blockcrack_1;a=20;hSpread=3.0;vSpread=3.0} @origin
+    - effect:particles{p=blockcrack_1;a=10;hSpread=1.0;vSpread=1.0} @origin
+RockTossVeteran-Tick:
+    Skills:
+    - effect:particles{p=blockcrack_1;a=10;hSpread=0.5;vSpread=0.5} @origin
+
+RushVeteran:
+    Cooldown: 10
+    Conditions:
+    - offgcd
+    Skills:
+    - gcd{ticks=160}
+    - message{m="<mob.name>&f rushes forward!"} @PIR{r=40}
+    - lunge{v=-20} @target
+
+TossBabyGoblinVeteran:
+    Cooldown: 10
+    Conditions:
+    - offgcd
+    Skills:
+    - gcd{ticks=160}
+    - message{m="<mob.name>&f tosses a Baby Goblin!"} @PIR{r=40}
+    - projectile{bulletType=MOB;mob=BabyGoblin;onEnd=TossBabyGoblinVeteran-End;onTick=TossBabyGoblinVeteran-Tick;i=1;hR=2.0;vR=2.0;d=800;mr=100;v=28;syo=+1.5;sfo=+1;hp=true;hnp=true;g=1;vo=0.4} @targetlocation @targetlocation
+TossBabyGoblinVeteran-End:
+    Skills:
+    - summon{type=BabyGoblin;amount=1;radius=1;onSurface=true;ctt=true;itt=true} @origin
+TossBabyGoblinVeteran-Tick:
+    Skills:
+    - effect:particles{p=slime;a=10;hSpread=0.5;vSpread=0.5} @origin
