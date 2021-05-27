@@ -102,3 +102,34 @@ Sharpen:
   - effect boss particles crit:1:1:250:0.1 >0 1
   - potionself INCREASE_DAMAGE:160:3 >0 1
   - potionself SPEED:160:3 >0 1
+  
+  
+Overlord
+  Skills:
+  - Skill{s=Laser} @Target
+
+Laser:
+  Skills:
+  - projectile{i=1;oT=LaserTick;oH=LaserHit;oE=LaserEnd;mr=5;sE=false;v=100} @Target
+LaserTick:
+  Skills:
+  - effect:particlering{p=flame;r=5;points=40} @origin
+  - effect:particles{particle=totem;a=20;s=0.5;hs=0.1;vs=0.1} @origin
+  - delay 20
+LaserHit:
+  Skills:
+  - damage{ia=true;a=20;pkb=true}
+  - ignite{t=100}
+  - effect{effect=Black_Screen;d=10} @Target
+  - stun{d=100;f=true} @origin
+  - effect:explosion @PIR{r=10}
+  - damage{a=30;pkb=false}
+LaserEnd
+  Skills:
+  - Skill{s=Overlord2} @PIR{r=20}
+  
+Overlord2
+  Skills:
+  - effect{effect=enderbeam;d=5} @PIR{r=20}
+  - damage{ia=true;a=2}
+  - Skill{s=FireballBarage} @PIR{r=20}
