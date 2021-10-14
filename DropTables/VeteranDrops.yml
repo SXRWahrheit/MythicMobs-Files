@@ -76,8 +76,6 @@ QuestVeteranDrops:
     Drops:
     - exp 150 1
     - money 25 1
-    - VeteranTokenPlaceholder 1 1
-    - VeteranTokenPlaceholder 1-2 0.25
     - SmallRedstoneCache 1 0.05
 QuestVeteranMeleeDrops:
     MaxItems: 1

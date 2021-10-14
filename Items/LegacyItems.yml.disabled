@@ -1,0 +1,60 @@
+
+ArcSword:
+    Id: diamond_sword
+    Data: 0
+    Amount: 1
+    Display: "&5Sparking Arcblade"
+    Lore:
+    - "&5&oLegendary"
+    - "&fLightning runs through your veins! Right click with full Super Energy to empower your Arcblade. Hits on enemies will chain to others nearby!"
+    Skills:
+    - skill{s=Super-Activate} @Trigger ~onUse
+ArcSwordTest:
+    Id: diamond_sword
+    Data: 0
+    Amount: 1
+    Display: "&5Sparking Arcblade"
+    Lore:
+    - "&5&oLegendary"
+    - "&fLightning runs through your veins! Right click with full Super Energy to empower your Arcblade. Hits on enemies will chain to others nearby!"
+    Skills:
+    - skill{s=Arcblade-Test} @target ~onAttack
+
+ImpactSwordTest:
+    Id: diamond_sword
+    Data: 0
+    Amount: 1
+    Display: "&5High-impact Blade"
+    Lore:
+    - "&5&oLegendary"
+    - "&fStrike from the skies! Right click to ascend, then left click to smash into the ground and cause a massive impact!"
+    Skills:
+    - skill{s=Impact-Cast} @self ~onUse
+    - skill{s=Impact-Swing} @self ~onSwing
+
+SandstormSwordTest:
+    Id: diamond_sword
+    Data: 0
+    Amount: 1
+    Display: "&5Blade of the Sands"
+    Lore:
+    - "&5&oLegendary"
+    - "&fSummon a raging sandstorm! Right click with full Super Energy to surround yourself with a sandstorm, slowing nearby enemies."
+    Skills:
+    - skill{s=Sandstorm-Cast} @self ~onUse
+    
+TestChest:
+    Id: Diamond_Chestplate
+    Data: 0
+    Display: '&dTest Chestplate'
+    Lore:
+    - '&d&oElite'
+    - '&fThis chestplate seeps magical energy.'
+    Enchantments:
+    - PROTECTION_ENVIRONMENTAL:6
+    - PROTECTION_EXPLOSIONS:4
+    Attributes:
+        All:
+            Health: 9
+            Armor: 9
+            ArmorToughness: 2

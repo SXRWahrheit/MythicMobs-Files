@@ -67,7 +67,7 @@ CripplingShotChampion:
     Conditions:
     - offgcd
     Skills:
-    - message={m="&d<mob.name>&f<&co> This will slow you down!"} @PlayersInRadius{r=40}
+    - message{m="&d<mob.name>&f<&co> This will slow you down!"} @PlayersInRadius{r=40}
     - delay 20
     - arrowvolley{a=1;s=10;v=30;f=0;rd=200} @Target
     - potion{type=SLOW;duration=200;level=2} @Target
@@ -77,7 +77,7 @@ BurningShotChampion:
     Conditions:
     - offgcd
     Skills:
-    - message={m="&d<mob.name>&f<&co> You will be nothing but ashes!"} @PlayersInRadius{r=40}
+    - message{m="&d<mob.name>&f<&co> You will be nothing but ashes!"} @PlayersInRadius{r=40}
     - delay 20
     - arrowvolley{a=1;s=10;v=30;f=0;rd=200} @Target
     - ignite{ticks=100} @Target
@@ -87,7 +87,7 @@ VanishChampion:
     Conditions:
     - offgcd
     Skills:
-    - message={m="&d<mob.name>&f disappears!"} @PlayersInRadius{r=40}
+    - message{m="&d<mob.name>&f disappears!"} @PlayersInRadius{r=40}
     - delay 10
     - potion{type=INVISIBILITY;duration=200;level=2} @Self
     - GCD{ticks=120}

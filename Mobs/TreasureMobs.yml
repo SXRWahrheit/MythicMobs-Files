@@ -3,7 +3,6 @@ GoblinRedstone:
   Display: '&6Redstone Goblin'
   Health: 250
   Damage: 4
-  Skills:
   Drops:
   - redstone 64 1
   - redstone 1-64 0.5
@@ -23,7 +22,7 @@ GoblinRedstone:
     FollowRange: 15
   Skills:
   - runaigoalselector{goal=fleeplayers} ~onDamaged 1
-  - GoblinRadius ~onTimer:20 @Self
+  - skill{s=GoblinRadius} ~onTimer:20 @Self
   AIGoalSelectors:
   - 0 clear
   - 1 fleeplayers
@@ -33,7 +32,6 @@ GoblinLapis:
   Display: '&6Lapis Lazuli Goblin'
   Health: 250
   Damage: 4
-  Skills:
   Drops:
   - LapisLazuli 64 1
   - LapisLazuli 1-64 0.5
@@ -53,7 +51,7 @@ GoblinLapis:
     FollowRange: 15
   Skills:
   - runaigoalselector{goal=fleeplayers} ~onDamaged 1
-  - GoblinRadius ~onTimer:20 @Self
+  - skill{s=GoblinRadius} ~onTimer:20 @Self
   AIGoalSelectors:
   - 0 clear
   - 1 fleeplayers
@@ -63,7 +61,6 @@ GoblinMoney:
   Display: '&6Greedy Goblin'
   Health: 250
   Damage: 4
-  Skills:
   Drops:
   - money 50 1
   - money 1-50 0.5
@@ -83,7 +80,7 @@ GoblinMoney:
     FollowRange: 15
   Skills:
   - runaigoalselector{goal=fleeplayers} ~onDamaged 1
-  - GoblinRadius ~onTimer:20 @Self
+  - skill{s=GoblinRadius} ~onTimer:20 @Self
   AIGoalSelectors:
   - 0 clear
   - 1 fleeplayers
@@ -93,7 +90,6 @@ GoblinExp:
   Display: "&6Goblin o' Enchanting"
   Health: 250
   Damage: 4
-  Skills:
   Drops:
   - exp 50 1
   - exp 1-100 0.5
@@ -113,7 +109,7 @@ GoblinExp:
     FollowRange: 15
   Skills:
   - runaigoalselector{goal=fleeplayers} ~onDamaged 1
-  - GoblinRadius ~onTimer:20 @Self
+  - skill{s=GoblinRadius} ~onTimer:20 @Self
   AIGoalSelectors:
   - 0 clear
   - 1 fleeplayers
@@ -123,7 +119,6 @@ GoblinSand:
   Display: "&6Sandy Goblin"
   Health: 250
   Damage: 4
-  Skills:
   Drops:
   - sand 64 1
   - sand 1-64 0.5
@@ -143,7 +138,7 @@ GoblinSand:
     FollowRange: 15
   Skills:
   - runaigoalselector{goal=fleeplayers} ~onDamaged 1
-  - GoblinRadius ~onTimer:20 @Self
+  - skill{s=GoblinRadius} ~onTimer:20 @Self
   AIGoalSelectors:
   - 0 clear
   - 1 fleeplayers
@@ -153,7 +148,6 @@ GoblinPrismarine:
   Display: "&6Prismarine Goblin"
   Health: 250
   Damage: 4
-  Skills:
   Drops:
   - prismarine_shard 64 1
   - prismarine_shard 1-64 0.5
@@ -173,7 +167,7 @@ GoblinPrismarine:
     FollowRange: 15
   Skills:
   - runaigoalselector{goal=fleeplayers} ~onDamaged 1
-  - GoblinRadius ~onTimer:20 @Self
+  - skill{s=GoblinRadius} ~onTimer:20 @Self
   AIGoalSelectors:
   - 0 clear
   - 1 fleeplayers

@@ -9,8 +9,8 @@ WaterTemple-Miniboss:
 #    - skill{s=SmashAttackWaterTemple-Miniboss} @PIR{r=40} >0 0.2
     - skill{s=SummonGuardiansWaterTemple-Miniboss} @PIR{r=40} >0 0.2
     - skill{s=BleedingWaterTemple-Miniboss} @PIR{r=40} ~onAttack 0.25
-    - skill{s=SacrificeCheckWaterTemple-Miniboss} @LEIR{r=40} <50% 0.2
-    - skill{s=SacrificeSignalWaterTemple-Miniboss} @LEIR{r=40} ~onSignal:RUNSACRIFICE
+    - skill{s=SacrificeCheckWaterTemple-Miniboss} @EIR{r=40} <50% 0.2
+    - skill{s=SacrificeSignalWaterTemple-Miniboss} @EIR{r=40} ~onSignal:RUNSACRIFICE
     - skill{s=SacrificeHealWaterTemple-Miniboss} @self ~onSignal:SACRIFICEHEAL
     Equipment:
     - ChampHelm:4

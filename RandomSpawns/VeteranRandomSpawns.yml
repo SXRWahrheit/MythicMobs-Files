@@ -8,27 +8,35 @@ ProsperusVeterans:
     - distancefromspawn{distance=>1000} true
 #    - region{r=dawnslanding} false
     - onblock STATIONARY_WATER,WATER false
+    - inblock{b=air} true
 HeavensVeterans:
-    Type: SkeletalRogue,LesserWight,LesserShade,LesserDrow,SkeletalArcher,AbsoluteExplodyBoy
+    Type: SkeletalRogue,LesserWight,LesserShade,LesserDrow,SkeletalArcher,LesserLivingFlame
     Worlds: heavens,ultimatus
     Chance: 0.10
     Action: REPLACE
     Conditions:
     - onblock STATIONARY_WATER,WATER false
+    - inblock{b=air} true
 NetherVeterans:
-    Type: SkeletalRogue,LesserWight,LesserShade,LesserDrow,SkeletalArcher,AbsoluteExplodyBoy
+    Type: SkeletalRogue,LesserWight,LesserShade,LesserDrow,SkeletalArcher,LesserLivingFlame
     Worlds: prosperus_nether
     Chance: 0.03
     Action: REPLACE
+NetherBonusVeterans:
+    Type: LesserLivingFlame
+    Worlds: prosperus_nether
+    Chance: 0.05
+    Action: Replace
 EndVeterans:
-    Type: SkeletalRogue,LesserWight,LesserShade,LesserDrow,SkeletalArcher,AbsoluteExplodyBoy
+    Type: SkeletalRogue,LesserWight,LesserShade,LesserDrow,SkeletalArcher,LesserLivingFlame
     Worlds: prosperus_the_end
-    Chance: 0.20
+    Chance: 0.05
     Action: REPLACE
 AvenfeldVeterans:
-    Type: SkeletalRogue,LesserWight,LesserShade,LesserDrow,SkeletalArcher,AbsoluteExplodyBoy
+    Type: SkeletalRogue,LesserWight,LesserShade,LesserDrow,SkeletalArcher
     Worlds: avenfeld
-    Chance: 0.10
+    Chance: 0.20
     Action: REPLACE
     Conditions:
     - onblock STATIONARY_WATER,WATER false
+    - inblock{b=air} true

@@ -37,21 +37,21 @@ SmashAttackWaterTemple-Miniboss:
 SacrificeCheckWaterTemple-Miniboss:
     Cooldown: 60
     Skills:
-    - signal{s=MINIONCHECK} @LEIR{r=40}
+    - signal{s=MINIONCHECK} @EIR{r=40}
     - message{m="&d<mob.name>&f<&co> Skill run: SacrificeCheckWaterTemple-Miniboss"} @PlayersInRadius{r=40}
 SacrificeConfirmWaterTemple-Miniboss:
     Skills:
-    - signal{s=RUNSACRIFICE} @LEIR{r=40}
+    - signal{s=RUNSACRIFICE} @EIR{r=40}
     - message{m="&d<mob.name>&f<&co> Skill run: SacrificeConfirmWaterTemple-Miniboss"} @PlayersInRadius{r=40}
 SacrificeSignalWaterTemple-Miniboss:
     Cooldown: 60
     Conditions:
     Skills:
     - message{m="&d<mob.name>&f<&co> My time is not yet over - minions, give me life!"} @PlayersInRadius{r=40}
-    - signal{s=SACRIFICE} @LEIR{r=40}
+    - signal{s=SACRIFICE} @EIR{r=40}
 SacrificeTargetWaterTemple-Miniboss:
     Skills:
-    - signal{s=SACRIFICEHEAL} @LEIR{r=40}
+    - signal{s=SACRIFICEHEAL} @EIR{r=40}
     - remove @self
 SacrificeHealWaterTemple-Miniboss:
     Skills:

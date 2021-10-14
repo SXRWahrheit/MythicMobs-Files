@@ -1,14 +1,4 @@
-Arcblade:
-    Cooldown: 2
-    Conditions:
-    - dcondition{c=super-activated}
-    - dcondition{c=super-energy-remaining}
-    - targetwithin{d=8}
-    Skills:
-    - dskill{s=super-swing;a=40} @trigger ~onAttack
-Arcblade-Test:
-    Skills:
-    - dskill{s=arcblade-task-runner}
+
 
 #############################################################
 #   Elemental skills

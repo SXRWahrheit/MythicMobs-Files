@@ -61,7 +61,7 @@ Toxus:
     Health: 2000
     Damage: 8
     Skills:
-    - message{cooldown=20;m="<mob.name>&f<co> Can you feel my corruption?"} @PlayersInRadius}{r=40} ~onCombat >0 0.2
+    - message{cooldown=20;m="<mob.name>&f<co> Can you feel my corruption?"} @PlayersInRadius{r=40} ~onCombat >0 0.2
     - message{m="<mob.name>&f<&co> Give in to the poison..."} @PlayersInRadius{r=40} ~onKillPlayer >0 1
     - skill{s=PoisonFangChampion} @PIR{r=40} ~onTimer:20 >0 0.2
     - skill{s=SmashAttackChampion} @PIR{r=40} ~onTimer:20 >0 0.2

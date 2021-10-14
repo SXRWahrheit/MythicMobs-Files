@@ -207,12 +207,12 @@ BoulderTossVeteran-Hit:
     - damage{amount=14} @PlayersNearOrigin{r=3}
 BoulderTossVeteran-End:
     Skills:
-    - effect:particles{p=blockcrack_1;a=200;hSpread=3.0;vSpread=3.0} @origin
-    - effect:particles{p=blockcrack_1;a=100;hSpread=1.0;vSpread=1.0} @origin
+    - effect:particles{p=block_crack;m=stone;a=200;hSpread=3.0;vSpread=3.0} @origin
+    - effect:particles{p=block_crack;m=stone;a=100;hSpread=1.0;vSpread=1.0} @origin
     - effect:particles{p=cloud;a=40;hSpread=1.0;vSpread=1.0} @origin
 BoulderTossVeteran-Tick:
     Skills:
-    - effect:particles{p=blockcrack_1;a=10;hSpread=0.5;vSpread=0.5} @origin
+    - effect:particles{p=block_crack;m=stone;a=10;hSpread=0.5;vSpread=0.5} @origin
 
 StompVeteran:
     Cooldown: 8
@@ -238,11 +238,11 @@ RockTossVeteran-Hit:
     - damage{amount=6} @PlayersNearOrigin{r=3}
 RockTossVeteran-End:
     Skills:
-    - effect:particles{p=blockcrack_1;a=20;hSpread=3.0;vSpread=3.0} @origin
-    - effect:particles{p=blockcrack_1;a=10;hSpread=1.0;vSpread=1.0} @origin
+    - effect:particles{p=block_crack;m=stone;a=20;hSpread=3.0;vSpread=3.0} @origin
+    - effect:particles{p=block_crack;m=stone;a=10;hSpread=1.0;vSpread=1.0} @origin
 RockTossVeteran-Tick:
     Skills:
-    - effect:particles{p=blockcrack_1;a=10;hSpread=0.5;vSpread=0.5} @origin
+    - effect:particles{p=block_crack;m=stone;a=10;hSpread=0.5;vSpread=0.5} @origin
 
 RushVeteran:
     Cooldown: 10

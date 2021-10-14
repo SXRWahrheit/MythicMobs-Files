@@ -29,76 +29,11 @@ MeteorEnd:
   
 FarBlind:
   Cooldown: 20
+  TargetConditions:
+  - distance{d=10to50}
   Conditions:
-  - targetdistance 10-50
   - offgcd
   Skills:
   - message{m="<mob.name>&e blinds you for not fighting it close up!"} @PlayersInRing{min=10;max=50}
   - potion{type=BLINDNESS;duration=160;level=1} @PlayersInRing{min=10;max=50}
   - sound{s=ambient.cave.cave;volume=2} @PlayersInRing{min=10;max=50}
-  
-Stealth:
-  Cooldown: 1
-  Conditions:
-  - targetwithin 30
-  Skills:
-  - message{m="<mob.name>&e fades away."} @target
-  - potionself INVISIBILITY:200:1 >0 1
-  - potionself INCREASE_DAMAGE:200:3 >0 1
-  - effect boss particles largesmoke:1:1:25:1:0.5 >0 1
-  
-Bleeding:
-  Cooldown: 1
-  Conditions:
-  - targetwithin 5
-  - targetinlineofsight true
-  Skills:
-  - message{m="<target.name> is bleeding."} @target
-  - sound{s=damage.hit} @target
-  - effect:particles{particle=dripLava;amount=5;hS=1;vS=1;speed=5} @self
-  - damage{amount=1;ia=false;pk=false;pi=false} @target ~onTimer:20
-  - damage{amount=1;ia=false;pk=false;pi=false} @target ~onTimer:20
-  - effect:particles{particle=dripLava;amount=5;hS=1;vS=1;speed=5} @self
-  - damage{amount=1;ia=false;pk=false;pi=false} @target ~onTimer:20
-  - damage{amount=1;ia=false;pk=false;pi=false} @target ~onTimer:20
-  - effect:particles{particle=dripLava;amount=5;hS=1;vS=1;speed=5} @self
-  - damage{amount=1;ia=false;pk=false;pi=false} @target ~onTimer:20
-  - damage{amount=1;ia=false;pk=false;pi=false} @target ~onTimer:20
-  
-Charge:
-  Cooldown: 1
-  Conditions:
-  - targetwithin 20
-  - targetinlineofsight true
-  Skills:
-  - message{m="<mob.name>&e charges toward <target.name>."} @target
-  - effect boss particle crit:1:1:250:2:0 >0 1
-  - potion{type=SPEED;duration=20;level=5} @self
-  
-Flurry:
-  Cooldown: 1
-  Conditions:
-  - targetwithin 5
-  - targetinlineofsight true
-  Skills:
-  - message{m="<mob.name>&e unleashes a flurry of blows on <target.name>"} @target
-  - potion{type=HARM;duration=10;level=1} @target ~onTimer:20
-  - potion{type=HARM;duration=10;level=1} @target ~onTimer:20
-  - potion{type=HARM;duration=10;level=1} @target ~onTimer:20
-  - potion{type=HARM;duration=10;level=1} @target ~onTimer:20
-  - potion{type=HARM;duration=10;level=1} @target ~onTimer:20
-  - potion{type=HARM;duration=10;level=1} @target ~onTimer:20
-
-  
-Sharpen:
-  Cooldown: 1
-  Skills:
-  - message{m="<mob.name>&e begins sharpening its weapon."} @target
-  - effect boss sound random.break 1:1 >0 1
-  - effect boss particles crit:1:1:250:0.1 >0 1
-  - potionself SLOW:40:7
-  - delay 40
-  - effect boss sound random.break 1:1 >0 1
-  - effect boss particles crit:1:1:250:0.1 >0 1
-  - potionself INCREASE_DAMAGE:160:3 >0 1
-  - potionself SPEED:160:3 >0 1

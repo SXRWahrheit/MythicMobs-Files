@@ -1,0 +1,125 @@
+#Arcblade-Lightning:
+#    Skills:
+#    - dskill{s=arcblade-first-hit} @target
+#Arcblade-Lightning-Chain1:
+#    Skills:
+#    - missile{onTick=Arcblade-Lightning-Tick;onHit=Arcblade-Lightning-Hit1;i=4;hR=1;vR=1;d=200;mr=10;v=10;hp=false;hnp=true;sB=false;tyo=+1.5}
+#Arcblade-Lightning-Hit1:
+#    Skills:
+#    - damage{amount=20;ignoreArmor=false}
+#    - dskill{s=arcblade-lightning-chain1}
+#Arcblade-Lightning-Chain2:
+#    Skills:
+#    - missile{onTick=Arcblade-Lightning-Tick;onHit=Arcblade-Lightning-Hit2;i=4;hR=1;vR=1;d=200;mr=10;v=10;hp=false;hnp=true;sB=false;tyo=+1.5}
+#Arcblade-Lightning-Hit2:
+#    Skills:
+#    - damage{amount=20;ignoreArmor=false}
+#    - dskill{s=arcblade-lightning-chain2}
+#Arcblade-Lightning-Chain3:
+#    Skills:
+#    - missile{onTick=Arcblade-Lightning-Tick;onHit=Arcblade-Lightning-Hit3;i=4;hR=1;vR=1;d=200;mr=10;v=10;hp=false;hnp=true;sB=false;tyo=+1.5}
+#Arcblade-Lightning-Hit3:
+#    Skills:
+#    - damage{amount=20;ignoreArmor=false}
+#Arcblade-Lightning-Tick:
+#    Skills:
+#    - effect:particles{p=fireworksSpark;a=20;speed=0;hS=0.1;vS=0.1} @origin
+#Arcblade-Lunge:
+#    Skills:
+#    - leap{velocity=800} @TargetLocation
+Super-Activate:
+    Conditions:
+    - dcondition{c=super-charged}
+    Skills:
+    - dskill{s=super-activate} @trigger ~onUse
+Overgrowth-Cast:
+    Skills:
+    - dskill{s=overgrowth-cast}
+    - dskill{s=super-activate} @trigger ~onUse
+    Conditions:
+    - dcondition{c=super-charged}
+HundredBlades-Cast:
+    Skills:
+    - dskill{s=hundredblades-cast}
+    - dskill{s=super-activate} @trigger ~onUse
+    Conditions:
+    - dcondition{c=super-charged}
+Impact-Cast:
+    Skills:
+    - dskill{s=impact-cast}
+    - dskill{s=super-swing;a=125}
+    - dskill{s=super-activate} @trigger ~onUse
+    Conditions:
+    - dcondition{c=super-charged}
+Impact-Swing:
+    Skills:
+    - dskill{s=impact-swing}
+    - dskill{s=super-swing;a=200}
+    Conditions:
+    - dcondition{c=super-activated}
+Sandstorm-Cast:
+    Skills:
+    - dskill{s=sandstorm-cast}
+    - dskill{s=super-activate} @trigger ~onUse
+    Conditions:
+    - dcondition{c=super-charged}
+Reinvigorate-Activate:
+    Conditions:
+    - dcondition{c=super-charged}
+    Skills:
+    - dskill{s=super-activate} @trigger ~onUse
+Reinvigorate-Cast:
+    Conditions:
+    - dcondition{c=super-activated}
+    - dcondition{c=super-energy-remaining}
+    Skills:
+    - dskill{s=reinvigorate-targeter} @target ~onSwing
+Reinvigorate-Test:
+    Skills:
+    - dskill{s=reinvigorate-targeter} @target ~onSwing
+Reinvigorate-Heal:
+    Skills:
+    - heal{amount=30;oh=false}
+    - message{m="&aYou feel reinvigorated!"}
+HammerOfSol-Activate:
+    Conditions:
+    - dcondition{c=super-charged}
+    Skills:
+    - dskill{s=super-activate} @trigger ~onUse
+HammerOfSol:
+    Conditions:
+    - dcondition{c=super-activated}
+    - dcondition{c=super-energy-remaining}
+    Skills:
+    - dskill{s=super-swing;a=50} @trigger ~onSwing
+    - projectile{onTick=HammerOfSol-Tick;onEnd=HammerOfSol-Hit;v=48;g=2.0;i=1;hR=2;vR=2;HitPlayers=true;HitNonPlayers=true;mr=80;d=360;StartYOffset=+1.8}
+HammerOfSol-Tick:
+    Skills:
+    - effect:particles{p=flame;amount=20;speed=0;hS=0.2;vS=0.2} @origin
+HammerOfSol-Hit:
+    Skills:
+    - skill{s=HammerOfSol-Hit-Mobs} @EntitiesNearOrigin{r=6;ignore=players}
+    - skill{s=HammerOfSol-Hit-Players} @PlayersNearOrigin{r=6}
+    - skill{s=HammerOfSol-Hit-ExplosionBD}
+    - skill{s=HammerOfSol-Hit-Explosion}
+HammerOfSol-Hit-Mobs:
+    Skills:
+    - damage{a=30}
+    - ignite{t=200}
+HammerOfSol-Hit-Players:
+    Skills:
+    - damage{a=8}
+    - ignite{t=200}
+HammerOfSol-Hit-ExplosionBD:
+    Conditions:
+    - world prosperus_nether,prosperus_the_end,heavens,avenfeld
+    Skills:
+    - explosion{yield=4;bd=true;fire=true}
+HammerOfSol-Hit-Explosion:
+    Conditions:
+    - world prosperus,ultimatus
+    Skills:
+    - explosion{yield=4;bd=false;fire=false}
+HammerOfSol-Test:
+    Skills:
+    - projectile{onTick=HammerOfSol-Tick;onEnd=HammerOfSol-Hit;v=48;g=2.0;i=1;hR=2;vR=2;HitPlayers=true;HitNonPlayers=true;mr=80;d=360;StartYOffset=+1.8}

@@ -180,3 +180,23 @@ VeteranTableTester:
         ThreatTable: true
 #Drider
 #LesserGhoul
+LesserLivingFlame:
+    Type: BLAZE
+    Display: '&9Lesser Living Flame'
+    Health: 75
+    Damage: 10
+    Drops:
+    - VeteranDrops
+    - VeteranMeleeDrops 1 0.1
+    - blaze_rod 6-10 1
+    Options:
+        AlwaysShowName: true
+        FollowRange: 40
+        MovementSpeed: 0.35
+        PreventOtherDrops: false
+        PreventItemPickup: true
+    Skills:
+    - skill{s=SummonDarkSpriteVeteran} @PIR{r=40} >0 0.2
+    - skill{s=BlindVeteran} @PIR{r=40} >0 0.2
+    Modules:
+        ThreatTable: true
