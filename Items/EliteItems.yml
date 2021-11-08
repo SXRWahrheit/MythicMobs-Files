@@ -268,8 +268,7 @@ RedstoneCache:
     - '&d&oElite'
     - '&fThis bottle is brimming with redstone.'
     Skills:
-    - command{c="ex inventory add d:<p@<trigger.name>.inventory> o:li@i@redstone[quantity=64]"}
-        ~onUse
+    - command{c="redstonecacheopen <trigger.name>"} ~onUse
     - ConsumeHeldItem @Self ~onUse
     Options:
         Color: 255,0,0

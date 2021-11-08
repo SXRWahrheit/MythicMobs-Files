@@ -150,7 +150,7 @@ SmallRedstoneCache:
     - '&9&oVeteran'
     - '&fThis bottle is partially filled with redstone.'
     Skills:
-    - command{c="ex inventory add d:<p@<trigger.name>.inventory> o:li@i@redstone[quantity=32]"} ~onUse
+    - command{c="smallredstonecacheopen <trigger.name>"} ~onUse
     - ConsumeHeldItem @Self ~onUse
     Options:
         Color: 255,0,0
