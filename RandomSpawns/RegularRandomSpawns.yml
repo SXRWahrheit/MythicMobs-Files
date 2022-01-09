@@ -1,0 +1,41 @@
+ProsperusCaveSpider:
+  Type: cave_spider
+  Worlds: prosperus
+  Chance: 0.005
+  Action: REPLACE
+  Conditions:
+  - outside false
+  - lightlevelbelow 2
+HeavensCaveSpider:
+  Type: cave_spider
+  Worlds: heavens
+  Chance: 0.005
+  Action: REPLACE
+  Conditions:
+  - outside false
+  - lightlevelbelow 2
+AvenfeldCaveSpider:
+  Type: cave_spider
+  Worlds: avenfeld
+  Chance: 0.005
+  Action: REPLACE
+  Conditions:
+  - outside false
+  - lightlevelbelow 2
+EthereaCaveSpider:
+  Type: cave_spider
+  Worlds: etherea
+  Chance: 0.005
+  Action: REPLACE
+  Conditions:
+  - outside false
+  - lightlevelbelow 2
+
+CowSpawns:
+  Type: Cow
+  Worlds: prosperus
+  Chance: 0.05
+  Action: ADD
+  conditions:
+  - outside true
+  - region{r=dawnslanding} true

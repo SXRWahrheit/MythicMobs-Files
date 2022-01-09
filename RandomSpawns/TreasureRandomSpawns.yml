@@ -32,6 +32,13 @@ EndTreasure:
   Worlds: prosperus_the_end
   Chance: 0.005
   Action: REPLACE
+EthereaTreasure:
+  Type: GoblinRedstone,GoblinMoney,GoblinLapis,GoblinExp,GoblinSand,GoblinPrismarine
+  Worlds: etherea
+  Chance: 0.005
+  Action: REPLACE
+  Conditions:
+  - outside true
 
 CowSpawns:
   Type: Cow
